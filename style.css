@@ -58,7 +58,8 @@ nav {
 
   width: 90vw;
   max-width: 124rem;
-  height: 4rem;
+  padding: 2rem 0;
+  /* height: 4rem; */
 }
 
 .logoCont {
@@ -66,13 +67,14 @@ nav {
   height: 100%;
 }
 .logoCont img {
-  width: 1005;
+  width: 100%;
   height: 100%;
 }
 
 .ham {
   width: 2.4rem;
   height: 2.4rem;
+  cursor: pointer;
 }
 .ham img {
   width: 100%;
@@ -109,7 +111,7 @@ header {
   width: 100%;
   /* height: 44.7rem; */
   /* max-height: 68rem; */
-  max-width: 62.1rem;
+  max-width: 45.3rem;
 }
 .heroCont img {
   width: 100%;
@@ -136,7 +138,7 @@ header .textContent h1 {
   line-height: 4.41rem;
 }
 header .textContent p {
-  font-size: var(--font24);
+  font-size: 2.4rem;
   font-weight: var(--weight400);
   line-height: 2.88rem;
 }
@@ -147,9 +149,10 @@ header .textContent button {
   color: var(--white);
   border: none;
   border-radius: 1rem;
-  font-size: var(--font24);
+  font-size: 2.4rem;
   font-weight: var(--weight400);
   line-height: 2.88rem;
+  cursor: pointer;
 }
 
 main {
@@ -183,6 +186,7 @@ main .iconsContainer {
   justify-content: center;
   align-items: center;
   width: 90%;
+  max-width: 30rem;
   gap: 2rem;
 }
 .iconsContainer .box img {
@@ -256,9 +260,10 @@ article .content {
   color: var(--white);
   border: none;
   border-radius: 1rem;
-  font-size: var(--font24);
+  font-size: 2.4rem;
   font-weight: var(--weight400);
   line-height: 2.88rem;
+  cursor: pointer;
 }
 aside {
   display: flex;
@@ -292,6 +297,7 @@ aside .slides {
   /* width: 100%; */
   width: 124rem;
   height: 100%;
+  gap: 2rem;
 }
 aside .slides .slide {
   display: flex;
@@ -338,10 +344,11 @@ aside span {
   font-weight: var(--weight600);
   line-height: 5.4rem;
   align-self: center;
+  color: var(--darkBlue);
 }
 .sec1 .right {
   width: 100%;
-  max-width: 50rem;
+  max-width: 45.5rem;
 }
 .sec1 .right img {
   width: 100%;
@@ -355,7 +362,7 @@ aside span {
   gap: 2rem;
 }
 .sec1 p {
-  font-size: var(--font24);
+  font-size: 2.4rem;
   font-weight: var(--weight400);
   line-height: 2.88rem;
   align-self: center;
@@ -367,9 +374,10 @@ aside span {
   color: var(--white);
   border: none;
   border-radius: 1rem;
-  font-size: var(--font24);
+  font-size: 2.4rem;
   font-weight: var(--weight400);
   line-height: 2.88rem;
+  cursor: pointer;
 }
 
 .sec2 {
@@ -426,7 +434,7 @@ aside span {
   font-weight: var(--weight600);
 }
 .sec2 p {
-  font-size: var(--font24);
+  font-size: 2.4rem;
   font-weight: var(--weight400);
   line-height: 2.88rem;
   text-align: start;
@@ -466,6 +474,7 @@ footer {
   align-items: start;
   width: 90%;
   gap: 2rem;
+  max-width: 124rem;
 }
 .footerLogo {
   display: none;
@@ -491,6 +500,12 @@ form label {
   font-weight: var(--weight400);
   text-align: start;
 }
+.inputXbtn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
 form input {
   color: var(--black);
   font-size: var(--font14);
@@ -506,7 +521,7 @@ form input {
 }
 form button {
   color: var(--darkBlue);
-  font-size: var(--font14);
+  font-size: 2.4rem;
   line-height: 2.1rem;
   font-weight: var(--weight400);
   background-color: var(--white);
@@ -514,6 +529,7 @@ form button {
   outline: none;
   width: 30%;
   height: 5rem;
+  cursor: pointer;
 }
 
 .topFooter ul {
@@ -544,6 +560,7 @@ form button {
   font-size: var(--font10);
   line-height: 1.5rem;
   font-weight: var(--weight400);
+  max-width: 124rem;
 }
 .bottomFooter span {
   /* width: 2.2rem;
