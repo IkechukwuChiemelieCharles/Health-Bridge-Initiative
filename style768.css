@@ -12,6 +12,13 @@
   --font10: 1.2rem;
 }
 
+article,
+main,
+.sec1,
+.sec2,
+aside {
+  margin-top: 5rem;
+}
 .innerHeader {
   flex-direction: row;
   text-align: start;
@@ -118,6 +125,12 @@ article button {
 }
 .footerLogo {
   display: flex;
+  width: 20rem;
+  height: 8rem;
+}
+.footerLogo img {
+  width: 100%;
+  height: 70%;
 }
 .topFooter ul {
   grid-template-columns: 1fr 1fr;

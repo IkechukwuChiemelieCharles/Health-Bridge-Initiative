@@ -1,0 +1,83 @@
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --font32: 3.6rem;
+
+  --font24: 4.8rem;
+  --font20: 3.6rem;
+
+  --font16: 2.4rem;
+  /* --font18: 1.8rem; */
+
+  --font14: 1.6rem;
+  --font12: 2.4rem;
+  --font10: 1.4rem;
+}
+.ham {
+  display: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  gap: 3rem;
+}
+nav li,
+nav a {
+  font-size: var(--font14);
+  line-height: 1.68rem;
+  color: var(--darkBlue);
+  font-weight: var(--weight400);
+  text-decoration: none;
+  list-style: none;
+}
+nav button {
+  width: 10rem;
+  height: 6rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+nav .blue-btn {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+nav .white-btn {
+  background-color: var(--white);
+  color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+}
+.heroCont {
+  width: 50%;
+  max-width: 62.1rem;
+  height: 68rem;
+}
+header .textContent {
+  gap: 4.4rem;
+}
+main .iconsContainer {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: start;
+}
+/* .sec2 .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+} */
+.play,
+.app {
+  width: 30rem;
+  height: 8rem;
+}
