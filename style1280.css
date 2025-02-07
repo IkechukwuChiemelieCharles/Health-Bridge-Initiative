@@ -46,6 +46,7 @@ nav button {
   height: 6rem;
   border-radius: 1rem;
   border: none;
+  cursor: pointer;
 }
 
 nav .blue-btn {
