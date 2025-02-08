@@ -1,0 +1,114 @@
+:root {
+  /* --font32: 3.2rem; */
+
+  --font24: 3.6rem;
+  --font20: 3.2rem;
+
+  --font16: 2rem;
+  --font18: 1.8rem;
+
+  --font14: 1.6rem;
+  --font12: 1.4rem;
+  --font10: 1.2rem;
+}
+.innerHeader {
+  align-items: center;
+}
+
+.text {
+  align-items: center;
+  width: 60%;
+  text-align: center;
+}
+main {
+  height: 34.7rem;
+  max-height: 52.7rem;
+}
+.innerMain {
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+}
+.tips {
+  background-color: var(--white);
+  width: 39.4rem;
+  gap: 6rem;
+  padding: 4rem;
+  height: 100%;
+}
+.tips h2 {
+  height: 3.2rem;
+}
+.arr {
+  display: flex;
+}
+.span {
+  flex-direction: column;
+  height: 5.2rem;
+}
+.p4 {
+  align-self: flex-end;
+}
+
+aside .slides {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  /* width: 124rem; */
+  height: 100%;
+  gap: 2rem;
+}
+footer {
+  height: 43rem;
+  justify-content: space-around;
+}
+.topFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  gap: 1rem;
+}
+.footerLogo {
+  display: flex;
+  width: 20rem;
+  height: 8rem;
+}
+.footerLogo img {
+  width: 100%;
+  height: 70%;
+}
+.topFooter ul {
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  text-wrap: nowrap;
+  gap: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.inputXbtn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5rem;
+}
+form input {
+  width: 20.57rem;
+  height: 5rem;
+}
+form button {
+  width: 13.811rem;
+}
+.bottomFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

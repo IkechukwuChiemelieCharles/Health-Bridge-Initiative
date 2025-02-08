@@ -17,6 +17,7 @@
 
   --lightBlue: rgba(170, 199, 224, 1);
   --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
   --font32: 3.2rem;
   --font24: 2.4rem;
   --font20: 2rem;
@@ -513,7 +514,7 @@ form input {
   font-size: var(--font14);
   line-height: 2.1rem;
   font-weight: var(--weight400);
-  background-color: var(--lightWhite);
+  background-color: var(--lighterblue2);
   border: none;
   outline: none;
   text-align: start;
@@ -524,7 +525,7 @@ form input {
 form button {
   color: var(--darkBlue);
   font-size: 2rem;
-  line-height: 2.1rem;
+  line-height: 1.2rem;
   font-weight: var(--weight400);
   background-color: var(--white);
   border: none;
@@ -564,13 +565,22 @@ form button {
   font-weight: var(--weight400);
   max-width: 124rem;
 }
+.bottomFooter p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 .bottomFooter span {
-  /* width: 2.2rem;
-  height: 2.2rem; */
-  padding: 0.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   border: 1px solid var(--white);
   border-radius: 100%;
   font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .socialIcons {

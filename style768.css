@@ -114,7 +114,10 @@ article button {
   width: 16rem;
   height: 5.3rem;
 }
-
+footer {
+  height: 43rem;
+  justify-content: space-around;
+}
 .topFooter {
   display: flex;
   flex-direction: row;
