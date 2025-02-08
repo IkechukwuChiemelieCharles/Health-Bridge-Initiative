@@ -49,9 +49,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* gap: 2rem; */
+  gap: 2rem;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -82,191 +81,268 @@ nav ul {
   width: 100%;
   height: 100%;
 }
-
 header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  text-align: center;
   width: 100vw;
   color: var(--paraCol);
   gap: 2rem;
-  background: linear-gradient(
-    to bottom,
-    white 80%,
-    rgba(170, 199, 224, 1) 100%
-  );
+  background: linear-gradient(to bottom, white 0%, rgba(170, 199, 224, 1) 20%);
 
   padding: 3rem 0;
+  height: 48rem;
 }
 .innerHeader {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
   width: 90vw;
   max-width: 124rem;
+  gap: 3.2rem;
 }
-.heroCont {
-  width: 100%;
-  /* height: 44.7rem; */
-  /* max-height: 68rem; */
-  max-width: 45.3rem;
-}
-.heroCont img {
-  width: 100%;
-  height: 100%;
-}
-
-header .textContent {
+.text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 2rem;
+  align-items: start;
+  gap: 0.8rem;
 }
-header .textContent h1 span {
-  color: var(--darkBlue);
-  background-image: url(./Assets/zigzag.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-}
-header .textContent h1 {
-  font-size: var(--font32);
+.innerHeader h1 {
+  font-size: var(--font24);
   font-weight: var(--weight600);
-  line-height: 4.41rem;
+  line-height: 3.6rem;
 }
-header .textContent p {
-  font-size: 2.4rem;
+.innerHeader p {
+  font-size: var(--font14);
   font-weight: var(--weight400);
-  line-height: 2.88rem;
+  line-height: 2.1rem;
 }
-header .textContent button {
-  width: 20.6rem;
-  height: 6rem;
+
+.innerHeader .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.innerHeader .btn button {
+  padding: 1.6rem 2.4rem;
+  font-weight: var(--weight400);
+  font-size: var(--font14);
+  border-radius: 0.2rem;
+}
+.innerHeader .btn :first-child {
   background-color: var(--darkBlue);
-  color: var(--white);
   border: none;
-  border-radius: 1rem;
-  font-size: 2.4rem;
+  color: var(--white);
+}
+.innerHeader .btn :last-child {
+  background: transparent;
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
+}
+
+.visXmis {
+  display: flex;
+
+  flex-direction: column;
+  width: 80%;
+  max-width: 124rem;
+  gap: 1.2rem;
+  padding: 2rem 0;
+}
+.vision,
+.mission {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 7.4rem;
+  width: 100%;
+
+  gap: 1rem;
+}
+.mission .text,
+.mission .text {
+  width: 80%;
+}
+.mission .text h4,
+.vision .text h4 {
+  color: var(--darkBlue);
+  font-size: var(--font16);
+  font-weight: var(--weight600);
+  line-height: 2.4rem;
+}
+.mission .text p,
+.vision .text p {
+  font-size: var(--font14);
   font-weight: var(--weight400);
-  line-height: 2.88rem;
-  cursor: pointer;
+  line-height: 2.1rem;
 }
 
 main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 90vw;
   max-width: 124rem;
-  text-align: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  gap: 1.2rem;
 }
-main h1 {
-  font-size: var(--font32);
-  font-weight: var(--weight600);
-  line-height: 4.41rem;
-}
-main .iconsContainer {
-  display: grid;
-  gap: 2rem;
-  justify-items: center;
-  align-items: end;
-  grid-template-columns: 1fr;
+main .textContent {
   width: 100%;
-}
-
-.iconsContainer .box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 90%;
-  max-width: 30rem;
-  gap: 2rem;
+  align-items: start;
+  gap: 1rem;
 }
-.iconsContainer .box img {
-  width: 21.25rem;
-  height: 28.331rem;
-}
-.iconsContainer .box h2 {
-  font-size: 2.8rem;
-  font-weight: var(--weight400);
-  line-height: 3.36rem;
-}
-.iconsContainer .box p {
-  font-size: var(--font18);
-  line-height: 2.16rem;
-  font-weight: var(--weight400);
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90vw;
-  max-width: 124rem;
-  text-align: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-article h1 {
-  font-size: var(--font32);
+main .textContent h1 {
+  font-size: var(--font20);
   font-weight: var(--weight600);
-  line-height: 4.41rem;
+  line-height: 3rem;
+  color: var(--darkBlue);
 }
-article span .arr-right {
-  display: none;
-}
-article .content {
-  display: grid;
-  gap: 2rem;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr;
-  width: 100%;
-}
-.content .boxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  gap: 2rem;
-}
-.content .boxes img {
-  width: 15.584rem;
-  height: 19.5rem;
-}
-.content .boxes h2 {
-  font-size: 2.8rem;
-  font-weight: var(--weight600);
-  line-height: 3.36rem;
-}
-.content .boxes p {
-  font-size: var(--font18);
-  line-height: 2.16rem;
+main .textContent p {
+  font-size: var(--font14);
   font-weight: var(--weight400);
+  line-height: 2.1rem;
+  color: var(--black);
 }
-.content button {
-  padding: 1.5rem 1.9rem;
+
+main .textContent button {
+  padding: 1rem 1.4rem;
   background-color: var(--darkBlue);
   color: var(--white);
   border: none;
-  border-radius: 1rem;
-  font-size: 2.4rem;
+  border-radius: 0.4rem;
+  font-size: var(--font14);
   font-weight: var(--weight400);
   line-height: 2.88rem;
   cursor: pointer;
 }
+
+main .mainImg {
+  width: 100%;
+  max-width: 55.081rem;
+}
+main .mainImg img {
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 124rem;
+  gap: 1.2rem;
+}
+article h1 {
+  font-size: var(--font20);
+  font-weight: var(--weight600);
+  line-height: 3rem;
+  color: var(--darkBlue);
+  align-self: flex-start;
+}
+
+article .teams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.teams .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.2rem;
+  color: var(--black);
+  width: 100%;
+}
+.teamImgCont {
+  width: 100%;
+}
+.teamImgCont img {
+  width: 100%;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.teams .team h3 {
+  font-size: var(--font14);
+  font-weight: var(--weight600);
+  line-height: 1.44rem;
+}
+
+.teams .team p {
+  font-size: var(--font12);
+  font-weight: var(--weight400);
+  line-height: 1.44rem;
+}
+
+.sec1 {
+  background-color: var(--lightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  gap: 1.2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.innerSec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 124rem;
+  gap: 1.2rem;
+}
+.sec1 h1 {
+  font-size: var(--font20);
+  font-weight: var(--weight600);
+  line-height: 3rem;
+  color: var(--darkBlue);
+}
+.sec1 .conts {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  color: var(--black);
+  width: 15.2rem;
+  height: 16rem;
+}
+.conts img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.conts p {
+  font-size: var(--font16);
+  font-weight: var(--weight400);
+  line-height: 2.4rem;
+}
+.conts span {
+  font-size: var(--font32);
+  font-weight: var(--weight600);
+  line-height: 4.8rem;
+}
+
 aside {
   display: flex;
   flex-direction: column;
@@ -329,126 +405,73 @@ aside span {
   left: 0;
 }
 
-.sec1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 90vw;
-  max-width: 124rem;
-  text-align: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.sec1 h1 {
-  font-size: var(--font32);
-  font-weight: var(--weight600);
-  line-height: 5.4rem;
-  align-self: center;
-  color: var(--darkBlue);
-}
-.sec1 .right {
-  width: 100%;
-  max-width: 45.5rem;
-}
-.sec1 .right img {
-  width: 100%;
-}
-
-.sec1 .left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-.sec1 p {
-  font-size: 2.4rem;
-  font-weight: var(--weight400);
-  line-height: 2.88rem;
-  align-self: center;
-}
-.sec1 button {
-  width: 20.6rem;
-  height: 6rem;
-  background-color: var(--darkBlue);
-  color: var(--white);
-  border: none;
-  border-radius: 1rem;
-  font-size: 2.4rem;
-  font-weight: var(--weight400);
-  line-height: 2.88rem;
-  cursor: pointer;
-}
-
 .sec2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-
-  text-align: center;
+  max-width: 124rem;
+  text-align: start;
   gap: 2rem;
-  background-color: var(--darkBlue);
-  padding: 5rem 0;
+  overflow: hidden;
   margin-top: 2rem;
 }
-.sec2 span {
-  color: var(--lightBlue);
+
+.sec2 .imgCont {
+  width: 100%;
+  max-width: 64.065rem;
 }
-.sec2 .innerSec2 {
-  width: 90%;
-  max-width: 124rem;
+.sec2 .imgCont img {
+  width: 100%;
+}
+.sec2 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  width: 90%;
   gap: 2rem;
 }
+.sec2 h1 {
+  font-size: var(--font20);
+  font-weight: var(--weight600);
+  line-height: 3rem;
+  color: var(--darkBlue);
+}
+.sec2 p {
+  font-size: var(--font14);
+  font-weight: var(--weight400);
+  line-height: 2.1rem;
+  color: var(--black);
+}
 
+.sec2 button {
+  padding: 1rem 1.4rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: none;
+  border-radius: 0.4rem;
+  font-size: var(--font14);
+  font-weight: var(--weight400);
+  line-height: 2.88rem;
+  cursor: pointer;
+}
 .sec2 .btns {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 1rem;
+  gap: 1.6rem;
 }
-.play,
-.app {
-  width: 30rem;
-  height: 8rem;
-}
-.carelink {
-  width: 100%;
-  max-width: 124rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-.sec2 h1 {
-  font-size: var(--font32);
-  text-align: center;
-  color: var(--white);
-  font-weight: var(--weight600);
-}
-.sec2 p {
-  font-size: 2.4rem;
-  font-weight: var(--weight400);
-  line-height: 2.88rem;
-  text-align: start;
+.sec2 .btns :first-child {
+  background-color: var(--darkBlue);
+  border: none;
   color: var(--white);
 }
-.carelinkImg {
-  width: 34.277rem;
-  height: 43rem;
-}
-.carelinkImg img {
-  width: 100%;
-  height: 100%;
+.sec2 .btns :last-child {
+  background: transparent;
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
 }
 
 footer {
@@ -566,7 +589,7 @@ form button {
 }
 .bottomFooter span {
   /* width: 2.2rem;
-  height: 2.2rem; */
+    height: 2.2rem; */
   padding: 0.2rem;
   border: 1px solid var(--white);
   border-radius: 100%;
