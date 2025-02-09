@@ -18,6 +18,8 @@
   --lightBlue: rgba(170, 199, 224, 1);
   --lighterblue: rgba(0, 87, 163, 0.5);
   --lighterblue2: rgba(204, 221, 237, 1);
+  --lightblack: rgba(0, 0, 0, 0.2);
+
   --font32: 3.2rem;
   --font24: 2.4rem;
   --font20: 2rem;
@@ -50,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* gap: 2rem; */
+  gap: 2rem;
 }
 nav {
   display: flex;
@@ -88,19 +90,18 @@ header {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 48rem;
   color: var(--paraCol);
   gap: 2rem;
   background: linear-gradient(to bottom, white 0%, rgba(170, 199, 224, 1) 30%);
-  padding: 3rem 0;
-  height: 35rem;
-  position: relative;
+  padding-top: 3rem;
+  height: 48rem;
 }
 .overlay {
-  background-image: url(../Assets/floatIcon1.png), url(../Assets/floatIcon2.png),
-    url(../Assets/floatIcon3.png);
+  background-image: url(../Assets/Pharmacist_assisting_customer.png);
   background-repeat: no-repeat;
-  background-position: right 2rem, center -1rem, left 26rem;
-  background-size: 5rem;
+  background-position: right 20rem;
+  background-size: 25rem;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -108,12 +109,14 @@ header {
 .innerHeader {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   text-align: start;
   width: 90vw;
   max-width: 124rem;
   gap: 3.2rem;
+  height: 100%;
+  position: relative;
 }
 .text {
   display: flex;
@@ -121,6 +124,7 @@ header {
   justify-content: center;
   align-items: start;
   gap: 2.8rem;
+  z-index: 4;
 }
 .innerHeader h1 {
   font-size: var(--font24);
@@ -133,163 +137,149 @@ header {
   line-height: 2.1rem;
 }
 
-.innerHeader .btn {
+.innerHeader .btns {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.6rem;
 }
-.innerHeader .btn button {
+.innerHeader .btns button {
   padding: 1.6rem 2.4rem;
   font-weight: var(--weight400);
   font-size: var(--font14);
   border-radius: 0.2rem;
 }
-.innerHeader .btn :first-child {
+.innerHeader .btns :first-child {
   background-color: var(--darkBlue);
   border: none;
   color: var(--white);
 }
-.innerHeader .btn :last-child {
+.innerHeader .btns :last-child {
   background: transparent;
   border: 1px solid var(--darkBlue);
   color: var(--darkBlue);
 }
 
-main {
+article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  gap: 1.2rem;
-  background-color: var(--lighterblue2);
-  height: 23.4rem;
+  height: 67.7rem;
+  gap: 2rem;
 }
-.innerMain {
-  width: 80%;
-  max-width: 124rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.arr {
-  display: none;
-}
-.tips {
-  background-color: var(--white);
+.innerArt {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 90%;
+  height: 100%;
+  /* max-width: 67.8rem; */
   gap: 2rem;
-  padding: 4rem;
-  color: var(--darkBlue);
 }
-.tips h2 {
+article .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.8rem;
+  max-width: 69.457rem;
+  height: 100%;
+}
+.imgCont1 {
+  width: 21.28rem;
+  height: 25.6rem;
+}
+.imgCont1 img {
+  width: 100%;
+  height: 100%;
+}
+
+article .left h1 {
+  font-size: var(--font20);
+  font-weight: var(--weight600);
+  line-height: 3rem;
+}
+.headXp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
+}
+article p {
   font-size: var(--font14);
   font-weight: var(--weight400);
-  line-height: 2.4rem;
-  background-image: url(../Assets/zigzag.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 3.312rem;
+  line-height: 2.1rem;
 }
-.tips p,
-.tips span {
-  font-size: var(--font12);
-  font-weight: var(--weight400);
-  line-height: 1.8rem;
-
-  /* transform: skew(20deg); */
-}
-
-.p1 {
-  transform: rotate(-1.5deg);
-}
-.p2 {
-  transform: rotate(1.5deg);
-}
-.p3 {
-  transform: rotate(1.5deg);
-}
-.p4 {
-  transform: rotate(-1.5deg);
-}
-.span {
+.innerArt .btns {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
 }
+.innerArt .btns button {
+  padding: 1.6rem 2.4rem;
+  font-weight: var(--weight400);
+  font-size: var(--font14);
+  border-radius: 0.2rem;
+}
+.innerArt .btns :first-child {
+  background-color: var(--darkBlue);
+  border: none;
+  color: var(--white);
+}
+.innerArt .btns :last-child {
+  background: transparent;
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
+}
+
 aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 90vw;
-  max-width: 124rem;
-  text-align: center;
   gap: 2rem;
-  /* overflow: hidden; */
-  margin-top: 2rem;
 }
-aside h1 {
-  font-size: var(--font32);
-  font-weight: var(--weight600);
-  line-height: 5.4rem;
-  align-self: center;
-}
-aside p {
-  font-size: var(--font14);
-  font-weight: var(--weight400);
-  line-height: 2.1rem;
-  align-self: center;
-}
-
-aside .slides {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-  /* width: 124rem; */
-  height: 100%;
-  /* gap: 2rem; */
-}
-aside .slides .slide {
+.texts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 60%; */
-  max-width: 23.3rem;
+  width: 50%;
+  max-width: 56.4rem;
+  align-self: flex-start;
+  gap: 1.2rem;
+}
 
-  gap: 3.2rem;
-  height: 34.7rem;
-  position: relative;
-  border-radius: 1rem;
-  /* border: 1px solid red; */
-  box-shadow: 0 1px 1px var(--lighterblue2);
-  padding: 0 2rem;
-}
-aside .slides img {
-  width: 10.4rem;
-  height: 10.4rem;
-}
-aside h3 {
-  font-size: var(--font16);
+aside h1 {
+  font-size: var(--font20);
   font-weight: var(--weight600);
+  line-height: 3rem;
+  align-self: flex-start;
+}
+aside p {
+  font-size: 1.6rem;
+  font-weight: var(--weight400);
   line-height: 2.4rem;
-}
-aside span {
-  font-size: 3.2rem;
-  font-weight: var(--weight600);
-  line-height: 4.8rem;
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+  align-self: flex-start;
 }
 
+aside .imgCont {
+  align-self: flex-end;
+  width: 100%;
+  max-width: 43rem;
+  display: flex;
+  justify-content: end;
+}
+
+aside .imgCont img {
+  width: 80%;
+}
 footer {
   display: flex;
   flex-direction: column;

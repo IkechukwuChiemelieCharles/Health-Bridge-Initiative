@@ -1,0 +1,118 @@
+:root {
+  /* --font32: 3.2rem; */
+
+  --font24: 3.6rem;
+  --font20: 3.2rem;
+
+  --font16: 2rem;
+  --font18: 1.8rem;
+
+  --font14: 1.6rem;
+  --font12: 1.4rem;
+  --font10: 1.2rem;
+}
+.container {
+  gap: 10rem;
+}
+.text {
+  align-items: start;
+  width: 40%;
+  max-width: 54.353rem;
+  /* text-align: center; */
+}
+
+.overlay {
+  background-image: url(../Assets/Pharmacist_assisting_customer.png);
+  background-repeat: no-repeat;
+  background-position: right 0rem;
+  background-size: 45rem;
+}
+.innerHeader h1 {
+  line-height: 4.8rem;
+}
+article {
+  height: 46.4rem;
+}
+article .left {
+  align-items: start;
+  gap: 2rem;
+  text-align: start;
+  width: 50%;
+  justify-content: center;
+}
+
+.innerArt {
+  position: relative;
+  align-items: start;
+}
+article .left h1 {
+  line-height: 4.8rem;
+}
+article p {
+  line-height: 2.4rem;
+}
+.imgCont1 {
+  position: absolute;
+  width: 33.032rem;
+  height: 40.835rem;
+  right: 0;
+}
+aside {
+  flex-direction: row;
+}
+.texts {
+  align-self: center;
+}
+
+footer {
+  height: 43rem;
+  justify-content: space-around;
+}
+.topFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  gap: 1rem;
+}
+.footerLogo {
+  display: flex;
+  width: 20rem;
+  height: 8rem;
+}
+.footerLogo img {
+  width: 100%;
+  height: 70%;
+}
+.topFooter ul {
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  text-wrap: nowrap;
+  gap: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.inputXbtn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5rem;
+}
+form input {
+  width: 20.57rem;
+  height: 5rem;
+}
+form button {
+  width: 13.811rem;
+}
+.bottomFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

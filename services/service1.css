@@ -34,7 +34,7 @@
 }
 @font-face {
   font-family: "MyCustomFont"; /* Choose a name */
-  src: url("Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
+  src: url("../Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
     format("opentype"); /* Correct format */
   font-weight: normal;
   font-style: normal;

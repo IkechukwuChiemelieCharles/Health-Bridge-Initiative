@@ -87,14 +87,7 @@ header {
   line-height: 3.6rem;
 }
 .innerArt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   width: 90%;
   max-width: 124rem;
   gap: 2rem;
-}
-.priceCont {
-  grid-template-columns: 1fr 1fr 1fr;
 }

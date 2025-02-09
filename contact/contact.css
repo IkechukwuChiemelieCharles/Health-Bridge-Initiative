@@ -32,7 +32,7 @@
 }
 @font-face {
   font-family: "MyCustomFont"; /* Choose a name */
-  src: url("Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
+  src: url("../Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
     format("opentype"); /* Correct format */
   font-weight: normal;
   font-style: normal;
@@ -223,7 +223,7 @@ article {
   align-items: center;
   font-size: var(--font16);
   color: var(--black);
-  /* line-height: 2.4rem; */
+  line-height: 2.4rem;
   font-weight: var(--weight400);
   height: 5.6rem;
   border-bottom: 1px solid var(--black);
