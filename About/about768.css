@@ -23,6 +23,7 @@
 }
 header {
   justify-content: center;
+  height: 78rem;
 }
 .innerHeader {
   align-items: center;
