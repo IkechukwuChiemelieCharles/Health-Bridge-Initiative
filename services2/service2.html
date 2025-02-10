@@ -21,18 +21,24 @@
   <body>
     <div class="container">
       <nav>
-        <div class="logoCont"><img src="../Assets/logo.png" alt="logo" /></div>
+        <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
 
         <ul>
-          <li><a href="../About/about.html">About Us</a></li>
-          <li><a href="../contact/contact.html">Contact Us</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#"> FAQs</a></li>
+          <li><a href="./About/about.html">Home</a></li>
+          <li><a href="./About/about.html">About Us</a></li>
+
+          <li class="listDropDown">
+            <a class="currentPage" href="./services/service1.html">Services</a>
+            <img src="../Assets/chevron-down.png" alt="" />
+          </li>
+
+          <li><a href="./services/service1.html">Testimonials</a></li>
+          <li><a href="./contact/contact.html">Contact</a></li>
+        </ul>
+        <div class="navBtn">
           <button class="blue-btn">Sign Up</button>
           <button class="white-btn">Log In</button>
-        </ul>
+        </div>
         <div class="ham">
           <img src="../Assets/ham2.png" alt="" />
         </div>
@@ -101,6 +107,7 @@
           </div>
 
           <form
+            class="form1"
             action="
         "
           >
@@ -116,15 +123,29 @@
           </form>
 
           <ul>
-            <li><a href="../About/about.html">About Us</a></li>
-            <li><a href="../contact/contact.html">Contact Us</a></li>
-            <li>
-              <a href="../Testimonies/testimony.html">Terms of Service</a>
-            </li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#"> FAQs</a></li>
+            <li><a href="./About/about.html">About Us</a></li>
+            <li><a href="./contact/contact.html">Contact Us</a></li>
+            <li><a href="./Testimonies/testimony.html">Terms of Service</a></li>
+            <li><a href="./services/service1.html">Features</a></li>
+            <li><a href="./services2/service2.html">Privacy Policy</a></li>
+            <li><a href="./services3/service3.html"> FAQs</a></li>
           </ul>
+
+          <form
+            class="form2"
+            action="
+      "
+          >
+            <h3>Stay Informed</h3>
+            <label for=""
+              >Subscribe to our newsletter for updates on our initiatives and
+              healthcare tips.
+            </label>
+            <div class="inputXbtn">
+              <input type="text" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </div>
+          </form>
         </div>
 
         <div class="bottomFooter">

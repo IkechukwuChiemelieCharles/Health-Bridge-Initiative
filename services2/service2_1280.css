@@ -59,6 +59,33 @@ nav .white-btn {
   color: var(--darkBlue);
   border: 1px solid var(--darkBlue);
 }
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 60%;
+  gap: 3rem;
+}
+nav {
+  justify-content: space-between;
+
+  /* height: 4rem; */
+}
+.navBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6rem;
+}
+.listDropDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+.currentPage {
+  text-decoration: underline;
+}
 .overlay {
   /* background-size: 10rem; */
 }

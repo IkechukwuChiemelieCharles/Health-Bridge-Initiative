@@ -55,17 +55,19 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   width: 90%;
   gap: 1rem;
+  height: 17rem;
+  /* gap: 5rem; */
 }
 .footerLogo {
   display: flex;
-  width: 20rem;
+  width: 14rem;
   height: 8rem;
 }
 .footerLogo img {
-  width: 100%;
+  width: 14rem;
   height: 70%;
 }
 .topFooter ul {
@@ -80,6 +82,14 @@ form {
   align-items: start;
   justify-content: center;
   gap: 1.2rem;
+
+  /* width: 37.1rem; */
+}
+.form1 {
+  display: none;
+}
+.form2 {
+  display: flex;
 }
 .inputXbtn {
   display: flex;
@@ -92,9 +102,14 @@ form input {
   height: 5rem;
 }
 form button {
-  width: 13.811rem;
+  /* width: 13.811rem; */
 }
 .bottomFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+bottomFooter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

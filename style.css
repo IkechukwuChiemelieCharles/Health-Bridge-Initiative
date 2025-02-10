@@ -45,6 +45,9 @@ html {
 body {
   font-family: "MyCustomFont", sans-serif;
 }
+button {
+  font-family: "MyCustomFont", sans-serif;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -63,6 +66,9 @@ nav {
   /* height: 4rem; */
 }
 nav ul {
+  display: none;
+}
+.navBtn {
   display: none;
 }
 .logoCont {
@@ -464,7 +470,7 @@ footer {
   background: linear-gradient(
     to bottom,
     rgba(0, 87, 163, 1) 30%,
-    rgba(0, 29, 54, 1) 100%
+    rgba(0, 29, 54, 1) 60%
   );
 
   padding: 3rem 0;
@@ -523,16 +529,19 @@ form input {
   padding-left: 2rem;
 }
 form button {
-  color: var(--darkBlue);
-  font-size: 2rem;
+  color: var(--white);
+  font-size: 1.2rem;
   line-height: 1.2rem;
   font-weight: var(--weight400);
-  background-color: var(--white);
+  background-color: var(--darkBlue);
   border: none;
   outline: none;
   width: 30%;
   height: 5rem;
   cursor: pointer;
+}
+.form2 {
+  display: none;
 }
 
 .topFooter ul {
