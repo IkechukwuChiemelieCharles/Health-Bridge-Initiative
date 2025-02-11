@@ -1,0 +1,50 @@
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
+  --font24: 3.6rem;
+  --font16: 1.6rem;
+  --font14: 1.6rem;
+  --font12: 1.4rem;
+  --weight500: 500;
+  --weight400: 400;
+  --weight600: 600;
+  --line36: 4.41rem;
+  --line21: 1.941rem;
+  --line24: 1.92rem;
+  --line18: 1.641rem;
+}
+nav {
+  width: 90%;
+  max-width: 124rem;
+}
+nav .logoCont {
+  width: 12rem;
+  height: 4.83rem;
+}
+main {
+  height: 100.1rem;
+}
+.innerMain {
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+  max-width: 124rem;
+}
+.imgCont {
+  width: 54.5rem;
+  height: 74.7rem;
+}
+form {
+  height: 66rem;
+  width: 83.1rem;
+}

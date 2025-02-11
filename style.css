@@ -55,14 +55,114 @@ button {
   flex-direction: column;
   /* gap: 2rem; */
 }
+.mobille {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 22.6rem;
+  height: 100vh;
+  position: fixed;
+  top: 8.5rem;
+  right: 0;
+  background-color: var(--darkBlue);
+  padding: 2rem;
+  z-index: 10;
+}
+.mobileBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.mobileBtn a {
+  border: none;
+  cursor: pointer;
+  padding: 1.2rem 2.4rem;
+  font-weight: var(--weight400);
+  font-size: var(--font14);
+  border-radius: 0.2rem;
+  text-wrap: nowrap;
+}
+
+.mobileBtn .blue-btn {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+.mobileBtn .white-btn {
+  background-color: var(--white);
+  color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+}
+.hide {
+  display: none;
+}
+.closeMobile {
+  width: 0.6rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+.mobille ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.mobille ul li,
+.mobille ul a {
+  font-size: var(--font14);
+  /* line-height: 2.1rem; */
+  color: var(--white);
+  font-weight: var(--weight500);
+  text-decoration: none;
+  list-style: none;
+  height: 4.4rem;
+}
+
+/* .mobille .navBtn a {
+  border: none;
+  cursor: pointer;
+  padding: 1.6rem 2.4rem;
+  font-weight: var(--weight400);
+  font-size: var(--font14);
+  border-radius: 0.2rem;
+}
+
+.mobille .navBtn .blue-btn {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+.mobille .navBtn .white-btn {
+  background-color: var(--white);
+  color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+} */
 
 nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 124rem;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  background-color: var(--white);
+  /* height: 4rem; */
+  z-index: 10;
+}
+
+.innerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90vw;
   max-width: 124rem;
   padding: 2rem 0;
+
   /* height: 4rem; */
 }
 nav ul {
@@ -106,6 +206,7 @@ header {
   );
 
   padding: 3rem 0;
+  margin-top: 6rem;
 }
 .innerHeader {
   display: flex;

@@ -25,6 +25,9 @@
 .ham {
   display: none;
 }
+.mobille {
+  display: none;
+}
 
 nav li,
 nav a {
@@ -34,6 +37,12 @@ nav a {
   font-weight: var(--weight400);
   text-decoration: none;
   list-style: none;
+}
+.navBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6rem;
 }
 
 nav .navBtn a {
@@ -67,12 +76,7 @@ nav {
 
   /* height: 4rem; */
 }
-.navBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.6rem;
-}
+
 .listDropDown {
   display: flex;
   justify-content: center;
