@@ -18,9 +18,14 @@
   --font16: 2.4rem;
   /* --font18: 1.8rem; */
 
-  --font14: 2.4rem;
+  --font14: 1.6rem;
   --font12: 2.4rem;
   --font10: 1.4rem;
+
+
+
+
+ 
 }
 .ham {
   display: none;

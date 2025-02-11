@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* rgba(128, 171, 209, 1) */
+/* rgba(170, 199, 224, 1) */
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
+  --font24: 2.4rem;
+  --font16: 1.6rem;
+  --font14: 1.4rem;
+  --font12: 1.2rem;
+  --weight500: 500;
+  --weight400: 400;
+  --weight600: 600;
+  --line36: 3.6rem;
+  --line21: 2.1rem;
+  --line24: 2.4rem;
+  --line18: 1.8rem;
+}
+
+@font-face {
+  font-family: "MyCustomFont"; /* Choose a name */
+  src: url("../Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
+    format("opentype"); /* Correct format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+}
+button {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100vw;
+  background: linear-gradient(to top, white 5%, rgba(170, 199, 224, 1) 50%);
+}
+nav {
+  /* align-self: flex-start; */
+  width: 90%;
+  padding: 2rem 0;
+  /* height: 5.6rem; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 41.936rem;
+  /* max-width: 54.2rem; */
+}
+nav .logoCont {
+  /* align-self: flex-start; */
+  width: 6rem;
+  height: 2.415rem;
+}
+nav .logoCont img {
+  /* align-self: flex-start; */
+  width: 100%;
+  height: 1005;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 3.2rem;
+
+  /* max-width: 54.2rem; */
+}
+.innerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3.2rem;
+  max-width: 41.936rem;
+}
+
+.imgCont {
+  width: 37.5rem;
+  height: 37.6rem;
+}
+.imgCont img {
+  width: 100%;
+  height: 100%;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  height: 66rem;
+  width: 100%;
+  gap: 3.2rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+form .header h1 {
+  color: var(--darkBlue);
+  font-weight: var(--weight600);
+  font-size: var(--font24);
+  line-height: var(--line36);
+}
+form .header p {
+  color: var(--darkBlue);
+  font-weight: var(--weight500);
+  font-size: var(--font14);
+  line-height: var(--line21);
+}
+
+.inputs {
+  width: 100%;
+  height: 16.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+}
+.input {
+  height: 7.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.input label {
+  color: var(--black);
+  font-weight: var(--weight400);
+  font-size: var(--font16);
+  line-height: var(--line24);
+}
+.input input {
+  color: var(--black);
+  font-weight: var(--weight400);
+  font-size: var(--font16);
+  line-height: var(--line24);
+  padding-left: 2rem;
+  width: 100%;
+  height: 4.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--black);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  height: 30.6rem;
+  gap: 1.2rem;
+}
+.loginBtn {
+  width: 100%;
+  height: 5.6rem;
+  background-color: var(--darkBlue);
+  border-radius: 0.6rem;
+  color: var(--white);
+  border: none;
+  font-size: 1.4rem;
+}
+.forgot {
+  color: var(--darkBlue);
+  text-decoration: none;
+  font-size: var(--font14);
+  font-weight: var(--weight400);
+  line-height: var(--line21);
+}
+.or {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+.or span {
+  width: 50%;
+  border: 1px solid var(--black);
+}
+.or p {
+  color: var(--black);
+  font-size: var(--font12);
+  font-weight: var(--weight400);
+  line-height: var(--line18);
+}
+.googleXfb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.googleXfb button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  /* width: 16.15rem; */
+  width: 45%;
+  height: 5.6rem;
+  color: var(--black);
+  font-size: var(--font12);
+  font-weight: var(--weight400);
+  line-height: var(--line18);
+  background-color: var(--white);
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 0.6rem;
+
+  padding: 1rem;
+}
+.googleXfb button img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.accountyet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  height: 4.1rem;
+}
+.accountyet p {
+  color: var(--black);
+  font-size: var(--font14);
+  font-weight: var(--weight500);
+  line-height: var(--line21);
+}
+.accountyet a {
+  color: var(--darkBlue);
+  font-size: var(--font14);
+  font-weight: var(--weight400);
+  line-height: var(--line21);
+  text-decoration: none;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--darkBlue);
+  font-size: var(--font14);
+  font-weight: var(--weight400);
+  line-height: var(--line21);
+}
