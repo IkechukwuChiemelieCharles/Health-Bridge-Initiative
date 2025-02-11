@@ -72,7 +72,8 @@ nav ul {
   gap: 3rem;
 }
 nav {
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  width: 100vw;
 
   /* height: 4rem; */
 }
