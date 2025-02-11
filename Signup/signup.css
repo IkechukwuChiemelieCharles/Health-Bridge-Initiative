@@ -89,6 +89,7 @@ main {
   gap: 3.2rem;
   border-top: 1px solid var(--black);
   padding-top: 2rem;
+  /* max-width: 41.936rem; */
 
   /* max-width: 54.2rem; */
 }
@@ -97,7 +98,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   gap: 3.2rem;
   max-width: 41.936rem;
 }
