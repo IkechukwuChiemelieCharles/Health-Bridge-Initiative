@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* rgba(128, 171, 209, 1) */
+/* rgba(170, 199, 224, 1) */
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
+  --inputBg: rgba(249, 250, 251, 1);
+  --border: rgba(228, 231, 236, 1);
+  --green: rgba(3, 107, 38, 1);
+
+  --font32: 3.2rem;
+  --font24: 2.4rem;
+  --font20: 2rem;
+  --font16: 1.6rem;
+  --font18: 1.8rem;
+  --font14: 1.4rem;
+  --font12: 1.2rem;
+  --font10: 1rem;
+  --weight500: 500;
+  --weight400: 400;
+  --weight600: 600;
+}
+@font-face {
+  font-family: "MyCustomFont"; /* Choose a name */
+  src: url("../Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
+    format("opentype"); /* Correct format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+button {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+.tabCont {
+  display: none;
+}
+.deskCont {
+  display: none;
+}
+.mobileCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 2rem; */
+  width: 100vw;
+  gap: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 2rem 0;
+  /* position: fixed; */
+  top: 0;
+  background-color: var(--white);
+  z-index: 10;
+}
+
+.innerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  max-width: 124rem;
+  padding: 2rem 0;
+
+  /* height: 4rem; */
+}
+nav ul {
+  display: none;
+}
+.navBtn {
+  display: none;
+}
+.logoCont {
+  width: 10rem;
+  height: 100%;
+}
+.logoCont img {
+  width: 100%;
+  height: 100%;
+}
+
+.ham {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+.ham img {
+  width: 100%;
+  height: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: start;
+  color: var(--black);
+}
+main input {
+  width: 100%;
+  height: 5rem;
+  padding-left: 5rem;
+  background-image: url(../Assets/search.png);
+  background-repeat: no-repeat;
+  background-size: 2.4rem;
+  background-position: 2rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--inputBg);
+  outline: var(--inputBg);
+}
+main h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+}
+main p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.912rem;
+}
+
+article {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 90%;
+  gap: 1.2rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+.innerArt {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50rem;
+  border: 1px solid var(--border);
+  gap: 1.2rem;
+  padding: 1rem;
+}
+.innerArt .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border: 1px solid var(--border);
+  width: 14.7rem;
+  height: 10.5rem;
+  gap: 1.2rem;
+  padding: 1.4rem 2rem;
+}
+.innerArt .box p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.68rem;
+  text-align: start;
+}
+.innerArt .box span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.92rem;
+}
+.innerArt .box .green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.innerArt .box .percent {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.74rem;
+  color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.innerArt .box .green h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.74rem;
+  color: var(--green);
+}
+
+aside {
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+  gap: 1.6rem;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+aside h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+aside .lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  gap: 1.2rem;
+  padding: 2rem 0;
+}
+aside .lower p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: var(--black);
+}
+
+.time,
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.doctor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+.doctor img {
+  width: 3.055rem;
+  height: 3.2rem;
+}
+.doctor div {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+aside .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  align-self: center;
+}
+aside .btn button {
+  width: 15.15rem;
+  height: 5.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+aside .btn :first-child {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+aside .btn :last-child {
+  background-color: var(--white);
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
+}
+.sec1 {
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+  gap: 1.6rem;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+.sec1 h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.sec1 .doctor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding: 1.6rem 0;
+  width: 100%;
+}
+.sec1 .doctor .docprofile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  /* width: 50%; */
+}
+.sec1 .doctor .docprofile img {
+  width: 3.055rem;
+  height: 3.2rem;
+}
+.sec1 .doctor .docprofile p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.912rem;
+}
+.sec1 .doctor button {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.639rem;
+  width: 11.1rem;
+  height: 3.6rem;
+  color: var(--black);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  background: none;
+}
+
+.sec2 {
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+  gap: 1.6rem;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+.sec2 h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.sec2 .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  height: 8rem;
+  /* gap: 1.2rem; */
+  cursor: pointer;
+}
+.sec2 .first .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.sec2 .first .text p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+.sec2 .first .text span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.userprofile {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.leftprofile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+.leftprofile img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+.leftprofile .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.leftprofile .name :first-child {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.186rem;
+}
+.leftprofile .name :last-child {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.912rem;
+}
+.rightprofile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+}
+.rightprofile .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.top span {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.top span h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+.top span p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+}
+.rightprofile .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom span {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.bottom span h5 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+.bottom span p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+}
+.bottom span button {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.639rem;
+  color: var(--green);
+  background-color: rgba(231, 246, 236, 1);
+  border: none;
+  width: 5.5rem;
+  height: 3.6rem;
+  border-radius: 1rem;
+}
