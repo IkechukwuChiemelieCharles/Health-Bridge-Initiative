@@ -59,6 +59,7 @@ button {
   width: 100vw;
   background: linear-gradient(to top, white 5%, rgba(170, 199, 224, 1) 50%);
 }
+
 nav {
   /* align-self: flex-start; */
   width: 90%;
@@ -158,6 +159,41 @@ form .header p {
   height: 7.6rem;
   gap: 0.9rem;
 }
+.approved {
+  box-shadow: 1px 1px 1px green, -1px -1px 1px green;
+  border: none;
+}
+.rejected {
+  box-shadow: 1px 1px 1px red, -1px -1px 1px red;
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* gap: 1rem; */
+}
+
+.nameErr,
+.surNameErr,
+.numErr,
+.emailErr,
+.passwordErr,
+.ConfirmPasswordErr {
+  font-size: 1rem;
+  color: red;
+  /* display: none; */
+}
+/* .err {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+.err input{
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+} */
 .fourinputs input,
 .fourinputs select {
   width: 100%;
@@ -190,6 +226,7 @@ form .header p {
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
+  /* gap: 50rem; */
 }
 .input {
   height: 7.6rem;

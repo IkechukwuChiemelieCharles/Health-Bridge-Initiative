@@ -29,12 +29,20 @@
             </div>
             <div class="inputs">
               <div class="input">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" />
+                <div class="label">
+                  <label for="email">Email Address</label>
+                  <span class="emailErr"></span>
+                </div>
+
+                <input class="emailInput" type="email" name="email" />
               </div>
               <div class="input">
-                <label for="password">Password</label>
-                <input type="password" name="password" />
+                <div class="label">
+                  <label for="password"> Password</label>
+                  <span class="passwordErr"> </span>
+                </div>
+
+                <input class="passwordInput" type="password" name="password" />
               </div>
             </div>
 
@@ -73,5 +81,7 @@
         </div>
       </main>
     </div>
+
+    <script src="./login.js"></script>
   </body>
 </html>

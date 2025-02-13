@@ -153,6 +153,13 @@ form .header p {
   justify-content: center;
   align-items: start;
 }
+.approved {
+  box-shadow: 1px 1px 1px green, -1px -1px 1px green;
+  border: none;
+}
+.reject {
+  box-shadow: 1px 1px 1px red, -1px -1px 1px red;
+}
 .input label {
   color: var(--black);
   font-weight: var(--weight400);
@@ -170,7 +177,17 @@ form .header p {
   border-radius: 0.6rem;
   border: 1px solid var(--black);
 }
-
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.label .emailErr,
+.label .passwordErr {
+  font-size: 1rem;
+  color: red;
+}
 .buttons {
   display: flex;
   justify-content: space-between;

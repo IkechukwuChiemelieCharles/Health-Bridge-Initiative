@@ -32,20 +32,36 @@
             </div>
             <div class="fourinputs">
               <div class="fourinput">
-                <label for="fName">First Name</label>
-                <input type="text" name="fName" />
+                <div class="label">
+                  <label for="fName">First Name</label>
+                  <span class="nameErr"></span>
+                </div>
+
+                <input class="fName" type="text" name="fName" />
               </div>
               <div class="fourinput">
-                <label for="EmailAddress">Surname </label>
-                <input type="text" name="Surname" />
+                <div class="label">
+                  <label for="EmailAddress">Surname </label>
+                  <span class="surNameErr"></span>
+                </div>
+
+                <input class="Surname" type="text" name="Surname" />
               </div>
               <div class="fourinput">
-                <label for="Number">Phone Number</label>
-                <input type="number" name="Number" />
+                <div class="label">
+                  <label for="Number">Phone Number</label>
+                  <span class="numErr"></span>
+                </div>
+
+                <input class="number" type="text" name="Number" />
               </div>
 
               <div class="fourinput">
-                <label for="Number">Age Group</label>
+                <div class="label">
+                  <label for="select">Age Group </label>
+                  <span class="err"></span>
+                </div>
+
                 <select name="" id="">
                   <option value="">Select</option>
                 </select>
@@ -55,6 +71,7 @@
               <h5>Gender</h5>
               <div class="radio">
                 <input type="radio" name="gender" />
+
                 <label for="gender">Male</label>
               </div>
               <div class="radio">
@@ -64,20 +81,36 @@
             </div>
             <div class="inputs">
               <div class="input">
-                <label for="email">Email Address</label>
-                <input type="email" name="email" />
+                <div class="label">
+                  <label for="email">Email Address </label>
+                  <span class="emailErr"></span>
+                </div>
+
+                <input class="email" type="email" name="email" />
               </div>
               <div class="input">
-                <label for="password">Password</label>
-                <input type="password" name="password" />
+                <div class="label">
+                  <label for="password">Password </label>
+                  <span class="passwordErr"></span>
+                </div>
+
+                <input class="password" type="password" name="password" />
               </div>
               <div class="input">
-                <label for="ConfirmPassword">Confirm Password</label>
-                <input type="password" name="ConfirmPassword" />
+                <div class="label">
+                  <label for="ConfirmPassword">Confirm Password</label>
+                  <span class="ConfirmPasswordErr"></span>
+                </div>
+
+                <input
+                  class="ConfirmPassword"
+                  type="password"
+                  name="ConfirmPassword"
+                />
               </div>
 
               <div class="check">
-                <input type="checkbox" name="Agree" />
+                <input required type="checkbox" name="Agree" />
                 <label for="Agree"> I agree to the Terms and Conditions</label>
               </div>
             </div>
@@ -117,5 +150,7 @@
         </div>
       </main>
     </div>
+
+    <script src="./signup.js"></script>
   </body>
 </html>

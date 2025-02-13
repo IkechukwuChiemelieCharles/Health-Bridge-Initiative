@@ -10,3 +10,5 @@ ham.addEventListener("click", function () {
 closeMobile.addEventListener("click", function () {
   mobille.classList.add("hide");
 });
+
+

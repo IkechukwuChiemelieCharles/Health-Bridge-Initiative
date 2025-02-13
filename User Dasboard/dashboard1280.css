@@ -10,6 +10,8 @@
 
   --lightBlue: rgba(170, 199, 224, 1);
   --lighterblue: rgba(0, 87, 163, 0.5);
+  --border: rgba(228, 231, 236, 1);
+
   --font32: 3.6rem;
 
   --font24: 4.8rem;
@@ -30,22 +32,21 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  border: 1px solid black;
 }
 .innerDesk {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 124rem;
-  border: 1px solid red;
   width: 90%;
+  gap: 2rem;
 }
 .sideBar {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  border: 1px solid blue;
+  border: 1px solid var(--border);
   width: 25%;
   height: 102.4rem;
 }
@@ -107,18 +108,84 @@
 }
 
 .mainCont {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 102.4rem;
+  justify-content: space-between;
   width: 80%;
+  gap: 2rem;
 }
 .mainCont nav {
-  border: 1px solid blue;
   width: 100%;
+  height: 10rem;
 }
 .mainCont nav input {
-  border: 1px solid blue;
   width: 70%;
+  height: 5rem;
+
+  padding-left: 5rem;
+  background-image: url(../Assets/search.png);
+  background-repeat: no-repeat;
+  background-size: 2.4rem;
+  background-position: 2rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--inputBg);
+  outline: var(--inputBg);
 }
 
-.notification{
-    
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.notification img:first-child {
+  width: 4rem;
+  height: 4rem;
+}
+.notification img:last-child {
+  width: 5rem;
+  height: 5rem;
+}
+main {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 124rem;
+}
+main .currentdate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 22.1rem;
+  height: 6.7rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  text-wrap: nowrap;
+}
+main h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.94rem;
+}
+main .prof p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.92rem;
+}
+main .currDate p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.68rem;
+}
+.topCont {
+  width: 100%;
+}
+.bottomCont {
+  width: 100%;
 }
