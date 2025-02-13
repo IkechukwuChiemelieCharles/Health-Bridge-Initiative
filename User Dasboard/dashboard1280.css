@@ -47,7 +47,7 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--border);
-  width: 25%;
+  width: 30%;
   height: 102.4rem;
 }
 .topBar {
@@ -114,7 +114,7 @@
   align-items: center;
   height: 102.4rem;
   justify-content: space-between;
-  width: 80%;
+  width: 75%;
   gap: 2rem;
 }
 .mainCont nav {
@@ -161,7 +161,8 @@ main .currentdate {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1.8rem;
   width: 22.1rem;
   height: 6.7rem;
   border: 1px solid var(--border);
@@ -178,6 +179,13 @@ main .prof p {
   font-weight: 400;
   line-height: 1.92rem;
 }
+main .currDate {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.4rem;
+}
 main .currDate p {
   font-size: 1.4rem;
   font-weight: 400;
@@ -188,4 +196,38 @@ main .currDate p {
 }
 .bottomCont {
   width: 100%;
+}
+
+.topCont {
+  width: 92rem;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+}
+aside {
+  width: 36rem;
+}
+.innerArt {
+  width: 55rem;
+}
+.userprofile {
+  width: 55rem;
+  justify-content: start;
+}
+.leftprofile {
+  width: 15.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+.left {
+  width: 50rem;
+  border: none;
+}
+.innerArt .box {
+  width: 17rem;
+  height: 11.3rem;
+  padding: 1rem 2.5rem;
 }

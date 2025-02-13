@@ -10,6 +10,8 @@ const passwordErr = document.querySelector(".passwordErr");
 
 // console.log(emailInput);
 
+
+
 form.addEventListener("submit", function (e) {
   if (emailInput.value) {
     emailInput.classList.add("approved");
