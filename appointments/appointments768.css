@@ -1,0 +1,111 @@
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
+  --inputBg: rgba(249, 250, 251, 1);
+  --border: rgba(228, 231, 236, 1);
+  --green: rgba(3, 107, 38, 1);
+  /* --font32: 3.2rem; */
+
+  --font24: 3.6rem;
+  --font20: 3.2rem;
+
+  --font16: 2rem;
+  --font18: 1.8rem;
+
+  --font14: 1.6rem;
+  --font12: 1.4rem;
+  --font10: 1.2rem;
+}
+
+.mobileCont {
+  display: none;
+}
+.tabCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  gap: 2rem;
+}
+
+main {
+  width: 90%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 124rem;
+}
+main .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 70%;
+  gap: 2.4rem;
+}
+aside {
+  overflow: visible;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 30%;
+  gap: 1.8rem;
+}
+
+/* main div {
+} */
+main input {
+  width: 100%;
+}
+main p {
+  font-size: 1.6rem;
+}
+main h1 {
+  line-height: 2.94rem;
+}
+
+main h1 {
+  line-height: 2.94rem;
+}
+main p {
+  font-size: 1.6rem;
+  line-height: 1.92rem;
+}
+
+article {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+  gap: 2rem;
+}
+
+.newAppoints {
+  border-radius: 0.6rem;
+  border: 1px solid var(--border);
+}
+.navArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+}

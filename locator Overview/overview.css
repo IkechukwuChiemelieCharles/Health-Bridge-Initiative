@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* rgba(128, 171, 209, 1) */
+/* rgba(170, 199, 224, 1) */
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
+  --font32: 3.2rem;
+  --font24: 2.4rem;
+  --font20: 2rem;
+  --font16: 1.6rem;
+  --font18: 1.8rem;
+  --font14: 1.4rem;
+  --font12: 1.2rem;
+  --font10: 1rem;
+  --weight500: 500;
+  --weight400: 400;
+  --weight600: 600;
+}
+@font-face {
+  font-family: "MyCustomFont"; /* Choose a name */
+  src: url("../Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
+    format("opentype"); /* Correct format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+}
+.overMobileCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 90%;
+}
+.topContainer .text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.topContainer .text h5 {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+}
+.topContainer .text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+}
+
+.topContainer .text p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 90%;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.overviewBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.overviewBtn button {
+  width: 50%;
+  height: 6rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  cursor: pointer;
+}
+.overviewBtn button:first-child {
+  background-color: rgba(204, 221, 237, 1);
+  color: var(--black);
+}
+.overviewBtn button:last-child {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+
+.bottomReview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.review {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.WriteReview {
+  width: 26rem;
+  height: 5.6rem;
+  background-color: var(--darkBlue);
+  border-radius: 0.6rem;
+  border: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.hide {
+  display: none;
+}
