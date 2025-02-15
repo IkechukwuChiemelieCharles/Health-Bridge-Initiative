@@ -411,8 +411,9 @@ aside .btn :last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 1.2rem;
+  /* align-self: flex-start; */
   text-align: center;
 }
 .leftprofile img {
@@ -423,13 +424,13 @@ aside .btn :last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 0.8rem;
 }
 .leftprofile .name :first-child {
   font-size: 1.6rem;
   font-weight: 600;
-  line-height: 2.186rem;
+  line-height: 150%;
 }
 .leftprofile .name :last-child {
   font-size: 1.4rem;

@@ -160,6 +160,9 @@ form .header p {
 .reject {
   box-shadow: 1px 1px 1px red, -1px -1px 1px red;
 }
+button {
+  cursor: pointer;
+}
 .input label {
   color: var(--black);
   font-weight: var(--weight400);

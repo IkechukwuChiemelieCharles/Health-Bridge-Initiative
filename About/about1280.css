@@ -40,7 +40,7 @@ nav a {
   text-decoration: none;
   list-style: none;
 }
-nav button {
+nav a {
   border: none;
   cursor: pointer;
   padding: 1.6rem 2.4rem;

@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* rgba(128, 171, 209, 1) */
+/* rgba(170, 199, 224, 1) */
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
+  --inputBg: rgba(249, 250, 251, 1);
+  --border: rgba(228, 231, 236, 1);
+  --green: rgba(3, 107, 38, 1);
+
+  --font32: 3.2rem;
+  --font24: 2.4rem;
+  --font20: 2rem;
+  --font16: 1.6rem;
+  --font18: 1.8rem;
+  --font14: 1.4rem;
+  --font12: 1.2rem;
+  --font10: 1rem;
+  --weight500: 500;
+  --weight400: 400;
+  --weight600: 600;
+}
+@font-face {
+  font-family: "MyCustomFont"; /* Choose a name */
+  src: url("../Assets/fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf")
+    format("opentype"); /* Correct format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+button {
+  font-family: "MyCustomFont", sans-serif;
+}
+
+.tabCont {
+  display: none;
+}
+.deskCont {
+  display: none;
+}
+.mobileCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 2rem; */
+  width: 100vw;
+  gap: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 2rem 0;
+  /* position: fixed; */
+  top: 0;
+  background-color: var(--white);
+  z-index: 10;
+}
+
+.innerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  max-width: 124rem;
+  padding: 2rem 0;
+
+  /* height: 4rem; */
+}
+nav ul {
+  display: none;
+}
+.navBtn {
+  display: none;
+}
+.logoCont {
+  width: 10rem;
+  height: 100%;
+}
+.logoCont img {
+  width: 100%;
+  height: 100%;
+}
+
+.ham {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+}
+.ham img {
+  width: 100%;
+  height: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+}
+/* main div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: start;
+  color: var(--black);
+} */
+main input {
+  width: 100%;
+  height: 5rem;
+  padding-left: 5rem;
+  background-image: url(../Assets/search.png);
+  background-repeat: no-repeat;
+  background-size: 2.4rem;
+  background-position: 2rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--inputBg);
+  outline: var(--inputBg);
+}
+ h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.6rem;
+}
+/* main p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.912rem;
+} */
+ .leftTop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+ .merian {
+  width: 100%;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+}
+ .merian a {
+  font-size: 1.4rem;
+  color: var(--darkBlue);
+  text-decoration: none;
+  line-height: 150%;
+}
+ .merian span {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+}
+
+.topCont {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 124rem;
+  gap: 2rem;
+}
+.topCont aside {
+  width: 100%;
+  height: 46.1rem;
+}
+.topCont aside img {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.2rem;
+  /* overflow: hidden; */
+}
+.boxes {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+  width: 205.2rem;
+  gap: 1.2rem;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  gap: 2.4rem;
+  padding: 1rem;
+  width: 24.6rem;
+  height: 20.9rem;
+  border-radius: 0.6rem;
+}
+.box .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.box .text h5 {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+}
+.box .text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+}
+.box .text span p {
+  color: var(--green);
+}
+.box .text p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+}
+.box a {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: var(--darkBlue);
+  text-decoration: none;
+}
+.spans {
+  width: 16rem;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+
+  justify-content: center;
+  gap: 0.8rem;
+}
+.spans span {
+  width: 1.2rem;
+  height: 0.6rem;
+  border: 1px solid var(--darkBlue);
+  border-radius: 0.6rem;
+}
+.spans .activeSpan {
+  width: 1.6rem;
+  height: 0.6rem;
+  background-color: var(--darkBlue);
+}

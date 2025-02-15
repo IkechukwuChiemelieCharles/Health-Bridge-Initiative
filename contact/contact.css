@@ -145,11 +145,12 @@ header {
   align-items: center;
   gap: 1.6rem;
 }
-.innerHeader .btn button {
+.innerHeader .btn a {
   padding: 1.6rem 2.4rem;
   font-weight: var(--weight400);
   font-size: var(--font14);
   border-radius: 0.2rem;
+  text-decoration: none;
 }
 .innerHeader .btn :first-child {
   background-color: var(--darkBlue);
@@ -292,16 +293,18 @@ article {
   align-items: center;
   gap: 1.6rem;
 }
-.innerSection .btn button {
+.innerSection .btn a {
   padding: 1.6rem 2.4rem;
   font-weight: var(--weight400);
   font-size: var(--font14);
   border-radius: 0.2rem;
+  text-decoration: none;
 }
-.innerSection .btn button {
+.innerSection .btn a {
   background-color: var(--darkBlue);
   border: none;
   color: var(--white);
+  text-decoration: none;
 }
 
 footer {
@@ -374,7 +377,7 @@ form input {
   height: 4.6rem;
   padding-left: 2rem;
 }
-form button {
+form a {
   color: var(--white);
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -385,6 +388,9 @@ form button {
   width: 30%;
   height: 5rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form2 {
   display: none;

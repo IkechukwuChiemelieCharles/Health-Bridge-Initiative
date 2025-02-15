@@ -308,6 +308,9 @@ label {
   align-items: center;
   width: 100%;
 }
+button {
+  cursor: pointer;
+}
 .googleXfb button {
   display: flex;
   justify-content: center;

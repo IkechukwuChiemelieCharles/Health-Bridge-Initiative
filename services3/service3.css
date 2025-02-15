@@ -263,7 +263,7 @@ aside p {
 }
 
 aside .imgCont {
-  align-self: flex-end;
+  /* align-self: flex-end; */
   width: 100%;
   max-width: 43rem;
   display: flex;
@@ -271,7 +271,7 @@ aside .imgCont {
 }
 
 aside .imgCont img {
-  width: 80%;
+  width: 100%;
 }
 footer {
   display: flex;

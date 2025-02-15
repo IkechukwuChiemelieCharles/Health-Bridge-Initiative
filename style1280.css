@@ -70,6 +70,39 @@ nav ul {
   justify-content: end;
   width: 60%;
   gap: 3rem;
+  position: relative;
+}
+.dropMenu {
+  position: absolute;
+  top: 2rem;
+  left: 40rem;
+  width: 15rem;
+  height: 16.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 5rem; */
+  /* padding: 2rem 0; */
+}
+.dropMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--white);
+
+  gap: 0;
+}
+
+.dropMenu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.1rem;
+  font-size: 1.4rem;
 }
 nav {
   /* justify-content: space-between; */
@@ -83,6 +116,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
+  cursor: pointer;
 }
 .currentPage {
   text-decoration: underline;
@@ -110,4 +144,12 @@ main .iconsContainer {
 .app {
   width: 30rem;
   height: 8rem;
+}
+
+.hide {
+  display: none;
+}
+
+.img-up {
+  transform: rotate(180deg);
 }
