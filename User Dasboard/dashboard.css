@@ -385,6 +385,8 @@ aside .btn :last-child {
   height: 8rem;
   /* gap: 1.2rem; */
   cursor: pointer;
+  text-decoration: none;
+  color: var(--black);
 }
 .sec2 .first .text {
   display: flex;
