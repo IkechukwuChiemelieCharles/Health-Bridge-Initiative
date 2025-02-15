@@ -145,7 +145,7 @@ main input {
   background-color: var(--inputBg);
   outline: var(--inputBg);
 }
- h1 {
+h1 {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 3.6rem;
@@ -155,7 +155,7 @@ main input {
   font-weight: 400;
   line-height: 1.912rem;
 } */
- .leftTop {
+.leftTop {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -163,7 +163,7 @@ main input {
   flex-direction: column;
   gap: 0.8rem;
 }
- .merian {
+.merian {
   width: 100%;
   display: flex;
   gap: 0.8rem;
@@ -171,13 +171,13 @@ main input {
   align-items: center;
   color: var(--black);
 }
- .merian a {
+.merian a {
   font-size: 1.4rem;
   color: var(--darkBlue);
   text-decoration: none;
   line-height: 150%;
 }
- .merian span {
+.merian span {
   display: flex;
   gap: 0.6rem;
   justify-content: center;
@@ -213,7 +213,13 @@ main input {
   flex-direction: column;
   width: 100%;
   gap: 1.2rem;
-  /* overflow: hidden; */
+  overflow: auto;
+}
+.left::-webkit-scrollbar {
+  display: none;
+}
+.left::-moz-scrollbar {
+  display: none;
 }
 .boxes {
   display: flex;

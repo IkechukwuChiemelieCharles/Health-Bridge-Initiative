@@ -139,7 +139,9 @@ h1 {
   font-weight: 600;
   line-height: 2.94rem;
 }
-.left{}
+.left {
+  overflow: visible;
+}
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr;

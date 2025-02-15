@@ -163,7 +163,13 @@ article {
   width: 90%;
   gap: 1.2rem;
   padding: 1rem;
-  overflow: hidden;
+  overflow: auto;
+}
+article::-webkit-scrollbar {
+  display: none;
+}
+article::-moz-scrollbar {
+  display: none;
 }
 .innerArt {
   display: flex;
