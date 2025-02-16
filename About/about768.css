@@ -42,6 +42,7 @@ header {
 }
 .innerHeader p {
   line-height: 2.4rem;
+  align-self: center;
 }
 .visXmis {
   flex-direction: row;

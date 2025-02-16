@@ -22,6 +22,9 @@
   --font12: 2.4rem;
   --font10: 1.4rem;
 }
+.ham {
+  display: none;
+}
 nav li,
 nav a {
   font-size: var(--font14);
@@ -109,7 +112,8 @@ nav {
   cursor: pointer;
 }
 .currentPage {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--darkBlue);
+  padding-bottom: 0.4rem;
 }
 
 .sec1 {

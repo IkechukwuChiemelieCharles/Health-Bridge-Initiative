@@ -135,3 +135,9 @@ nav {
 .innerArt p {
   line-height: 2.88rem;
 }
+
+main .box1 {
+  width: 24rem;
+  height: 19.9rem;
+  border-radius: 0.6rem;
+}

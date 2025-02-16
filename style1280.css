@@ -116,7 +116,8 @@ nav {
   cursor: pointer;
 }
 .currentPage {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--darkBlue);
+  padding-bottom: 0.4rem;
 }
 .heroCont {
   width: 50%;

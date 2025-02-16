@@ -39,6 +39,7 @@ main {
 }
 main .box1 {
   width: 26.7rem;
+  height: 20.5rem;
 }
 .innerArt p {
   font-size: var(--font18);
@@ -46,6 +47,9 @@ main .box1 {
 article {
   width: 90vw;
   justify-content: start;
+}
+.answer {
+  font-size: 1.6rem !important;
 }
 
 .innerSection {
@@ -105,7 +109,7 @@ form input {
   width: 20.57rem;
   height: 5rem;
 }
-form button {
+form a {
   /* width: 13.811rem; */
 }
 .bottomFooter {
@@ -113,7 +117,7 @@ form button {
   flex-direction: row;
   justify-content: space-between;
 }
-bottomFooter {
+.bottomFooter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
