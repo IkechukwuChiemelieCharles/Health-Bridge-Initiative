@@ -1,0 +1,228 @@
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --border: rgba(228, 231, 236, 1);
+  --grey: rgba(249, 250, 251, 1);
+
+  --font32: 3.6rem;
+
+  --font24: 4.8rem;
+  --font20: 3.6rem;
+
+  --font16: 2.4rem;
+  /* --font18: 1.8rem; */
+
+  --font14: 1.6rem;
+  --font12: 2.4rem;
+  --font10: 1.4rem;
+}
+.tabCont {
+  display: none;
+}
+.deskCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.innerDesk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 124rem; */
+  width: 100%;
+  gap: 0;
+}
+.sideBar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--border);
+  width: 20%;
+  height: 102.4rem;
+}
+.topBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 42rem;
+  gap: 1.2rem;
+  width: 100%;
+}
+.topBar .logoCont {
+  width: 20rem;
+  height: 8rem;
+}
+.sideBar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+}
+.sideBar ul a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 4.8rem;
+  gap: 1.2rem;
+  width: 100%;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  text-decoration: none;
+  color: var(--black);
+  border-radius: 0.4rem;
+}
+.active {
+  background-color: var(--lightBlue);
+  color: var(--darkBlue) !important;
+}
+.bottomBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 19rem;
+  gap: 1.2rem;
+  width: 100%;
+}
+.bottomBar span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  cursor: pointer;
+}
+.mainCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 102.4rem;
+  justify-content: start;
+  width: 80%;
+  gap: 2rem;
+  background-color: var(--grey);
+}
+.mainCont nav {
+  justify-content: center;
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+.innerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+  padding: 0 0;
+}
+.innerNavArea {
+}
+.mainCont nav input {
+  width: 70%;
+  height: 5rem;
+
+  padding-left: 5rem;
+  background-image: url(../Assets/search.png);
+  background-repeat: no-repeat;
+  background-size: 2.4rem;
+  background-position: 2rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--inputBg);
+  outline: var(--inputBg);
+}
+
+main {
+  width: 90%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.top {
+  /* width: 30.8rem; */
+}
+
+main .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: auto;
+  gap: 2.4rem;
+}
+main h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.94rem;
+}
+
+.innerNavArea {
+  justify-content: space-between;
+  width: 90%;
+  gap: 2.4rem;
+}
+.innerNavArea h5 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+}
+.imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.imgs p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+article {
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  gap: 2rem;
+}
+
+.topContainer {
+  width: 100%;
+}
+.priceCont {
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 1.8rem;
+}
+.box1,
+.box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  border: 1px solid var(--darkBlue);
+  width: 90%;
+  max-width: 50rem;
+  /* width: 100%; */
+  height: 56.2rem;
+  padding: 1rem 2rem;
+  gap: 0;
+  border-radius: 1rem;
+}
