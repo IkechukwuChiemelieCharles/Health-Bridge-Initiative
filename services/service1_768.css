@@ -14,6 +14,10 @@
 .container {
   gap: 10rem;
 }
+.mobille {
+  width: 37.6rem;
+  padding: 4rem;
+}
 .text {
   align-items: start;
   width: 40%;

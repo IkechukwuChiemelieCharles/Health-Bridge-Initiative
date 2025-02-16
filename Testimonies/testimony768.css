@@ -14,6 +14,10 @@
 .innerHeader {
   align-items: center;
 }
+.mobille {
+  width: 37.6rem;
+  padding: 4rem;
+}
 
 .text {
   align-items: center;

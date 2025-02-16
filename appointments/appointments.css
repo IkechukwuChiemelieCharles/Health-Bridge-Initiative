@@ -52,6 +52,12 @@ body {
 button {
   font-family: "MyCustomFont", sans-serif;
 }
+.deskCont {
+  display: none;
+}
+.tabCont {
+  display: none;
+}
 .mobileCont {
   display: flex;
   justify-content: center;
@@ -60,14 +66,54 @@ button {
   /* gap: 2rem; */
   width: 100vw;
   gap: 2.5rem;
+  margin-top: 10rem;
 }
+
+.mobille {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  width: 22.6rem;
+  height: 100vh;
+  position: fixed;
+  top: 8.5rem;
+  right: 0;
+  background-color: var(--darkBlue);
+  padding: 4rem;
+  z-index: 10;
+}
+
+
+.hide {
+  display: none;
+}
+
+.mobille ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.mobille ul li,
+.mobille ul a {
+  font-size: var(--font14);
+  /* line-height: 2.1rem; */
+  color: var(--white);
+  font-weight: var(--weight500);
+  text-decoration: none;
+  list-style: none;
+  height: 4.4rem;
+}
+
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
   padding: 2rem 0;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   background-color: var(--white);
   z-index: 10;
@@ -114,6 +160,7 @@ main {
   justify-content: center;
   align-items: start;
   width: 90%;
+  margin-top: 5rem;
 }
 
 .leftTop {
@@ -272,6 +319,8 @@ article {
   justify-content: center;
   align-items: start;
   gap: 1.2rem;
+}
+.docs p {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.912rem;

@@ -21,6 +21,11 @@
 .container {
   gap: 5rem;
 }
+
+.mobille {
+  width: 37.6rem;
+  padding: 4rem;
+}
 header {
   justify-content: center;
   height: 78rem;

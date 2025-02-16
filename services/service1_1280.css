@@ -32,24 +32,6 @@ nav ul {
   width: 100%;
   gap: 3rem;
 }
-nav li,
-nav a {
-  font-size: var(--font14);
-  line-height: 1.68rem;
-  color: var(--darkBlue);
-  font-weight: var(--weight400);
-  text-decoration: none;
-  list-style: none;
-}
-nav button {
-  border: none;
-  cursor: pointer;
-  padding: 1.6rem 2.4rem;
-  font-weight: var(--weight400);
-  font-size: var(--font14);
-  border-radius: 0.2rem;
-}
-
 nav .blue-btn {
   background-color: var(--darkBlue);
   color: var(--white);
@@ -59,17 +41,22 @@ nav .white-btn {
   color: var(--darkBlue);
   border: 1px solid var(--darkBlue);
 }
-nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 60%;
-  gap: 3rem;
+nav button {
+  border: none;
+  cursor: pointer;
+  padding: 1.6rem 2.4rem;
+  font-weight: var(--weight400);
+  font-size: var(--font14);
+  border-radius: 0.2rem;
 }
-nav {
-  justify-content: space-between;
-
-  /* height: 4rem; */
+nav li,
+nav a {
+  font-size: var(--font14);
+  line-height: 1.68rem;
+  color: var(--darkBlue);
+  font-weight: var(--weight400);
+  text-decoration: none;
+  list-style: none;
 }
 .navBtn {
   display: flex;
@@ -77,11 +64,76 @@ nav {
   align-items: center;
   gap: 2.6rem;
 }
+
+nav .navBtn a {
+  border: none;
+  cursor: pointer;
+  padding: 1.6rem 2.4rem;
+  font-weight: var(--weight400);
+  font-size: var(--font14);
+  border-radius: 0.2rem;
+}
+
+nav .navBtn .blue-btn {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+nav .navBtn .white-btn {
+  background-color: var(--white);
+  color: var(--darkBlue);
+  border: 1px solid var(--darkBlue);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 60%;
+  gap: 3rem;
+  position: relative;
+}
+.dropMenu {
+  position: absolute;
+  top: 2rem;
+  left: 40rem;
+  width: 15rem;
+  height: 16.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 5rem; */
+  /* padding: 2rem 0; */
+}
+.dropMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--white);
+
+  gap: 0;
+}
+
+.dropMenu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.1rem;
+  font-size: 1.4rem;
+}
+nav {
+  width: 100vw;
+}
+
 .listDropDown {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.4rem;
+  cursor: pointer;
 }
 .currentPage {
   text-decoration: underline;
@@ -91,6 +143,7 @@ nav {
 }
 header {
   height: 78rem;
+  margin-top: 14rem;
 }
 .overlay {
   background-image: url(../Assets/Pharmacist_assisting_customer.png);
@@ -124,4 +177,7 @@ header {
 }
 .priceCont {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.hide {
+  display: none;
 }

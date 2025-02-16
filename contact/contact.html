@@ -17,31 +17,68 @@
   <body>
     <div class="container">
       <nav>
-        <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
+        <div class="innerNav">
+          <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
 
-        <ul>
-          <li><a href="./About/about.html">Home</a></li>
-          <li><a href="./About/about.html">About Us</a></li>
+          <ul>
+            <li>
+              <a target="_blank" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a target="_blank" class="" href="./About/about.html">About Us</a>
+            </li>
 
-          <li class="listDropDown">
-            <a href="./services/service1.html">Services</a>
-            <img src="../Assets/chevron-down.png" alt="" />
-          </li>
+            <li class="listDropDown currentPage">
+              Services
+              <img class="img-down" src="../Assets/chevron-down.png" alt="" />
+            </li>
+            <div class="dropMenu hidden">
+              <ul>
+                <a href="./services/service1.html">Healthcare plans</a>
+                <a href="./services2/service2.html">Healthcare locator</a>
+                <a href="./services3/service3.html">Symptom Checker</a>
+                <a href="./services4/service4.html">Virtual Appointment</a>
+              </ul>
+            </div>
 
-          <li><a href="./services/service1.html">Testimonials</a></li>
-          <li>
-            <a class="currentPage" href="./contact/contact.html">Contact</a>
-          </li>
-        </ul>
-        <div class="navBtn">
-          <a href="../Signup/signup.html" class="blue-btn">Sign Up</a>
-          <a href="../Login/login.html" class="white-btn">Log In</a>
-        </div>
-        <div class="ham">
-          <img src="../Assets/ham2.png" alt="" />
+            <li>
+              <a target="_blank" href="./services/service1.html"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="./contact/contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="navBtn">
+            <a href="../Signup/signup.html" class="blue-btn">Sign Up</a>
+            <a href="../Login/login.html" class="white-btn">Log In</a>
+          </div>
+          <div class="ham">
+            <img src="../Assets/ham2.png" alt="" />
+          </div>
         </div>
       </nav>
+      <div class="mobille hide">
+        <ul>
+          <li>
+            <a target="_blank" class="currentPage" href="./About/about.html"
+              >Home</a
+            >
+          </li>
+          <li><a target="_blank" href="./About/about.html">About Us</a></li>
 
+          <div class="listDropDown"></div>
+          <li class="listDropDown">
+            <a target="_blank" href="./services/service1.html">Services</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="./services/service1.html">Testimonials</a>
+          </li>
+          <li><a target="_blank" href="./contact/contact.html">Contact</a></li>
+        </ul>
+      </div>
       <header>
         <div class="innerHeader">
           <div class="text">
@@ -89,31 +126,100 @@
       <article>
         <div class="innerArt">
           <h1>Frequently Asked Questions</h1>
-          <p>
-            Can I book a virtual consultation?
-            <img src="../Assets/plus.svg" alt="" />
-          </p>
-          <p>
-            Locating healthcare centers? <img src="../Assets/plus.svg" alt="" />
-          </p>
-          <p>
-            What healthcare plans are available?
-            <img src="../Assets/plus.svg" alt="" />
-          </p>
-          <p>
-            Is my health data secure? <img src="../Assets/plus.svg" alt="" />
-          </p>
-          <p>
-            How do I reach the support team?
-            <img src="../Assets/plus.svg" alt="" />
-          </p>
-          <p>
-            How can I update my plan? <img src="../Assets/plus.svg" alt="" />
-          </p>
-          <p>
-            What are the benefits of VHA?
-            <img src="../Assets/plus.svg" alt="" />
-          </p>
+
+          <div class="questXans">
+            <div class="question">
+              <p class="questCont">Can I book a virtual consultation?</p>
+              <img class="plusImg" src="../Assets/plus.svg" alt="" />
+
+              <img class="hidden minusImg" src="../Assets/minus.png " alt="" />
+              <img class="hidden" src="../Assets/minus.png " alt="" />
+            </div>
+            <p class="answer hidden">
+              Yes, HealthBridge Initiative allows you to schedule virtual
+              consultations with certified healthcare professionals through our
+              video call feature. Simply choose a time slot that works for you.
+            </p>
+          </div>
+          <div class="questXans">
+            <div class="question">
+              <p class="questCont">Locating healthcare centers?</p>
+              <img class="plusImg" src="../Assets/plus.svg" alt="" />
+
+              <img class="hidden minusImg" src="../Assets/minus.png " alt="" />
+            </div>
+            <p class="answer hidden">
+              You can use our map locator feature to search for nearby
+              healthcare centers based on your location. You can also filter by
+              the type of care you need, such as specialists or primary care.
+            </p>
+          </div>
+          <div class="questXans">
+            <div class="question">
+              <p class="questCont">What healthcare plans are available?</p>
+              <img class="plusImg" src="../Assets/plus.svg" alt="" />
+
+              <img class="hidden minusImg" src="../Assets/minus.png " alt="" />
+            </div>
+            <p class="answer hidden">
+              We offer a range of flexible health insurance plans, from basic
+              coverage to more comprehensive packages, designed to fit your
+              specific needs. You can explore and select the plan that best
+              suits you.
+            </p>
+          </div>
+          <div class="questXans">
+            <div class="question">
+              <p class="questCont">Is my health data secure?</p>
+              <img class="plusImg" src="../Assets/plus.svg" alt="" />
+
+              <img class="hidden minusImg" src="../Assets/minus.png " alt="" />
+            </div>
+            <p class="answer hidden">
+              Yes, we prioritize your privacy. All health data shared on
+              HealthBridge is encrypted, ensuring your personal information
+              remains confidential.
+            </p>
+          </div>
+          <div class="questXans">
+            <div class="question">
+              <p class="questCont">How do I reach the support team?</p>
+              <img class="plusImg" src="../Assets/plus.svg" alt="" />
+
+              <img class="hidden minusImg" src="../Assets/minus.png " alt="" />
+            </div>
+            <p class="answer hidden">
+              You can reach out to our friendly customer support team through
+              live chat or email. We’re here to assist you with any questions or
+              concerns you may have.
+            </p>
+          </div>
+          <div class="questXans">
+            <div class="question">
+              <p class="questCont">How can I update my plan?</p>
+              <img class="plusImg" src="../Assets/plus.svg" alt="" />
+
+              <img class="hidden minusImg" src="../Assets/minus.png " alt="" />
+            </div>
+            <p class="answer hidden">
+              You can modify your healthcare plan or subscription at any time
+              directly from your user dashboard, ensuring you’re always on the
+              right plan.
+            </p>
+          </div>
+          <div class="questXans">
+            <div class="question">
+              <p class="questCont">What are the benefits of VHA?</p>
+              <img class="plusImg" src="../Assets/plus.svg" alt="" />
+
+              <img class="hidden minusImg" src="../Assets/minus.png " alt="" />
+            </div>
+            <p class="answer hidden">
+              With virtual health assistance, you can consult healthcare
+              professionals remotely, saving time and accessing healthcare
+              services conveniently from the comfort of your home.
+            </p>
+          </div>
         </div>
       </article>
 
@@ -149,7 +255,7 @@
             </label>
             <div class="inputXbtn">
               <input type="text" placeholder="Enter your email" />
-              <a >Subscribe</a>
+              <a>Subscribe</a>
             </div>
           </form>
 
@@ -197,5 +303,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="../data.js"></script>
+    <script src="./contact.js"></script>
   </body>
 </html>

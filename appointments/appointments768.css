@@ -30,6 +30,11 @@
 .mobileCont {
   display: none;
 }
+
+.mobille {
+  width: 37.6rem;
+  padding: 4rem;
+}
 .tabCont {
   display: flex;
   flex-direction: column;
@@ -38,6 +43,7 @@
 
   width: 100vw;
   gap: 2rem;
+  margin-top: 10rem;
 }
 
 main {
@@ -52,7 +58,7 @@ main .top {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  width: 70%;
+  width: 50%;
   gap: 2.4rem;
 }
 aside {

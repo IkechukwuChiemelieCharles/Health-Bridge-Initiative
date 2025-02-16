@@ -10,7 +10,11 @@
       href="./appointments768.css"
       media="(min-width:768px)"
     />
-
+    <link
+      rel="stylesheet"
+      href="./appointments1280.css"
+      media="(min-width:1280px)"
+    />
     <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon" />
     <title>My Appointments</title>
   </head>
@@ -25,7 +29,41 @@
           </div>
         </div>
       </nav>
+      <div class="mobille hide">
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              class="currentPage"
+              href="../User Dasboard/dashboard.html"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="../PHC Locator/locator.html"
+              >PHC Locator</a
+            >
+          </li>
 
+          <div class="listDropDown"></div>
+          <li class="listDropDown">
+            <a target="_blank" href="../appointments/appointments.html"
+              >My Appointments</a
+            >
+          </li>
+
+          <li>
+            <a target="_blank" href="./services/service1.html"
+              >Consult a Doctor</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="./contact/contact.html"
+              >AI Symptom Checker</a
+            >
+          </li>
+        </ul>
+      </div>
       <main>
         <input type="text" placeholder="Search here..." />
         <div class="leftTop">
@@ -166,7 +204,34 @@
           </div>
         </div>
       </nav>
+      <div class="mobille hide">
+        <ul>
+          <li>
+            <a target="_blank" class="currentPage" href="../User Dasboard/dashboard.html"
+              >Dashboard</a
+            >
+          </li>
+          <li><a target="_blank" href="../PHC Locator/locator.html">PHC Locator</a></li>
 
+          <div class="listDropDown"></div>
+          <li class="listDropDown">
+            <a target="_blank" href="../appointments/appointments.html"
+              >My Appointments</a
+            >
+          </li>
+
+          <li>
+            <a target="_blank" href="./services/service1.html"
+              >Consult a Doctor</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="./contact/contact.html"
+              >AI Symptom Checker</a
+            >
+          </li>
+        </ul>
+      </div>
       <main>
         <div class="input">
           <input type="text" placeholder="Search here..." />
@@ -299,5 +364,271 @@
         </div>
       </article>
     </div>
+
+    <div class="deskCont">
+      <div class="innerDesk">
+        <div class="sideBar">
+          <div class="topBar">
+            <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
+
+            <ul>
+              <a href="../User Dasboard/dashboard.html"
+                ><img src="../Assets/home-black.png" alt="" />Dashboard</a
+              >
+
+              <a href="../PHC Locator/locator.html"
+                ><img src="../Assets/locator-blue.png" alt="" />PHC Locator</a
+              >
+
+              <a class="active" href="../appointments/appointments.html"
+                ><img src="../Assets/appointments.png" alt="" />My
+                Appointments</a
+              >
+
+              <a href=""
+                ><img src="../Assets/consult.png" alt="" />Consult a Doctor</a
+              >
+
+              <a href=""
+                ><img src="../Assets/insurance.png" alt="" />Insurance Plans</a
+              >
+
+              <a href=""
+                ><img src="../Assets/symptom.png" alt="" />AI Symptom Checker</a
+              >
+            </ul>
+          </div>
+          <div class="bottomBar">
+            <ul>
+              <a href=""><img src="../Assets/settings.png" alt="" />Settings</a>
+
+              <a href=""
+                ><img src="../Assets/support.png" alt="" />Contact Support</a
+              >
+
+              <span>
+                <a href="../appointments/appointments.html"
+                  ><img src="../Assets/Avatarsonline.png" alt="" />My
+                  Appointments</a
+                >
+                <img src="../Assets/sign-out.png" alt="" />
+              </span>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mainCont">
+          <nav>
+            <div class="innerNav">
+              <input type="text" placeholder="Search here..." />
+
+              <div class="notification">
+                <img src="../Assets/Notification.png" alt="" />
+                <img src="../Assets/userThumbnail.png" alt="" />
+              </div>
+            </div>
+          </nav>
+
+          <main>
+            <div class="input">
+              <button class="new">
+                <img src="../Assets/plus-circle.png" alt="" /> New Appointment
+              </button>
+            </div>
+            <div class="top">
+              <div class="leftTop">
+                <h1>My Appointment</h1>
+
+                <p>Check and filter all your medical appointments here</p>
+              </div>
+
+              <aside>
+                <div class="icon">
+                  <img src="../Assets/health-plus.png" alt="" />
+                  <p>All</p>
+                  <span>0</span>
+                </div>
+                <div class="icon">
+                  <img src="../Assets/clock.png" alt="" />
+                  <p>Upcoming</p>
+                  <span>0</span>
+                </div>
+                <div class="icon">
+                  <img src="../Assets/home-black.png" alt="" />
+                  <p>Cancelled</p>
+                  <span>0</span>
+                </div>
+              </aside>
+            </div>
+          </main>
+
+          <article>
+            <div class="newAppoints">
+              <div class="navArea">
+                <div class="innerNavArea">
+                  <h5>All Visits</h5>
+
+                  <div class="imgs">
+                    <p><img src="../Assets/search.png" alt="" /> Search</p>
+
+                    <p><img src="../Assets/filter-alt.png" alt="" /> Filter</p>
+
+                    <p><img src="../Assets/chevron-v.png" alt="" /> Sort</p>
+                  </div>
+                </div>
+              </div>
+              <ul>
+                <li>Name</li>
+                <li>Address</li>
+                <li>Date & Time</li>
+              </ul>
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+              <div class="docs">
+                <div class="docProfile">
+                  <img src="../Assets/doconlinethumbnail.png" alt="" />
+                  <div class="docname">
+                    <p>Dr. Alison Ogaga</p>
+                    <p>General Practioner</p>
+                  </div>
+                </div>
+                <div class="address">
+                  <p>Meiran PHC Center</p>
+                  <p>4 Meiran Road, 100...</p>
+                </div>
+                <div class="address">
+                  <p>28 Jan., 2025</p>
+                  <p>10:00 AM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="calendarCont">
+              <img src="../Assets/calendarImg.png" alt="" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
   </body>
 </html>

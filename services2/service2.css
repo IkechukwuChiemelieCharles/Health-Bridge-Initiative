@@ -57,13 +57,66 @@ button {
   flex-direction: column;
   gap: 2rem;
 }
+
+.mobille {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  width: 22.6rem;
+  height: 100vh;
+  position: fixed;
+  top: 12.4rem;
+  right: 0;
+  background-color: var(--darkBlue);
+  padding: 2rem;
+  z-index: 10;
+}
+
+
+.hide {
+  display: none;
+}
+
+.mobille ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.mobille ul li,
+.mobille ul a {
+  font-size: var(--font14);
+  /* line-height: 2.1rem; */
+  color: var(--white);
+  font-weight: var(--weight500);
+  text-decoration: none;
+  list-style: none;
+  height: 4.4rem;
+}
+
 nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  /* max-width: 124rem; */
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  background-color: var(--white);
+  /* height: 4rem; */
+  z-index: 10;
+}
+.innerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 90vw;
   max-width: 124rem;
   padding: 2rem 0;
+
   /* height: 4rem; */
 }
 nav ul {
@@ -102,6 +155,7 @@ header {
   background: linear-gradient(to bottom, white 0%, rgba(170, 199, 224, 1) 30%);
   padding-top: 3rem;
   height: 48rem;
+  margin-top: 12rem;
 }
 .overlay {
   background-image: url(../Assets/Pharmacist_assisting_customer.png);

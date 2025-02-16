@@ -57,12 +57,12 @@ button {
 }
 .mobille {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: start;
   width: 22.6rem;
   height: 100vh;
   position: fixed;
-  top: 8.5rem;
+  top: 12.4rem;
   right: 0;
   background-color: var(--darkBlue);
   padding: 2rem;
@@ -75,34 +75,10 @@ button {
   gap: 0.2rem;
 }
 
-.mobileBtn a {
-  border: none;
-  cursor: pointer;
-  padding: 1.2rem 2.4rem;
-  font-weight: var(--weight400);
-  font-size: var(--font14);
-  border-radius: 0.2rem;
-  text-wrap: nowrap;
-}
-
-.mobileBtn .blue-btn {
-  background-color: var(--darkBlue);
-  color: var(--white);
-  border: 1px solid var(--white);
-}
-.mobileBtn .white-btn {
-  background-color: var(--white);
-  color: var(--darkBlue);
-  border: 1px solid var(--darkBlue);
-}
 .hide {
   display: none;
 }
-.closeMobile {
-  width: 0.6rem;
-  height: 1.2rem;
-  cursor: pointer;
-}
+
 .mobille ul {
   display: flex;
   flex-direction: column;
@@ -206,7 +182,7 @@ header {
   );
 
   padding: 3rem 0;
-  margin-top: 6rem;
+  margin-top: 12rem;
 }
 .innerHeader {
   display: flex;

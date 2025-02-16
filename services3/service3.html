@@ -21,29 +21,68 @@
   <body>
     <div class="container">
       <nav>
-        <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
+        <div class="innerNav">
+          <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
 
-        <ul>
-          <li><a href="./About/about.html">Home</a></li>
-          <li><a href="./About/about.html">About Us</a></li>
+          <ul>
+            <li>
+              <a target="_blank" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a target="_blank" class="" href="./About/about.html">About Us</a>
+            </li>
 
-          <li class="listDropDown">
-            <a class="currentPage" href="./services/service1.html">Services</a>
-            <img src="../Assets/chevron-down.png" alt="" />
-          </li>
+            <li class="listDropDown currentPage">
+              Services
+              <img class="img-down" src="../Assets/chevron-down.png" alt="" />
+            </li>
+            <div class="dropMenu hide">
+              <ul>
+                <a href="./services/service1.html">Healthcare plans</a>
+                <a href="./services2/service2.html">Healthcare locator</a>
+                <a href="./services3/service3.html">Symptom Checker</a>
+                <a href="./services4/service4.html">Virtual Appointment</a>
+              </ul>
+            </div>
 
-          <li><a href="./services/service1.html">Testimonials</a></li>
-          <li><a href="./contact/contact.html">Contact</a></li>
-        </ul>
-        <div class="navBtn">
-          <button class="blue-btn">Sign Up</button>
-          <button class="white-btn">Log In</button>
-        </div>
-        <div class="ham">
-          <img src="../Assets/ham2.png" alt="" />
+            <li>
+              <a target="_blank" href="./services/service1.html"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="./contact/contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="navBtn">
+            <button class="blue-btn">Sign Up</button>
+            <button class="white-btn">Log In</button>
+          </div>
+          <div class="ham">
+            <img src="../Assets/ham2.png" alt="" />
+          </div>
         </div>
       </nav>
+      <div class="mobille hide">
+        <ul>
+          <li>
+            <a target="_blank" class="currentPage" href="./About/about.html"
+              >Home</a
+            >
+          </li>
+          <li><a target="_blank" href="./About/about.html">About Us</a></li>
 
+          <div class="listDropDown"></div>
+          <li class="listDropDown">
+            <a target="_blank" href="./services/service1.html">Services</a>
+          </li>
+
+          <li>
+            <a target="_blank" href="./services/service1.html">Testimonials</a>
+          </li>
+          <li><a target="_blank" href="./contact/contact.html">Contact</a></li>
+        </ul>
+      </div>
       <header>
         <div class="innerHeader">
           <div class="overlay"></div>
@@ -160,5 +199,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="../data.js"></script>
   </body>
 </html>

@@ -49,7 +49,42 @@ html {
 body {
   font-family: "MyCustomFont", sans-serif;
 }
+.mobille {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  width: 22.6rem;
+  height: 100vh;
+  position: fixed;
+  top: 8.5rem;
+  right: 0;
+  background-color: var(--darkBlue);
+  padding: 4rem;
+  z-index: 10;
+}
 
+.hide {
+  display: none;
+}
+
+.mobille ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 0.4rem;
+}
+
+.mobille ul li,
+.mobille ul a {
+  font-size: var(--font14);
+  /* line-height: 2.1rem; */
+  color: var(--white);
+  font-weight: var(--weight500);
+  text-decoration: none;
+  list-style: none;
+  height: 4.4rem;
+}
 button {
   font-family: "MyCustomFont", sans-serif;
 }
@@ -68,6 +103,7 @@ button {
   /* gap: 2rem; */
   width: 100vw;
   gap: 2.5rem;
+  margin-top: 10rem;
 }
 
 nav {
@@ -76,7 +112,7 @@ nav {
   align-items: center;
   width: 100vw;
   padding: 2rem 0;
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   background-color: var(--white);
   z-index: 10;
@@ -123,6 +159,7 @@ main {
   justify-content: center;
   align-items: start;
   width: 90%;
+  margin-top: 5rem;
 }
 
 main input {

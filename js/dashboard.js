@@ -1,13 +1,15 @@
-const mobille = document.querySelector(".mobille");
+const mobille = document.querySelectorAll(".mobille");
 
-const ham = document.querySelector(".ham");
+const ham = document.querySelectorAll(".ham");
 
-const closeMobile = document.querySelector(".closeMobile");
-
-ham.addEventListener("click", function () {
-  mobille.classList.toggle("hide");
+ham.forEach(function (ham, i) {
+  ham.addEventListener("click", function () {
+    mobille[i].classList.toggle("hide");
+  });
 });
-
+closeMobile.addEventListener("click", function () {
+  mobille.classList.add("hide");
+});
 
 //service drop down
 
