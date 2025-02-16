@@ -7,9 +7,6 @@ ham.forEach(function (ham, i) {
     mobille[i].classList.toggle("hide");
   });
 });
-closeMobile.addEventListener("click", function () {
-  mobille.classList.add("hide");
-});
 
 //service drop down
 

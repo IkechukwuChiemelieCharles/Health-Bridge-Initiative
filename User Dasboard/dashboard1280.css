@@ -6,11 +6,10 @@
   --paraCol: rgba(0, 0, 0, 1);
   --darkerBlue: rgba(0, 29, 54, 1);
 
-  /* rgba(0, 87, 163, 1) */
-
   --lightBlue: rgba(170, 199, 224, 1);
   --lighterblue: rgba(0, 87, 163, 0.5);
   --border: rgba(228, 231, 236, 1);
+  --grey: rgba(249, 250, 251, 1);
 
   --font32: 3.6rem;
 
@@ -37,9 +36,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 124rem;
-  width: 90%;
-  gap: 2rem;
+  width: 100%;
+  gap: 0;
+  background-color: var(--grey);
 }
 .sideBar {
   display: flex;
@@ -47,7 +46,7 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--border);
-  width: 30%;
+  width: 20%;
   height: 102.4rem;
 }
 .topBar {
@@ -114,7 +113,7 @@
   align-items: center;
   height: 102.4rem;
   justify-content: space-between;
-  width: 75%;
+  width: 80%;
   gap: 2rem;
 }
 .mainCont nav {
@@ -122,10 +121,17 @@
   height: 10rem;
   position: relative;
 }
+.innerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 2rem 0;
+  /* height: 4rem; */
+}
 .mainCont nav input {
   width: 70%;
   height: 5rem;
-
   padding-left: 5rem;
   background-image: url(../Assets/search.png);
   background-repeat: no-repeat;
@@ -152,11 +158,10 @@
   height: 5rem;
 }
 main {
-  width: 100%;
+  width: 90%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 124rem;
 }
 main .currentdate {
   display: flex;
@@ -193,24 +198,26 @@ main .currDate p {
   line-height: 1.68rem;
 }
 .topCont {
-  width: 100%;
+  width: 90%;
 }
 .bottomCont {
-  width: 100%;
+  width: 90%;
 }
 
 .topCont {
-  width: 92rem;
+  /* width: 92rem; */
   justify-content: space-between;
 }
 aside {
   width: 36rem;
 }
 .innerArt {
-  width: 55rem;
+  width: 100%;
+  justify-content: center;
+  gap: 4.5rem;
 }
 .userprofile {
-  width: 55rem;
+  width: 100%;
   justify-content: start;
 }
 .leftprofile {
@@ -223,11 +230,20 @@ aside {
   text-align: center;
 }
 .left {
-  width: 50rem;
+  width: 70%;
   border: none;
 }
 .innerArt .box {
-  width: 17rem;
+  /* width: 17rem; */
+  width: 25%;
   height: 11.3rem;
   padding: 1rem 2.5rem;
+}
+.sec1 {
+  height: 39rem;
+  width: 60%;
+}
+.sec2 {
+  height: 39rem;
+  width: 40%;
 }

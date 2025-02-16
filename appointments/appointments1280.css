@@ -11,6 +11,7 @@
   --lightBlue: rgba(170, 199, 224, 1);
   --lighterblue: rgba(0, 87, 163, 0.5);
   --border: rgba(228, 231, 236, 1);
+  --grey: rgba(249, 250, 251, 1);
 
   --font32: 3.6rem;
 
@@ -37,9 +38,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 124rem;
-  width: 90%;
-  gap: 2rem;
+  /* max-width: 124rem; */
+  width: 100%;
+  gap: 0;
 }
 .sideBar {
   display: flex;
@@ -47,7 +48,7 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--border);
-  width: 30%;
+  width: 20%;
   height: 102.4rem;
 }
 .topBar {
@@ -113,13 +114,25 @@
   align-items: center;
   height: 102.4rem;
   justify-content: start;
-  width: 75%;
+  width: 80%;
   gap: 2rem;
+  background-color: var(--grey);
 }
 .mainCont nav {
+  justify-content: center;
   width: 100%;
   height: 10rem;
   position: relative;
+}
+.innerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+  padding: 0 0;
+}
+.innerNavArea {
 }
 .mainCont nav input {
   width: 70%;
@@ -137,14 +150,22 @@
 }
 
 main {
-  width: 100%;
+  width: 90%;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  max-width: 124rem;
 }
 .top {
-  width: 40.8rem;
+  /* width: 30.8rem; */
+}
+
+main .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: auto;
+  gap: 2.4rem;
 }
 main h1 {
   font-size: 2.4rem;
@@ -180,7 +201,8 @@ main h1 {
 
 .newAppoints {
   width: 100%;
-  max-width: 61rem;
+  /* height: 70rem; */
+  /* max-width: 61rem; */
 }
 .calendarCont {
   width: 80%;
@@ -199,5 +221,27 @@ article ul li {
   line-height: 1.96rem;
 }
 article {
+}
+article {
+  justify-content: space-between;
+  align-items: start;
+  width: 90%;
+  gap: 2rem;
+}
+.docs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+.newAppoints {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  gap: 1.5rem;
 }

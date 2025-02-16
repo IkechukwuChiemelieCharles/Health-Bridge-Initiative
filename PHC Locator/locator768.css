@@ -50,7 +50,6 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 124rem;
 }
 main div {
   width: 50%;
@@ -112,7 +111,6 @@ main p {
   align-items: start;
   justify-content: start;
   width: 90%;
-  max-width: 124rem;
   gap: 2rem;
 }
 .topCont {
@@ -124,7 +122,6 @@ main p {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  max-width: 124rem;
   gap: 0.8rem;
   /* align-self: flex-start; */
 }

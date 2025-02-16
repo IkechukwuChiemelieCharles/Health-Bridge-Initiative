@@ -51,7 +51,6 @@ main {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  max-width: 124rem;
 }
 main .top {
   display: flex;
