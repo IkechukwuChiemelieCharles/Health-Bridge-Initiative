@@ -81,7 +81,9 @@ button {
 .hide {
   display: none;
 }
-
+.serviceDrop {
+  cursor: pointer;
+}
 .mobille ul {
   display: flex;
   flex-direction: column;
@@ -239,7 +241,7 @@ article {
   align-items: center;
   flex-direction: column;
   width: 90%;
-  max-width: 67.8rem;
+  /* max-width: 67.8rem; */
   gap: 2rem;
 }
 article .top {

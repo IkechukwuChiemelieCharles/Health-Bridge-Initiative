@@ -76,9 +76,11 @@ button {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
-
+.serviceDrop {
+  cursor: pointer;
+}
 .mobille ul {
   display: flex;
   flex-direction: column;
@@ -410,7 +412,7 @@ aside .slides .slide {
   justify-content: start;
   align-items: center;
   width: 25.1rem;
-  gap: 3.2rem;
+  gap: 1.6rem;
   height: 34.7rem;
   position: relative;
 }

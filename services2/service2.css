@@ -72,11 +72,12 @@ button {
   z-index: 10;
 }
 
-
 .hide {
   display: none;
 }
-
+.serviceDrop {
+  cursor: pointer;
+}
 .mobille ul {
   display: flex;
   flex-direction: column;

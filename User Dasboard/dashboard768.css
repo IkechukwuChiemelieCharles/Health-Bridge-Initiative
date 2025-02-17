@@ -76,7 +76,7 @@ main h1 {
   flex-direction: column;
   border-radius: 0.6rem;
   width: 50%;
-  border: 1px solid var(--border);
+  /* border: 1px solid var(--border); */
   height: 32.4rem;
   justify-content: space-between;
 }
@@ -87,6 +87,7 @@ aside {
 
 .innerArt {
   width: 100%;
+  border-radius: 0.6rem;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr; */
 }
@@ -96,6 +97,7 @@ aside {
   gap: 1.2rem;
   padding: 1rem 0.5rem;
   text-wrap: wrap;
+  border-radius: 0.6rem;
 }
 
 .bottomCont {
@@ -104,6 +106,7 @@ aside {
   align-items: center;
   width: 90%;
   gap: 1.8rem;
+  border-radius: 0.6rem !important;
 }
 .sec2 {
   height: 45.3rem;
@@ -119,12 +122,17 @@ aside {
   flex-direction: row;
   gap: 1.2rem;
   border: 1px solid var(--border);
+  border-radius: 0.6rem;
 }
 .rightprofile {
   border-left: 1px solid var(--border);
   padding: 0 2rem;
   border-top: none;
   margin: 2rem 0;
+}
+.leftprofile {
+  align-items: start;
+  padding: 0 2rem;
 }
 main h1 {
   line-height: 2.94rem;
@@ -179,6 +187,7 @@ aside .btn button {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 2.7rem;
+  /* border: 1px solid red; */
 }
 .sec2 .first .text span {
   font-size: 1.6rem;

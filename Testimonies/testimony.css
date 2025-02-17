@@ -79,7 +79,9 @@ button {
 .hide {
   display: none;
 }
-
+.serviceDrop {
+  cursor: pointer;
+}
 .mobille ul {
   display: flex;
   flex-direction: column;
