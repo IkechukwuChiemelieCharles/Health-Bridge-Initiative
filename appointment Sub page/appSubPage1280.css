@@ -6,8 +6,6 @@
   --paraCol: rgba(0, 0, 0, 1);
   --darkerBlue: rgba(0, 29, 54, 1);
 
-  /* rgba(0, 87, 163, 1) */
-
   --lightBlue: rgba(170, 199, 224, 1);
   --lighterblue: rgba(0, 87, 163, 0.5);
   --border: rgba(228, 231, 236, 1);
@@ -25,7 +23,7 @@
   --font12: 2.4rem;
   --font10: 1.4rem;
 }
-.tabCont {
+.mobileCont {
   display: none;
 }
 .deskCont {
@@ -38,9 +36,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width: 124rem; */
   width: 100%;
   gap: 0;
+  background-color: var(--grey);
 }
 .sideBar {
   display: flex;
@@ -107,21 +105,20 @@
   width: 100%;
   cursor: pointer;
 }
+
 .mainCont {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   height: 102.4rem;
-  justify-content: start;
+  /* justify-content: space-between; */
   width: 80%;
   gap: 2rem;
-  background-color: var(--grey);
 }
 .mainCont nav {
-  justify-content: center;
   width: 100%;
-  height: 10rem;
+  height: 8rem;
   position: relative;
 }
 .innerNav {
@@ -129,15 +126,12 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-
-  padding: 0 0;
-}
-.innerNavArea {
+  padding: 2rem 0;
+  /* height: 4rem; */
 }
 .mainCont nav input {
   width: 70%;
   height: 5rem;
-
   padding-left: 5rem;
   background-image: url(../Assets/search.png);
   background-repeat: no-repeat;
@@ -149,81 +143,70 @@
   outline: var(--inputBg);
 }
 
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.notification img:first-child {
+  width: 4rem;
+  height: 4rem;
+}
+.notification img:last-child {
+  width: 5rem;
+  height: 5rem;
+}
 main {
   width: 90%;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 0;
 }
-.top {
-  /* width: 30.8rem; */
-}
-
-main .top {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: auto;
-  gap: 2.4rem;
+.leftTop {
+  gap: 0.5rem;
 }
 main h1 {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 2.94rem;
 }
-
-.innerNavArea {
-  justify-content: space-between;
-  width: 90%;
-  gap: 2.4rem;
-}
-.innerNavArea h5 {
-  font-size: 2.4rem;
+main .prof p {
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.88rem;
+  line-height: 1.92rem;
 }
-.imgs {
+main a {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  /* padding: 2.9rem 1.6rem; */
+  width: 12.8rem;
+  height: 5.6rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.4rem;
-}
-.imgs p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.4rem;
+  text-decoration: none;
 }
 
-article {
-  justify-content: space-between;
-  align-items: start;
-  width: 90%;
-  gap: 2rem;
+.innerAside .container {
+  height: 32rem;
+}
+.detail {
+  flex-direction: row;
 }
 
-.topContainer {
-  width: 100%;
+.container .docImg {
+  width: 7.8rem;
+  height: 7.8rem;
 }
-.priceCont {
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  gap: 1.8rem;
-}
-.box1,
-.box2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  border: 1px solid var(--darkBlue);
-  width: 90%;
-  max-width: 50rem;
-  /* width: 100%; */
-  height: 100%;
-  max-height: 66.2rem;
-  padding: 1rem 2rem;
+
+.innerNav {
   gap: 0;
-  border-radius: 1rem;
 }

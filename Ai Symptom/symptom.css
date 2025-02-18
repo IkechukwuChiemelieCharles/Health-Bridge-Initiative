@@ -214,7 +214,7 @@ main p {
   align-items: center;
   background-color: var(--white);
   width: 90%;
-  height: 50%;
+  /* height: 50%; */
   padding: 2rem;
   gap: 2rem;
   border-radius: 0.6rem;

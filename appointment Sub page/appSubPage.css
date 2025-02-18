@@ -21,6 +21,7 @@
   --inputBg: rgba(249, 250, 251, 1);
   --border: rgba(228, 231, 236, 1);
   --green: rgba(3, 107, 38, 1);
+  --lightAsh: rgba(248, 248, 248, 1);
 
   --font32: 3.2rem;
   --font24: 2.4rem;
@@ -242,4 +243,138 @@ article::-moz-scrollbar {
 }
 .box:first-child {
   background-color: var(--lighterblue2);
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.innerAside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+.innerAside .recc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.recc h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.recc span {
+  color: var(--darkBlue);
+}
+.recc a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: var(--black);
+}
+.docContainers {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+.innerAside .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 44rem;
+  gap: 2rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--lighterblue2);
+  background-color: var(--lightAsh);
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.container .docImg {
+  width: 11.67rem;
+  height: 11.67rem;
+}
+.innerAside .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  gap: 0.8rem;
+}
+.innerAside .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+.date img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.time {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 1.2rem;
+}
+.time button {
+  width: 100%;
+  border-radius: 0.6rem;
+  height: 4rem;
+  border: 1px solid var(--black);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.2rem;
+}
+.detail button {
+  width: 100%;
+  border-radius: 0.6rem;
+  height: 4rem;
+  border: 1px solid var(--black);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+.detail button:last-child {
+  border: 1px solid var(--darkBlue);
+  color: var(--darkBlue);
+  font-weight: 600;
 }
