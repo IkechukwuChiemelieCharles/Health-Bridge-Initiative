@@ -21,9 +21,6 @@
   --inputBg: rgba(249, 250, 251, 1);
   --border: rgba(228, 231, 236, 1);
   --green: rgba(3, 107, 38, 1);
-  --ash: rgba(240, 242, 245, 1);
-
-  --overlay: rgba(228, 231, 236, 0.3);
 
   --font32: 3.2rem;
   --font24: 2.4rem;
@@ -48,29 +45,21 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "MyCustomFont", sans-serif;
 }
+
 button {
   font-family: "MyCustomFont", sans-serif;
+}
+
+.tabCont {
+  display: none;
 }
 .deskCont {
   display: none;
 }
-.tabCont {
-  display: none;
-}
-.mobileCont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* gap: 2rem; */
-  width: 100vw;
-  gap: 2.5rem;
-  margin-top: 10rem;
-}
-
 .mobille {
   display: flex;
   justify-content: end;
@@ -86,7 +75,7 @@ button {
 }
 
 .hide {
-  display: none !important;
+  display: none;
 }
 
 .mobille ul {
@@ -107,6 +96,16 @@ button {
   list-style: none;
   height: 4.4rem;
 }
+.mobileCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 2rem; */
+  width: 100vw;
+  gap: 2rem;
+  margin-top: 10rem;
+}
 
 nav {
   display: flex;
@@ -126,6 +125,7 @@ nav {
   align-items: center;
   width: 90vw;
   padding: 2rem 0;
+  max-width: 124rem;
 
   /* height: 4rem; */
 }
@@ -161,16 +161,16 @@ main {
   align-items: start;
   width: 90%;
   margin-top: 5rem;
+  max-width: 124rem;
 }
-
-.leftTop {
+main div {
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
   justify-content: center;
   align-items: start;
-  gap: 1.2rem;
+  color: var(--black);
 }
-
 main input {
   width: 100%;
   height: 5rem;
@@ -184,198 +184,50 @@ main input {
   background-color: var(--inputBg);
   outline: var(--inputBg);
 }
-
 main h1 {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 3.6rem;
 }
+
 main p {
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.912rem;
-}
-
-aside {
-  display: flex;
-  width: 90%;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.2rem;
-  overflow: auto;
-}
-.aside::-webkit-scrollbar {
-  display: none;
-}
-.aside::-moz-scrollbar {
-  display: none;
-}
-aside .icon {
-  /* width: 11.1rem;
-  height: 4.6rem; */
-  padding: 1.1rem 1.3rem;
-  background-color: var(--ash);
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-aside .icon img {
-  width: 2rem;
-  height: 2rem;
-}
-aside .icon p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-}
-aside .icon span {
-  width: 2.4rem;
-  height: 2.4rem;
-  background-color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.8rem;
-}
-
-aside .icon:first-child {
-  background-color: var(--lighterblue2);
-}
-aside .icon:first-child span {
-  background-color: var(--darkBlue);
-  color: var(--white);
-}
-
-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 2rem;
-}
-
-.newAppoints {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 2rem;
-}
-
-.navArea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4.8rem;
-  border: 1px solid var(--border);
-}
-.innerNavArea {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-}
-.navArea p {
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1.456rem;
-}
-.navArea img {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.docs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem;
-}
-.docProfile {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-  align-items: center;
-}
-
-.docProfile img {
-  width: 3.2rem;
-  height: 3.2rem;
-}
-
-.docname {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 1.2rem;
-}
-.docs p {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.912rem;
-}
-.docs button {
-  padding: 1rem;
-  border: 1px solid var(--border);
-  border-radius: 0.6rem;
-  background: none;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.639rem;
-}
-.new {
-  /* width: 18.1rem;
-  height: 5.6rem; */
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  text-decoration: none;
-
-  border: none;
-  border-radius: 1rem;
-  background: var(--darkBlue);
-  font-size: 1.4rem;
-  font-weight: 400;
   line-height: 2.1rem;
-  color: var(--white);
 }
-.calendarCont {
-  width: 90%;
-}
-.calendarCont img {
-  width: 100%;
-}
-
-.calendarOverlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--overlay);
+.messageArea {
   position: fixed;
   bottom: 0;
+
   left: 0;
-  right: 0;
-  z-index: 20;
-  width: 100vw;
-  height: 100vh;
-  transition: transform 0.5s ease-in-out;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 8.8rem;
+  padding: 1rem;
 }
-.closed {
-  transform: translateY(100%) !important;
+.innerMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 124rem;
+  gap: 4rem;
 }
-.open {
-  transform: translateY(0) !important;
+.innerMessage input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 4.8rem;
+  padding-left: 4rem;
+  background-image: url(/Assets/paperclip.png);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: 1rem center;
+  border-radius: 5rem;
+  border: 1px solid var(--darkBlue);
+  outline: none;
 }
