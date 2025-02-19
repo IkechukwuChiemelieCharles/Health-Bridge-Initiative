@@ -195,9 +195,6 @@ main a {
   text-decoration: none;
 }
 
-.innerAside .container {
-  height: 32rem;
-}
 .detail {
   flex-direction: row;
 }
@@ -209,4 +206,23 @@ main a {
 
 .innerNav {
   gap: 0;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: 2rem;
+
+  width: 90%;
+}
+
+.innerAside {
+  width: 90%;
+  border: 1px solid red;
+}
+.docProfile {
+  width: 30%;
+  border: 1px solid blue;
 }
