@@ -27,9 +27,6 @@
   --font10: 1.2rem;
 }
 
-.mobileCont {
-  display: none;
-}
 .mobille {
   width: 37.6rem;
   padding: 4rem;
@@ -47,7 +44,7 @@
 
 main {
   width: 90%;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
@@ -64,74 +61,43 @@ main h1 {
   line-height: 2.94rem;
 }
 
-.steps {
+.docContainers {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+
+.docContainers {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+/* .innerAside .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--white);
-  width: 90%;
-  height: 100%;
-  max-height: 64.3rem;
-  position: absolute;
   padding: 2rem;
-  gap: 2.8rem;
+  text-align: center;
+  width: 100%;
+  height: 14.6rem;
+  gap: 2rem;
   border-radius: 0.6rem;
-  overflow-y: auto;
-  /* max-width: 67.6rem; */
-  /* gap: 1.8rem; */
-  /* position: relative; */
-}
-.cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
-  width: 100%;
-  height: 54.7rem;
-  /* position: absolute; */
-  padding: 2rem;
-  gap: 4.8rem;
+  background-color: var(--lightAsh);
+} */
+
+.innerAside .container {
+  /* width: 22.95rem; */
+  height: 14.6rem;
+  max-width: 22.9rem;
+
+  gap: 2rem;
   border-radius: 0.6rem;
-  overflow-y: auto;
-  border: 1px solid var(--border);
-}
-.steps .stepHead h2 {
-  font-size: 2.4rem;
-  line-height: 2.4rem;
-}
-.check {
-  flex-direction: row;
-  width: 100%;
-
-  gap: 1.2rem;
-}
-.arr {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.9rem;
-}
-
-.btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 6.9rem;
-}
-.btns a {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-}
-.btns a:first-child {
-  background-color: var(--white);
-  border: 1px solid var(--darkBlue);
-  color: var(--darkBlue);
-  width: 20%;
-}
-.btns a:last-child {
-  width: 70%;
+  background-color: var(--lightAsh);
 }

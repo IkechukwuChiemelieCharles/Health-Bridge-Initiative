@@ -21,6 +21,7 @@
   --inputBg: rgba(249, 250, 251, 1);
   --border: rgba(228, 231, 236, 1);
   --green: rgba(3, 107, 38, 1);
+  --lightAsh: rgba(248, 248, 248, 1);
 
   --font32: 3.2rem;
   --font24: 2.4rem;
@@ -193,96 +194,258 @@ main p {
   line-height: 1.912rem;
 }
 
-.overlay {
-  background-color: rgba(58, 51, 51, 0.37);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 20;
+article {
   display: flex;
-
-  justify-content: center;
-  align-items: center;
-}
-
-.steps {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--white);
+  /* border: 1px solid red; */
+  justify-content: start;
   width: 90%;
-  height: 100%;
-  max-height: 82.3rem;
-  max-width: 74rem;
-  position: absolute;
-  padding: 2rem;
-  gap: 1.8rem;
-  border-radius: 0.6rem;
-  overflow-y: auto;
-  /* max-width: 67.6rem; */
+  align-items: center;
+  overflow: auto;
 }
-.steps .stepHead {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 1.2rem;
+article::-webkit-scrollbar {
+  display: none;
 }
-.steps .stepHead h2 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.4rem;
+article::-moz-scrollbar {
+  display: none;
 }
-.steps .stepHead p {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.4rem;
-}
-
-.step1 {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-  gap: 1.2rem;
-  /* flex-direction: column; */
-}
-
-.check {
+.innerArt {
   display: flex;
   justify-content: start;
-  align-items: start;
-  width: 100%;
-  flex-direction: column;
-  gap: 0.4rem;
+  align-items: center;
+  /* width: 100%; */
+  border: 1px solid var(--border);
+  gap: 1.2rem;
+  border-radius: 0.6rem;
+
+  padding: 1rem;
 }
-.arr {
+.box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  align-items: center;
+  border: 1px solid var(--border);
+  width: 9.6rem;
+  height: 9.6rem;
+  gap: 1.2rem;
+  border-radius: 0.6rem;
+  padding: 1rem;
 }
-.arr p {
+.innerArt .box p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+.innerArt .box img {
+  width: 2.4rem;
+  height: 2.076rem;
+}
+.box:first-child {
+  background-color: var(--lighterblue2);
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  width: 90%;
+}
+.innerAside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+.innerAside .recc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.recc h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.recc span {
+  color: var(--darkBlue);
+}
+.recc a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  color: var(--black);
+}
+.docContainers {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+.innerAside .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 14.6rem;
+  gap: 2rem;
+  border-radius: 0.6rem;
+  background-color: var(--lightAsh);
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+.img img {
+  width: 5.2rem;
+  height: 5.2rem;
+}
+.img h2 {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 2.1rem;
 }
-.check p {
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 16.15rem;
+}
+.details p {
   font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.details img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.docProfile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.topProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  gap: 1rem;
+}
+.topProfile .docImg {
+  width: 10.4rem;
+  height: 10.4rem;
+}
+.topProfile h2 {
+  font-size: 1.6rem;
   font-weight: 600;
+  line-height: 2.4rem;
+}
+.topProfile p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.68rem;
+}
+.location {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.midProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+  width: 100%;
+  gap: 1rem;
+}
+.exp {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.exp .trophy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.exp .trophy h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.exp p {
+  font-size: 1.4rem;
+  font-weight: 400;
   line-height: 2.1rem;
 }
-.steps a {
+
+.bottomProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+.bottomProfile ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.bottomProfile ul li {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+.bottomProfile ul li:first-child {
+  border-bottom: 2px solid var(--darkBlue);
+}
+.bottomProfile p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.1rem;
+}
+.bottomProfile a {
   font-size: 1.2rem;
   line-height: 1.8rem;
   font-weight: 400;
   padding: 2rem 1.6rem;
-  /* width: 12.8rem;
-  height: 5.6rem; */
+
   background-color: var(--darkBlue);
   color: var(--white);
   border: none;
