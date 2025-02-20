@@ -1,0 +1,181 @@
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  /* rgba(0, 87, 163, 1) */
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --lighterblue2: rgba(204, 221, 237, 1);
+  --inputBg: rgba(249, 250, 251, 1);
+  --border: rgba(228, 231, 236, 1);
+  --green: rgba(3, 107, 38, 1);
+  /* --font32: 3.2rem; */
+
+  --font24: 3.6rem;
+  --font20: 3.2rem;
+
+  --font16: 2rem;
+  --font18: 1.8rem;
+
+  --font14: 1.6rem;
+  --font12: 1.4rem;
+  --font10: 1.2rem;
+}
+body {
+  background-image: url(../Assets/logo-bg.png);
+  background-repeat: no-repeat;
+  /* background-size: 2.4rem; */
+  background-position: right 75rem;
+}
+.mobileCont {
+  display: none;
+}
+.mobille {
+  width: 37.6rem;
+  padding: 4rem;
+}
+.tabCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  gap: 2rem;
+  margin-top: 10rem;
+}
+
+main {
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main div {
+  width: 50%;
+}
+main input {
+  width: 50%;
+}
+main p {
+  font-size: 1.6rem;
+}
+main h1 {
+  line-height: 2.94rem;
+}
+
+.topCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 1.8rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  width: 50%;
+  /* border: 1px solid var(--border); */
+  height: 32.4rem;
+  justify-content: space-between;
+}
+aside {
+  height: 32.4rem;
+  gap: 1rem;
+}
+
+.innerArt {
+  width: 100%;
+  border-radius: 0.6rem;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+}
+.innerArt .box {
+  width: 14.7rem;
+  height: 10.5rem;
+  gap: 1.2rem;
+  padding: 1rem 0.5rem;
+  text-wrap: wrap;
+  border-radius: 0.6rem;
+}
+
+.bottomCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 1.8rem;
+  border-radius: 0.6rem !important;
+}
+.sec2 {
+  height: 45.3rem;
+  width: 40%;
+}
+.sec1 {
+  height: 45.3rem;
+  width: 60%;
+}
+
+.userprofile {
+  width: 100%;
+  flex-direction: row;
+  gap: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+}
+.rightprofile {
+  border-left: 1px solid var(--border);
+  padding: 0 2rem;
+  border-top: none;
+  margin: 2rem 0;
+}
+.leftprofile {
+  align-items: start;
+  padding: 0 2rem;
+}
+main h1 {
+  line-height: 2.94rem;
+}
+main p {
+  font-size: 1.6rem;
+  line-height: 1.92rem;
+}
+
+form {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.innerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 60%;
+  border-radius: 0.6rem;
+  gap: 1.6rem;
+  padding: 1rem;
+}
+form a {
+  align-self: flex-start;
+  font-size: 1.4rem;
+}
+form a img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+form h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+form label {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}

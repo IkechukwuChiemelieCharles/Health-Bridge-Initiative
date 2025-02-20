@@ -23,7 +23,14 @@
   --font12: 2.4rem;
   --font10: 1.4rem;
 }
-.mobileCont {
+body {
+  background-image: url(../Assets/Ambulance.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  /* z-index: 50; */
+}
+.tabCont {
   display: none;
 }
 .deskCont {
@@ -115,10 +122,14 @@
   /* justify-content: space-between; */
   width: 80%;
   gap: 2rem;
+  background-image: url(../Assets/logo-bg.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: bottom right;
 }
 .mainCont nav {
   width: 100%;
-  height: 8rem;
+  height: 10rem;
   position: relative;
 }
 .innerNav {
@@ -162,10 +173,18 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-top: 0;
 }
-.leftTop {
-  gap: 0.5rem;
+main .currentdate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  width: 22.1rem;
+  height: 6.7rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  text-wrap: nowrap;
 }
 main h1 {
   font-size: 2.4rem;
@@ -177,50 +196,46 @@ main .prof p {
   font-weight: 400;
   line-height: 1.92rem;
 }
-main a {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-weight: 400;
-  /* padding: 2.9rem 1.6rem; */
-  width: 12.8rem;
-  height: 5.6rem;
-  background-color: var(--darkBlue);
-  color: var(--white);
-  border: none;
-  border-radius: 0.6rem;
-  cursor: pointer;
+main .currDate {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.detail {
-  flex-direction: row;
-}
-
-.container .docImg {
-  width: 7.8rem;
-  height: 7.8rem;
-}
-
-.innerNav {
-  gap: 0;
-}
-
-aside {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: start;
-  flex-direction: row;
-  gap: 2rem;
-
-  width: 90%;
+  justify-content: center;
+  gap: 0.4rem;
+}
+main .currDate p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.68rem;
 }
 
-.innerAside {
+.mainCont ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 90%;
+  height: 5rem;
+  background-color: var(--white);
 }
-.docProfile {
-  width: 30%;
+.mainCont ul li,
+.mainCont ul a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 21.6rem;
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
+.innerUl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+}
+.activeSetting {
+  font-weight: 600;
+  line-height: 22.05rem;
+  color: var(--darkBlue);
+  border-bottom: 2px solid var(--darkBlue);
 }
