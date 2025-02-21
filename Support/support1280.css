@@ -241,36 +241,24 @@ main .currDate p {
   border-bottom: 2px solid var(--darkBlue);
 }
 
-.deskAccCont {
+.formCont {
   display: flex;
-  align-items: start;
   justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
   width: 90%;
-  gap: 2rem;
+  align-self: flex-end;
 }
 
-.account,
-.status {
-  width: 100%;
-  background-color: var(--white);
+form {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
 }
-
-.factor {
-  width: 50%;
-  height: auto;
-  justify-content: space-between;
-  padding: 0 0 4rem 0;
-}
-
-.uls {
-}
-.title,
-.list {
-  width: 100% !important;
-  justify-content: space-between !important;
-  padding: 0;
-}
-.imgCont {
-  width: 100% !important;
-  align-self: flex-start;
+.contact {
+  width: 38.8rem;
+  height: 50rem;
+  margin-right: -28rem;
+  margin-top: 0;
 }

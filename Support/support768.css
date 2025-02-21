@@ -27,10 +27,6 @@
   --font10: 1.2rem;
 }
 body {
-  background-image: url(../Assets/logo-bg.png);
-  background-repeat: no-repeat;
-  /* background-size: 2.4rem; */
-  background-position: right 120rem;
 }
 .mobileCont {
   display: none;
@@ -46,8 +42,13 @@ body {
   align-items: center;
 
   width: 100vw;
-  gap: 2rem;
+  height: 100vh;
+  gap: 4rem;
   margin-top: 10rem;
+  background-image: url(../Assets/logo-bg.png);
+  background-repeat: no-repeat;
+  /* background-size: 2.4rem; */
+  background-position: bottom right;
 }
 
 main {
@@ -211,70 +212,24 @@ form label {
   padding: 1.4rem;
 }
 
-.account {
-  /* width: 60%; */
-  align-items: start;
-  padding: 0 0;
-}
-.container {
-  width: 90%;
+.formCont {
   display: flex;
   justify-content: center;
-  align-items: start;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-.toggCont {
-  flex-direction: row !important;
-}
-.toggle {
-  height: 5.9rem;
-  width: 50%;
-}
-.account h2 {
-  font-size: 2rem;
-  line-height: 3rem;
-  height: 6rem;
-}
-.account div h4 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 2.1rem;
-}
-.account div h3 {
-  font-size: 2rem;
-  line-height: 3rem;
-}
-.account div p {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-}
-.text {
+  align-items: center;
   width: 90%;
-  padding: 1rem 0;
-  align-self: center !important;
-}
-.atm {
-  width: 90% !important;
-  align-self: center;
-}
-.imgCont {
-  width: 60% !important;
-  align-self: flex-start;
-}
-.btns {
-  justify-content: start !important;
-}
-.title {
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-}
-.list {
-  font-size: 1.4rem;
-  line-height: 2.1rem;
 }
 
-.status h2 {
-  /* width: 90%; */
-  height: 6rem;
+form {
+  width: 80%;
+  height: 62.1rem;
+}
+
+.contact {
+  width: 38.8rem;
+  height: 50rem;
+  margin-left: -20rem;
+  margin-top: 0;
+}
+.innerContact {
+  gap: 2.4rem;
 }
