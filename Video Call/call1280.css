@@ -1,0 +1,226 @@
+:root {
+  --darkBlue: rgba(0, 87, 163, 1);
+  --white: rgba(255, 255, 255, 1);
+  --lightWhite: rgba(217, 217, 217, 1);
+  --black: rgba(46, 46, 46, 1);
+  --paraCol: rgba(0, 0, 0, 1);
+  --darkerBlue: rgba(0, 29, 54, 1);
+
+  --lightBlue: rgba(170, 199, 224, 1);
+  --lighterblue: rgba(0, 87, 163, 0.5);
+  --border: rgba(228, 231, 236, 1);
+  --grey: rgba(249, 250, 251, 1);
+
+  --font32: 3.6rem;
+
+  --font24: 4.8rem;
+  --font20: 3.6rem;
+
+  --font16: 2.4rem;
+  /* --font18: 1.8rem; */
+
+  --font14: 1.6rem;
+  --font12: 2.4rem;
+  --font10: 1.4rem;
+}
+.tabCont {
+  display: none;
+}
+.deskCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.innerDesk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 0;
+  background-color: var(--grey);
+}
+.sideBar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--border);
+  width: 20%;
+  height: 102.4rem;
+}
+.topBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 42rem;
+  gap: 1.2rem;
+  width: 100%;
+}
+.topBar .logoCont {
+  width: 20rem;
+  height: 8rem;
+}
+.sideBar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 90%;
+}
+.sideBar ul a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 4.8rem;
+  gap: 1.2rem;
+  width: 100%;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.1rem;
+  text-decoration: none;
+  color: var(--black);
+  border-radius: 0.4rem;
+}
+.active {
+  background-color: var(--lightBlue);
+  color: var(--darkBlue) !important;
+}
+.bottomBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 19rem;
+  gap: 1.2rem;
+  width: 100%;
+}
+.bottomBar span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mainCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 102.4rem;
+  /* justify-content: space-between; */
+  width: 80%;
+  gap: 2rem;
+}
+.mainCont nav {
+  width: 100%;
+  height: 10rem;
+  position: relative;
+}
+.innerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 2rem 0;
+  /* height: 4rem; */
+}
+.mainCont nav input {
+  width: 70%;
+  height: 5rem;
+  padding-left: 5rem;
+  background-image: url(../Assets/search.png);
+  background-repeat: no-repeat;
+  background-size: 2.4rem;
+  background-position: 2rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--inputBg);
+  outline: var(--inputBg);
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.notification img:first-child {
+  width: 4rem;
+  height: 4rem;
+}
+.notification img:last-child {
+  width: 5rem;
+  height: 5rem;
+}
+main {
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftTop {
+  gap: 2rem;
+}
+main h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 2.94rem;
+}
+main .prof p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.92rem;
+}
+main a {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  /* padding: 2.9rem 1.6rem; */
+  width: 12.8rem;
+  height: 5.6rem;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.vidXChatCont {
+  width: 90%;
+  justify-content: space-between;
+}
+.vid {
+  width: 100% ;
+  /* max-height: 74.4rem; */
+}
+.imgCont {
+  height: 62.9rem;
+  height: 67.9rem;
+}
+.imgCont img {
+  height: 100%;
+}
+.message {
+  width: 40%;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: var(--white);
+  z-index: 5;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+}
+.open {
+  transform: translateY(0);
+}
+.closed {
+  transform: translateY(100%);
+}

@@ -69,15 +69,6 @@ main h1 {
   width: 100%;
   gap: 2rem;
 }
-
-.docContainers {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-  gap: 2rem;
-}
 /* .innerAside .container {
   display: flex;
   flex-direction: column;
@@ -117,5 +108,77 @@ main h1 {
   /* width: 100vw;
   height: 100vh; */
   transition: transform 0.5s ease-in-out;
+}
+
+.docImg {
+  width: 8.798rem;
+  height: 8.798rem;
+}
+.topProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+.topProfile span {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.8rem;
+}
+.location {
+  width: 100%;
+  justify-content: start;
+}
+
+/* .location {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+} */
+.formerArt {
+  flex-direction: row;
+}
+.innerDoc {
   background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  height: 40rem;
+  padding: 0 4rem;
+}
+.topCont {
+  gap: 2rem;
+}
+
+.videoOption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 25rem;
+  gap: 0;
+  transition: transform 0.5s ease-in-out;
+  z-index: 20;
+  background-color: var(--white);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0;
+}
+.videoOption .top {
+  width: 39rem;
+  /* background-color: var(--darkBlue); */
+}
+.midProfile2 {
+  width: 39rem;
+  /* background-color: var(--darkBlue); */
 }

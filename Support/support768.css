@@ -233,3 +233,21 @@ form {
 .innerContact {
   gap: 2.4rem;
 }
+.innerPop {
+  width: 60%;
+  height: 31.4rem;
+  position: relative;
+}
+
+.popUp p {
+  width: 80%;
+  font-size: 1.6rem;
+  line-height: 1.875rem;
+}
+
+.popUp img {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  cursor: pointer;
+}

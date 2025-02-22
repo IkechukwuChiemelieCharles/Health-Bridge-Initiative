@@ -141,3 +141,6 @@ main .box1 {
   height: 19.9rem;
   border-radius: 0.6rem;
 }
+.img-up {
+  transform: rotate(180deg);
+}

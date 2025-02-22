@@ -150,3 +150,6 @@ aside .slides {
 .hide {
   display: none;
 }
+.img-up {
+  transform: rotate(180deg);
+}

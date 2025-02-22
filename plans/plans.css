@@ -71,9 +71,10 @@ button {
 
 .mobille {
   display: flex;
-  justify-content: end;
-  align-items: start;
-  width: 22.6rem;
+  justify-content: start;
+  align-items: end;
+  flex-direction: column;
+  width: 40rem;
   height: 100vh;
   position: fixed;
   top: 8.5rem;
@@ -81,6 +82,7 @@ button {
   background-color: var(--darkBlue);
   padding: 4rem;
   z-index: 10;
+  gap: 25rem;
 }
 
 .hide {

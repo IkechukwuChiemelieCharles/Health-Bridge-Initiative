@@ -59,6 +59,7 @@ button {
   display: flex;
   justify-content: end;
   align-items: start;
+  /* flex-direction: column; */
   width: 22.6rem;
   height: 100vh;
   position: fixed;
@@ -67,12 +68,46 @@ button {
   background-color: var(--darkBlue);
   padding: 2rem;
   z-index: 10;
+  border: 1px solid red;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  /* gap: 30rem; */
+}
+
+.innerMobile {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.closed {
+  transform: translateX(100%);
+}
+
+.carret-left {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
 }
 .mobileBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
+}
+.darkOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100vw;
+  height: 100vh;
 }
 
 .hide {

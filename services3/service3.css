@@ -59,26 +59,47 @@ button {
 }
 .mobille {
   display: flex;
-  justify-content: end;
-  align-items: start;
-  width: 22.6rem;
+  justify-content: start;
+  align-items: end;
+  flex-direction: column;
+  width: 40rem;
   height: 100vh;
   position: fixed;
-  top: 12.4rem;
+  top: 8.5rem;
   right: 0;
   background-color: var(--darkBlue);
-  padding: 2rem;
+  padding: 4rem;
   z-index: 10;
+  gap: 25rem;
 }
-.mobileBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
+
+.open {
+  transform: translateX(0);
+}
+
+.closed {
+  transform: translateX(100%);
+}
+
+.carret-left {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+}
+
+.darkOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 .serviceDrop {
   cursor: pointer;
