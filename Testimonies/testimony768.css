@@ -53,6 +53,10 @@ main {
 .p4 {
   align-self: flex-end;
 }
+aside {
+
+  margin-bottom: 4rem;
+}
 
 aside .slides {
   display: grid;
@@ -118,9 +122,23 @@ form input {
   width: 20.57rem;
   height: 5rem;
 }
-form button {
-  /* width: 13.811rem; */
-}
+/* .form2 a {
+  color: var(--white);
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: var(--weight400);
+  background-color: var(--darkBlue);
+  border: none;
+  outline: none;
+  width: 30%;
+  height: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+} */
 .bottomFooter {
   display: flex;
   flex-direction: row;

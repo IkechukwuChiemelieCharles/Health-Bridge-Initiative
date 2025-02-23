@@ -64,14 +64,14 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 60%;
+  /* width: 60%; */
   gap: 3rem;
   position: relative;
 }
 .dropMenu {
   position: absolute;
-  top: 2rem;
-  left: 40rem;
+  top: 3rem;
+  left: 15rem;
   width: 15rem;
   height: 16.4rem;
   display: flex;
@@ -87,7 +87,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--lighterblue2);
 
   gap: 0;
 }
@@ -102,6 +102,10 @@ nav ul {
 }
 nav {
   width: 100vw;
+}
+.dropMenu a:hover {
+  background-color: var(--darkBlue);
+  color: var(--white);
 }
 
 .listDropDown {
@@ -138,4 +142,9 @@ aside p {
 }
 .img-up {
   transform: rotate(180deg);
+}
+.conts p {
+  font-size: 1.6rem;
+  font-weight: var(--weight400);
+  line-height: 1.4rem;
 }

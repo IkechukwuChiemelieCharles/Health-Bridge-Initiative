@@ -60,18 +60,20 @@ button {
 
 .mobille {
   display: flex;
-  justify-content: start;
-  align-items: end;
-  flex-direction: column;
-  width: 40rem;
+  justify-content: end;
+  align-items: start;
+  /* flex-direction: column; */
+  width: 22.6rem;
   height: 100vh;
   position: fixed;
-  top: 8.5rem;
+  top: 12.4rem;
   right: 0;
   background-color: var(--darkBlue);
-  padding: 4rem;
+  padding: 2rem;
   z-index: 10;
-  gap: 25rem;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  /* gap: 30rem; */
 }
 
 .open {

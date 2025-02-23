@@ -53,7 +53,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* gap: 2rem; */
+  /* gap: 6.8rem; */
 }
 
 .mobille {
@@ -321,6 +321,7 @@ aside {
   gap: 2rem;
   /* overflow: hidden; */
   margin-top: 2rem;
+  margin-bottom: 3.2rem;
 }
 aside h1 {
   font-size: var(--font32);
@@ -365,7 +366,7 @@ aside .slides img {
   height: 10.4rem;
 }
 aside h3 {
-  font-size: var(--font16);
+  font-size: 1.6rem;
   font-weight: var(--weight600);
   line-height: 2.4rem;
 }

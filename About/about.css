@@ -95,7 +95,6 @@ button {
   width: 100vw;
   height: 100vh;
   z-index: 5;
-
 }
 
 .hide {
@@ -107,7 +106,6 @@ button {
   align-items: center;
   gap: 0.2rem;
 }
-
 
 .serviceDrop {
   cursor: pointer;
@@ -439,6 +437,7 @@ article .teams {
   color: var(--black);
   width: 15.2rem;
   height: 16rem;
+  gap: 1rem;
 }
 .conts img {
   width: 3.2rem;

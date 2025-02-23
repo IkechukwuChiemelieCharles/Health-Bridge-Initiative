@@ -361,7 +361,6 @@ aside {
   width: 100vw;
   height: 70vh;
   transition: transform 0.5s ease-in-out;
-  border: 1px solid red;
 }
 
 .innerDoc {
@@ -373,7 +372,6 @@ aside {
   gap: 2rem;
   width: 90%;
   height: 70rem;
-  border: 1px solid red;
 }
 .formerArt {
   display: flex;

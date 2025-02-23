@@ -260,6 +260,7 @@ article {
   align-items: center;
   width: 100%;
   gap: 2rem;
+  /* background-color: var(--white); */
 }
 
 .newAppoints {
@@ -357,8 +358,52 @@ article {
 .calendarCont {
   width: 90%;
 }
-.calendarCont img {
+.calendar {
+  background: var(--white);
+  padding: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+h2 {
+  background-color: var(--darkBlue);
+  padding: 1rem;
+  color: var(--white);
+  font-size: 1.2rem;
+  border-radius: 0.6rem;
+}
+
+table {
   width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  /* border: 1px solid #ddd; */
+  text-align: center;
+}
+
+th {
+  /* background-color: #007bff; */
+  color: var(--black);
+}
+
+td {
+  /* background-color: #f9f9f9; */
+}
+
+td:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
 }
 
 .calendarOverlay {
@@ -374,6 +419,31 @@ article {
   width: 100vw;
   height: 100vh;
   transition: transform 0.5s ease-in-out;
+}
+
+.calendarText {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  font-size: 1.4rem;
+  flex-direction: column;
+  background-color: var(--white);
+
+  padding: 2rem;
+}
+.innerCalText {
+  width: 90%;
+  border-left: 2px solid var(--darkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  font-size: 1.4rem;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 2rem;
 }
 .closed {
   transform: translateY(100%) !important;

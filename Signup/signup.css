@@ -217,7 +217,7 @@ form .header p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.785rem;
+  gap: 1.2rem;
 }
 .inputs {
   width: 100%;

@@ -26,13 +26,6 @@
   display: none;
 }
 
-nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 100%;
-  gap: 3rem;
-}
 nav li,
 nav a {
   font-size: var(--font14);
@@ -72,14 +65,14 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 60%;
+  /* width: 60%; */
   gap: 3rem;
   position: relative;
 }
 .dropMenu {
   position: absolute;
-  top: 2rem;
-  left: 40rem;
+  top: 3rem;
+  left: 15rem;
   width: 15rem;
   height: 16.4rem;
   display: flex;
@@ -95,7 +88,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--lighterblue2);
 
   gap: 0;
 }
@@ -108,10 +101,6 @@ nav ul {
   height: 4.1rem;
   font-size: 1.4rem;
 }
-nav {
-  width: 100vw;
-}
-
 .listDropDown {
   display: flex;
   justify-content: center;
@@ -119,8 +108,17 @@ nav {
   gap: 0.4rem;
   cursor: pointer;
 }
+nav {
+  width: 100vw;
+}
+
+.dropMenu a:hover {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
 .currentPage {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--darkBlue);
+  padding-bottom: 0.4rem;
 }
 .innerMain {
   grid-template-columns: 1fr 1fr 1fr 1fr;
