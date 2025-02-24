@@ -254,23 +254,33 @@ main p {
   gap: 1.2rem;
   width: 100%;
 } */
-.account .bg {
-  background-color: var(--darkBlue);
-  width: 4.8rem;
+.bg {
+  background-color: var(--border);
+  width: 4.8rem !important;
   height: 2.4rem;
   border-radius: 5rem;
   position: relative;
-  align-self: flex-end;
+  cursor: pointer;
 }
-.account .bg .circle {
+.circle {
   background-color: var(--white);
-  width: 1.8rem;
+  width: 1.8rem !important;
   height: 1.8rem;
   border-radius: 5rem;
+  /* padding: 0.9rem; */
   top: 0.3rem;
   right: 0.3rem;
   position: absolute;
-  cursor: pointer;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0.5rem;
+  transition: left 0.3s ease-in-out;
+}
+.bg.activeToggle .circle {
+  left: calc(100% - 2.2rem);
+}
+.activeToggle {
+  background-color: var(--darkBlue);
 }
 .account div h4 {
   font-size: 1.4rem;

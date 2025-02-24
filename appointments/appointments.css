@@ -212,7 +212,7 @@ aside {
 .aside::-moz-scrollbar {
   display: none;
 }
-aside .icon {
+.icon {
   /* width: 11.1rem;
   height: 4.6rem; */
   padding: 1.1rem 1.3rem;
@@ -222,17 +222,19 @@ aside .icon {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
 }
-aside .icon img {
+
+.icon img {
   width: 2rem;
   height: 2rem;
 }
-aside .icon p {
+.icon p {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.8rem;
 }
-aside .icon span {
+.icon span {
   width: 2.4rem;
   height: 2.4rem;
   background-color: var(--white);
@@ -244,14 +246,20 @@ aside .icon span {
   font-weight: 400;
   line-height: 1.8rem;
 }
-
-aside .icon:first-child {
+.activeIcon {
   background-color: var(--lighterblue2);
 }
-aside .icon:first-child span {
+.activeIcon span {
   background-color: var(--darkBlue);
   color: var(--white);
 }
+/* .icon:first-child {
+  background-color: var(--lighterblue2);
+}
+ .icon:first-child span {
+  background-color: var(--darkBlue);
+  color: var(--white);
+} */
 
 article {
   display: flex;

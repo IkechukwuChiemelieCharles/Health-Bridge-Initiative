@@ -7,6 +7,8 @@ const calendar = document.querySelector(".calendar");
 
 const videoOption = document.querySelector(".videoOption");
 
+const boxes = document.querySelectorAll(".box");
+
 console.log(docProfile);
 
 //looped over doc containers, added event and made doc profile display
@@ -65,4 +67,15 @@ calendar.addEventListener("click", function () {
   //removed calendar when submit is clicked
   calendar.classList.remove("open");
   calendar.classList.add("closed");
+});
+
+//looped through boxes to change back ground when clicked
+
+boxes.forEach(function (box, i) {
+  box.addEventListener("click", function () {
+    boxes.forEach(function (box) {
+      box.classList.remove("activeBox");
+    });
+    box.classList.add("activeBox");
+  });
 });

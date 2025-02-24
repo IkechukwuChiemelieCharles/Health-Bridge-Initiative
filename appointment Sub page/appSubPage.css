@@ -232,6 +232,7 @@ article::-moz-scrollbar {
   gap: 1.2rem;
   border-radius: 0.6rem;
   padding: 1rem;
+  cursor: pointer;
 }
 .innerArt .box p {
   font-size: 1.4rem;
@@ -243,7 +244,7 @@ article::-moz-scrollbar {
   width: 2.4rem;
   height: 2.076rem;
 }
-.box:first-child {
+.activeBox {
   background-color: var(--lighterblue2);
 }
 

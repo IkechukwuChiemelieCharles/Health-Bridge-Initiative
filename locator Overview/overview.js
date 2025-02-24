@@ -1,13 +1,13 @@
-const reviewBtn = document.querySelector("#review");
+// const reviewBtn = document.querySelector("#review");
 
-const overviewBtn = document.querySelector("#overview");
+// const overviewBtn = document.querySelector("#overview");
 
-const bottomReview = document.querySelector(".bottomReview");
+// const bottomReview = document.querySelector(".bottomReview");
 
-reviewBtn.addEventListener("click", function () {
-  bottomReview.classList.remove("hide");
-});
+// reviewBtn.addEventListener("click", function () {
+//   bottomReview.classList.remove("hide");
+// });
 
-overviewBtn.addEventListener("click", function () {
-  bottomReview.classList.add("hide");
-});
+// overviewBtn.addEventListener("click", function () {
+//   bottomReview.classList.add("hide");
+// });

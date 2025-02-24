@@ -93,6 +93,10 @@ main p {
   width: 7.7rem;
   padding: 1rem 3rem;
 }
+.back a {
+  color: var(--black);
+  text-decoration: none;
+}
 .breadCrumb .phc {
   display: flex;
   justify-content: center;
@@ -190,4 +194,18 @@ h1 {
 }
 .box .text p {
   align-self: flex-start;
+}
+
+.overMobileCont {
+  left: 30%;
+
+  width: 50%;
+}
+
+.open {
+  transform: translateY(0);
+}
+
+.closed {
+  transform: translateY(100%);
 }
