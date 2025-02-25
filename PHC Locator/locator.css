@@ -433,15 +433,14 @@ h1 {
   font-weight: 400;
   line-height: 1.8rem;
   cursor: pointer;
-}
-.overviewBtn button:first-child {
-  background-color: var(--darkBlue);
-
-  color: var(--white);
-}
-.overviewBtn button:last-child {
   background-color: var(--lighterblue2);
   color: var(--black);
+}
+.overviewBtnactive {
+  background-color: var(--darkBlue) !important;
+  color: var(--white) !important;
+}
+.overviewBtn button:last-child {
 }
 
 .rating {

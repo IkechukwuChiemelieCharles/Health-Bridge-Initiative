@@ -13,6 +13,10 @@ const edit = document.querySelectorAll(".edit");
 
 reviewBtn.forEach(function (reviewBtn, i) {
   reviewBtn.addEventListener("click", function () {
+    overviewBtn[i].classList.remove("overviewBtnactive");
+
+    reviewBtn.classList.add("overviewBtnactive");
+
     bottomReview.forEach(function (bottomReview) {
       bottomReview.classList.remove("hide");
 
@@ -23,6 +27,10 @@ reviewBtn.forEach(function (reviewBtn, i) {
 
 overviewBtn.forEach(function (overviewBtn, i) {
   overviewBtn.addEventListener("click", function () {
+    overviewBtn.classList.add("overviewBtnactive");
+
+    reviewBtn[i].classList.remove("overviewBtnactive");
+
     bottomReview.forEach(function (bottomReview) {
       bottomReview.classList.add("hide");
       console.log("over2");
@@ -54,11 +62,6 @@ overlay.forEach(function (overlay, i) {
     overlay.classList.add("hide");
   });
 });
-
-
-
-
-
 
 edit.forEach(function (edit, i) {
   edit.addEventListener("click", function () {
