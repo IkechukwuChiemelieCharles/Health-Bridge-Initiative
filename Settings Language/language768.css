@@ -152,33 +152,8 @@ form {
   flex-direction: row;
   justify-content: space-between;
 }
-.innerForm {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  width: 60%;
-  border-radius: 0.6rem;
-  gap: 1.6rem;
-  padding: 1rem;
-}
-form a {
-  align-self: flex-start;
-  font-size: 1.4rem;
-}
-form a img {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-form h2 {
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-form label {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+.language {
+  width: 23rem;
 }
 .tabCont .ulNav {
   display: flex;
@@ -210,12 +185,4 @@ form label {
   color: var(--darkBlue) !important;
   border-bottom: 2px solid var(--darkBlue);
   padding: 1.4rem;
-}
-
-.select {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  flex-direction: column;
-  gap: 1.2rem;
 }

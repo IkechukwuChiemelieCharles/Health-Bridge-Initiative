@@ -15,7 +15,9 @@
       <nav>
         <div class="innerNav">
           <div class="logoCont">
-            <img src="../Assets/pointed-arrow-left.png" alt="" />
+            <a href="../plans/plans.html">
+              <img src="../Assets/pointed-arrow-left.png" alt="" />
+            </a>
           </div>
 
           <div class="ham">
@@ -146,7 +148,22 @@
 
             <div class="input">
               <label for="genotype"> Genotype</label>
-              <select name="genotype" id="genotype"></select>
+              <div class="genotype">
+                <div class="select">
+                  <p class="displayOption">Select</p>
+                  <img
+                    class="img"
+                    src="../Assets/chevron-down-black.png"
+                    alt=""
+                  />
+                </div>
+                <div class="hide selectDrop">
+                  <span class="option">AA</span>
+                  <span class="option">AS</span>
+                  <span class="option">SS</span>
+                  <span class="option">AC</span>
+                </div>
+              </div>
             </div>
 
             <div class="input">
@@ -366,7 +383,22 @@
 
             <div class="input">
               <label for="genotype"> Genotype</label>
-              <select name="genotype" id="genotype"></select>
+              <div class="genotype">
+                <div class="select">
+                  <p class="displayOption">Select</p>
+                  <img
+                    class="img"
+                    src="../Assets/chevron-down-black.png"
+                    alt=""
+                  />
+                </div>
+                <div class="hide selectDrop">
+                  <span class="option">AA</span>
+                  <span class="option">AS</span>
+                  <span class="option">SS</span>
+                  <span class="option">AC</span>
+                </div>
+              </div>
             </div>
 
             <div class="input">
@@ -533,5 +565,6 @@
     </div>
 
     <script src="../js/dashboard.js"></script>
+    <script src="./dropDown.js"></script>
   </body>
 </html>

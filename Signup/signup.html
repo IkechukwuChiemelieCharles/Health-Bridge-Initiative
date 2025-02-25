@@ -22,7 +22,7 @@
           <div class="imgCont">
             <img src="../Assets/signupImg.png" alt="" />
           </div>
-          <form action="../User Dasboard/dashboard.html">
+          <form action="../Login/login.html">
             <div class="header">
               <h1>Join Health Bridge Initiative Today!</h1>
               <p>
@@ -62,9 +62,30 @@
                   <span class="err"></span>
                 </div>
 
-                <select name="" id="">
+                <!-- <select name="" id="">
                   <option value="">Select</option>
-                </select>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select> -->
+
+                <div class="ageGroup">
+                  <div class="select">
+                    <p class="displayOption">Select</p>
+                    <img
+                      class="img"
+                      src="../Assets/chevron-down-black.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="hide selectDrop">
+                    <span class="option">18 -30</span>
+                    <span class="option">31 - 40</span>
+                    <span class="option">41 - 50</span>
+                    <span class="option">51 and above</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="gender">
@@ -116,7 +137,7 @@
             </div>
 
             <div class="buttons">
-              <button class="loginBtn">Log In</button>
+              <button class="loginBtn">Create Account</button>
               <a class="forgot" href="#">Forgot Password?</a>
               <div class="or">
                 <span></span>
@@ -152,5 +173,6 @@
     </div>
 
     <script src="./signup.js"></script>
+    <script src="./dropDown.js"></script>
   </body>
 </html>

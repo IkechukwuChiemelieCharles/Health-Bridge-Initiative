@@ -324,7 +324,8 @@ article {
   height: 3.2rem;
 }
 
-.docname {
+.docname,
+.address {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -344,6 +345,7 @@ article {
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.639rem;
+  cursor: pointer;
 }
 .new {
   /* width: 18.1rem;
@@ -371,7 +373,6 @@ article {
   padding: 2rem;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -393,9 +394,9 @@ table {
   border-collapse: collapse;
 }
 
-th,
-td {
-  padding: 15px;
+th {
+  padding: 1.5rem;
+
   /* border: 1px solid #ddd; */
   text-align: center;
 }
@@ -404,9 +405,20 @@ th {
   /* background-color: #007bff; */
   color: var(--black);
 }
-
 td {
-  /* background-color: #f9f9f9; */
+  width: 4rem;
+  height: 6rem;
+}
+td a {
+  text-decoration: none;
+  color: var(--darkBlue);
+  font-size: 1.1rem;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+
+  /* border: 1px solid #ddd; */
+  text-align: center;
 }
 
 td:hover {
@@ -432,11 +444,10 @@ td:hover {
 .calendarText {
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   gap: 1rem;
   font-size: 1.4rem;
-  flex-direction: column;
   background-color: var(--white);
 
   padding: 2rem;
@@ -451,6 +462,7 @@ td:hover {
   font-size: 1.4rem;
   flex-direction: column;
   background-color: var(--white);
+  text-align: start;
   padding: 2rem;
 }
 .closed {

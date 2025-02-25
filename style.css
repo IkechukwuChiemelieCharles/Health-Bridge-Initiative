@@ -742,3 +742,17 @@ form button {
 button:hover {
   font-weight: var(--weight600);
 }
+.iconHover {
+  stroke-width: 5;
+}
+.box:hover .iconHover,
+.box:hover h2 {
+  stroke-width: 10;
+  font-weight: 600;
+}
+
+
+.iconHover:hover {
+  stroke-width: 10;
+  /* fill: blue; */
+}

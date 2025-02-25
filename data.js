@@ -32,7 +32,6 @@ const imgDown = document.querySelector(".img-down");
 listDropDown.addEventListener("click", function () {
   dropMenu.classList.toggle("hide");
   imgDown.classList.toggle("img-up");
-
 });
 
 //service mobile menu drop down
