@@ -2,7 +2,7 @@
 const mobille = document.querySelector(".mobille");
 
 const ham = document.querySelector(".ham");
-const closeArr = document.querySelector(".carret-left");
+// const closeArr = document.querySelector(".carret-left");
 const darkOverlay = document.querySelector(".darkOverlay");
 
 ham.addEventListener("click", function () {
@@ -12,10 +12,10 @@ ham.addEventListener("click", function () {
   console.log("ham");
 });
 
-closeArr.addEventListener("click", function () {
-  mobille.classList.toggle("open");
-  darkOverlay.classList.add("hide");
-});
+// closeArr.addEventListener("click", function () {
+//   mobille.classList.toggle("open");
+//   darkOverlay.classList.add("hide");
+// });
 
 darkOverlay.addEventListener("click", function () {
   mobille.classList.toggle("open");

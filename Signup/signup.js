@@ -122,7 +122,7 @@ function saveToStorage() {
   console.log(fname.value);
   localStorage.setItem("First Name", fname.value);
   localStorage.setItem("Surname", Surname.value);
-  // localStorage.setItem("age", a.value);
+  localStorage.setItem("Phone Number", number.value);
   localStorage.setItem("email", email.value);
   localStorage.setItem("Password", password.value);
 

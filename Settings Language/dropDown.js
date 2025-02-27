@@ -35,3 +35,15 @@ options.forEach(function (option, i) {
     });
   });
 });
+
+const userName = document.querySelectorAll(".userName");
+
+const savedUserName = localStorage.getItem("First Name");
+
+userName.forEach(function (name) {
+  name.textContent = `Hello ${savedUserName},`;
+});
+
+// userFullName.forEach(function (name) {
+//   name.textContent = `${savedUserName} ${savedUsersurName}`;
+// });

@@ -69,12 +69,33 @@ button {
   width: 40rem;
   height: 100vh;
   position: fixed;
-  top: 8.5rem;
+  top: 5rem;
   right: 0;
   background-color: var(--darkBlue);
   padding: 4rem;
   z-index: 10;
   gap: 25rem;
+  width: 22.6rem;
+
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.closed {
+  transform: translateX(100%);
+}
+.darkOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
 }
 .hide {
   display: none;

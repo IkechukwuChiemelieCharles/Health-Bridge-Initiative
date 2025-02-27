@@ -1,4 +1,5 @@
 const boxes = document.querySelectorAll(".box");
+const profile = document.querySelectorAll(".profile");
 
 boxes.forEach(function (box, i) {
   box.addEventListener("click", function () {
@@ -23,8 +24,33 @@ checkDetails.forEach(function (btn, i) {
       overlay.forEach(function (overlay, i) {
         overlay.classList.remove("hide");
       });
+
+      const DeskdocName = doc
+        .querySelector(".innerDoc")
+        .querySelector(".formerArt")
+        .querySelector(".topCont")
+        .querySelector(".topProfile")
+        .querySelector("span")
+        .querySelector("h2");
+
+      const docImgContainer = doc
+        .querySelector(".innerDoc")
+        .querySelector(".formerArt")
+        .querySelector(".topCont")
+        .querySelector(".topProfile")
+        .querySelector("img");
     });
+
+    // console.log(DeskdocName);
   });
+
+  // profile.forEach(function (prof, i) {
+  //   const image = prof.querySelector("img");
+  //   const doctorName = prof
+  //     .querySelector(".name")
+  //     .querySelector(".doctorName");
+  //   console.log(doctorName);
+  // });
 });
 
 closeX.forEach(function (closeX, i) {

@@ -64,7 +64,8 @@ button {
   width: 22.6rem;
   height: 100vh;
   position: fixed;
-  top: 12.4rem;
+  top: 5rem;
+
   right: 0;
   background-color: var(--darkBlue);
   padding: 2rem;
@@ -95,7 +96,7 @@ button {
   background-color: rgba(0, 0, 0, 0.596);
   width: 100vw;
   height: 100vh;
-  z-index: 5;
+  z-index: 10;
 }
 
 .hide {
@@ -341,7 +342,6 @@ article {
   border-bottom: 1px solid var(--border);
   height: 5.6rem;
   cursor: pointer;
-
 }
 .answer {
   margin-top: 2rem;

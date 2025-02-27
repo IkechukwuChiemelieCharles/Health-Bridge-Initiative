@@ -17,7 +17,7 @@ export default function saveToStorage() {
   localStorage.setItem("First Name", fname.value);
   localStorage.setItem("Surname", Surname.value);
   localStorage.setItem("Password", password.value);
-  // localStorage.setItem("firstName", fname.value);
+  // localStorage.setItem("Phone Number", nu.value);
   // localStorage.setItem("firstName", fname.value);
   // localStorage.setItem("firstName", fname.value);
 
