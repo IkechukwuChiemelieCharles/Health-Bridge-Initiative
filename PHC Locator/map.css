@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#map {
+  border: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+#user-input {
+  width: 50%;
+  height: 30px;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20px auto;
+}
