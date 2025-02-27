@@ -179,7 +179,8 @@ form .header p {
 .numErr,
 .emailErr,
 .passwordErr,
-.ConfirmPasswordErr {
+.ConfirmPasswordErr,
+.ageErr {
   font-size: 1rem;
   color: red;
   /* display: none; */

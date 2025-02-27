@@ -1,4 +1,8 @@
-const form = document.querySelector("form");
+// import saveToStorage from "../Signup/signup";
+
+// import {signupForm} from "../Signup/signup";
+
+const form = document.querySelector(".form2");
 
 const emailInput = document.querySelector(".emailInput");
 
@@ -10,13 +14,25 @@ const passwordErr = document.querySelector(".passwordErr");
 
 // console.log(emailInput);
 
+const savedData = localStorage.getItem("Password");
+const savedEmail = localStorage.getItem("email");
 
+console.log(savedEmail);
+
+console.log(savedData);
 
 form.addEventListener("submit", function (e) {
   if (emailInput.value) {
     emailInput.classList.add("approved");
     emailInput.classList.remove("reject");
     emailErr.textContent = "";
+
+    if (emailInput.value !== savedEmail) {
+      passwordInput.classList.add("reject");
+      e.preventDefault();
+      emailErr.textContent = "Incorrect Email Address";
+      return;
+    }
   }
   if (passwordInput.value) {
     if (passwordInput.value.length < 6) {
@@ -27,6 +43,15 @@ form.addEventListener("submit", function (e) {
 
       return;
     }
+
+    if (passwordInput.value !== savedData) {
+      passwordInput.classList.add("reject");
+
+      e.preventDefault();
+      passwordErr.textContent = "Incorrect Password ";
+      return;
+    }
+
     passwordInput.classList.add("approved");
     passwordInput.classList.remove("reject");
     passwordErr.textContent = "";
@@ -38,12 +63,15 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
   }
   if (!passwordInput.value) {
-    console.log("none2");
     passwordInput.classList.add("reject");
-    passwordErr.textContent = "Please type in your Password ";
     e.preventDefault();
+
+    passwordErr.textContent = "Please type in your Password ";
+    passwordErr.textContent = "Incorrect Password ";
   }
 });
+
+// console.log(savedData);
 
 // loginBtn.addEventListener(
 //   (e) => "click",

@@ -231,11 +231,12 @@ header {
   align-items: center;
   gap: 1.6rem;
 }
-.innerHeader .btns button {
+.innerHeader .btns a {
   padding: 1.6rem 2.4rem;
   font-weight: var(--weight400);
   font-size: var(--font14);
   border-radius: 0.2rem;
+  text-decoration: none;
 }
 .innerHeader .btns :first-child {
   background-color: var(--darkBlue);
@@ -274,19 +275,19 @@ article {
   width: 100vw;
   height: 62.3rem;
   gap: 2rem;
+  background-color: var(--lighterblue2);
 }
 .innerArt {
   display: flex;
   justify-content: start;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 90%;
   height: 100%;
   /* max-width: 67.8rem; */
   gap: 2rem;
 }
 .rightCont {
-  background-color: var(--lighterblue2);
   height: 10rem;
   padding: 2rem;
   width: 100%;
@@ -294,12 +295,12 @@ article {
   display: flex;
   flex-direction: column;
 
-  justify-content: end;
+  justify-content: center;
   align-items: start;
   gap: 0.8rem;
 }
 .imgCont1 {
-  width: 80%;
+  width: 100%;
   height: 43.809rem;
 }
 .imgCont1 img {

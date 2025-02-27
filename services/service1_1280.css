@@ -179,6 +179,7 @@ header {
 }
 .priceCont {
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 124rem;
 }
 .hide {
   display: none;

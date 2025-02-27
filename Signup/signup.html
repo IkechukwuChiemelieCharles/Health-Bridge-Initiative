@@ -22,7 +22,7 @@
           <div class="imgCont">
             <img src="../Assets/signupImg.png" alt="" />
           </div>
-          <form action="../Login/login.html">
+          <form class="form1" action="../Login/login.html">
             <div class="header">
               <h1>Join Health Bridge Initiative Today!</h1>
               <p>
@@ -59,16 +59,10 @@
               <div class="fourinput">
                 <div class="label">
                   <label for="select">Age Group </label>
-                  <span class="err"></span>
+                  <span class="ageErr"></span>
                 </div>
 
-                <!-- <select name="" id="">
-                  <option value="">Select</option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                  <option value=""></option>
-                </select> -->
+             
 
                 <div class="ageGroup">
                   <div class="select">
@@ -172,7 +166,8 @@
       </main>
     </div>
 
-    <script src="./signup.js"></script>
+    <script src="./signup.js" type="module"></script>
     <script src="./dropDown.js"></script>
+    <script type="module" src="./UserData.js"></script>
   </body>
 </html>
