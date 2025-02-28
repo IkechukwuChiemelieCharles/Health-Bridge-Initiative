@@ -8,9 +8,9 @@ const darkOverlay = document.querySelectorAll(".darkOverlay");
 
 ham.forEach(function (ham, i) {
   ham.addEventListener("click", function () {
-    mobille[i].classList.toggle("open");
+    mobille[i].classList.add("open");
     darkOverlay.forEach(function (darkOverlay) {
-      darkOverlay.classList.toggle("hide");
+      darkOverlay.classList.remove("hide");
     });
 
     console.log("ham");
@@ -19,7 +19,7 @@ ham.forEach(function (ham, i) {
 
 darkOverlay.forEach(function (darkOverlay, i) {
   darkOverlay.addEventListener("click", function () {
-    mobille[i].classList.toggle("open");
+    mobille[i].classList.remove("open");
     darkOverlay.classList.add("hide");
   });
 });

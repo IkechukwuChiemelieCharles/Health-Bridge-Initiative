@@ -197,23 +197,27 @@ main .currDate p {
   font-weight: 400;
   line-height: 1.68rem;
 }
-.topCont {
-  width: 90%;
-}
+
 .bottomCont {
   width: 90%;
 }
 
 .topCont {
+  width: 90%;
   /* width: 92rem; */
   justify-content: space-between;
 }
+.left {
+  width: 60%;
+  border: none;
+}
 aside {
-  width: 36rem;
+  /* width: 36rem; */
+  width: 40%;
 }
 .innerArt {
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   gap: 4.5rem;
 }
 .userprofile {
@@ -229,13 +233,10 @@ aside {
   gap: 1.2rem;
   text-align: center;
 }
-.left {
-  width: 70%;
-  border: none;
-}
+
 .innerArt .box {
   /* width: 17rem; */
-  width: 25%;
+  width: 30%;
   height: 11.3rem;
   padding: 1rem 2.5rem;
 }
@@ -245,7 +246,6 @@ aside {
 }
 .sec1 .doctor .docprofile p {
   font-size: 1.6rem;
-
 }
 .sec2 {
   height: 39rem;
