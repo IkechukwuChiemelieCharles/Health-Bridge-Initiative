@@ -11,20 +11,9 @@
       href="./locator1280.css"
       media="(min-width:1280px)"
     />
-    <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon" />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
-    <script
-      defer
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon" />
 
     <script defer src="./locator.js"></script>
     <title>Health Bridge | PHC Locator</title>
@@ -97,14 +86,17 @@
         </ul>
       </div>
       <main>
-        <input type="text" placeholder="Search here..." />
+        <div class="searchXBtn">
+          <input id="locationInput" type="text" placeholder="Search here..." />
+          <!-- <button onclick="searchLocation()">Search</button> -->
+        </div>
         <div class="leftTop">
           <h1>PHC Centers near me</h1>
           <div class="merian">
             <span
               ><img src="../Assets/map-pin.png" alt="" /> Meiran, Lagos</span
             >
-            <a href="./map.html"> Change</a>
+            <a> Change</a>
           </div>
         </div>
       </main>
@@ -253,6 +245,7 @@
         </div>
 
         <aside>
+          <!-- <div id="map"></div> -->
           <img
             src="../Assets/🌎 Map Maker_ Lagos, Lagos, Nigeria (Standard).png"
             alt=""
@@ -561,7 +554,10 @@
           </div>
         </div>
 
-        <input type="text" placeholder="Search here..." />
+        <!-- <div class="searchXBtn"> -->
+        <input id="locationInput" type="text" placeholder="Search here..." />
+        <!-- <button onclick="searchLocation()">Search</button> -->
+        <!-- </div> -->
       </main>
       <div class="leftTop">
         <div class="innerLeftTop">
@@ -925,6 +921,7 @@
           </div>
         </div>
         <aside>
+          <!-- <div id="map"></div> -->
           <img
             src="../Assets/🌎 Map Maker_ Lagos, Lagos, Nigeria (Standard)2.png"
             alt=""
@@ -988,7 +985,14 @@
         <div class="mainCont">
           <nav>
             <div class="innerNav">
-              <input type="text" placeholder="Search here..." />
+              <!-- <div class="searchXBtn"> -->
+              <input
+                id="locationInput"
+                type="text"
+                placeholder="Search here..."
+              />
+              <!-- <button onclick="searchLocation()">Search</button> -->
+              <!-- </div> -->
 
               <div class="notification">
                 <img src="../Assets/Notification.png" alt="" />
@@ -1360,6 +1364,7 @@
               </div>
             </div>
             <aside>
+              <!-- <div id="map"></div> -->
               <img
                 src="../Assets/🌎 Map Maker_ Lagos, Lagos, Nigeria (Standard)3.png"
                 alt=""
@@ -1370,8 +1375,94 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="../js/dashboard.js"></script>
-    <script src="./locator.js"></script>
+    <!-- <script src="./locator.js"></script> -->
+    <script src="./mapTrial.js"></script>
+
     <script src="../locator Overview/overview.js"></script>
+
+    <!-- <script>
+      // Initialize the map
+      let map = L.map("map").setView([9.082, 8.6753], 6);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Function to fetch PHC locations from Overpass API
+      async function fetchPHCLocations(lat, lon) {
+        const query = `https://overpass-api.de/api/interpreter?data=[out:json];node[amenity=clinic](around:10000,${lat},${lon});out;`;
+        try {
+          let response = await fetch(query);
+          let data = await response.json();
+          displayPHCMarkers(data);
+        } catch (error) {
+          console.error("Error fetching PHC locations:", error);
+        }
+      }
+
+      // Function to display PHC markers on the map
+      function displayPHCMarkers(data) {
+        data.elements.forEach((phc) => {
+          let { lat, lon, tags } = phc;
+          let name = tags.name || "Unnamed PHC";
+          L.marker([lat, lon])
+            .addTo(map)
+            .bindPopup(
+              `<b>${name}</b><br>Latitude: ${lat}<br>Longitude: ${lon}`
+            );
+        });
+      }
+
+      // Function to get user's location and fetch PHCs nearby
+      function getUserLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              let lat = position.coords.latitude;
+              let lon = position.coords.longitude;
+              map.setView([lat, lon], 12);
+              fetchPHCLocations(lat, lon);
+            },
+            (error) => {
+              console.error("Geolocation error:", error);
+            }
+          );
+        } else {
+          alert("Geolocation is not supported by your browser");
+        }
+      }
+
+      // Function to search for a location
+      async function searchLocation() {
+        let locationInput = document.getElementById("locationInput").value;
+        if (!locationInput) {
+          alert("Please enter a location.");
+          return;
+        }
+
+        // Use Nominatim (OSM Geocoding API) to get coordinates
+        let url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+          locationInput
+        )}`;
+        try {
+          let response = await fetch(url);
+          let data = await response.json();
+          if (data.length > 0) {
+            let lat = parseFloat(data[0].lat);
+            let lon = parseFloat(data[0].lon);
+            map.setView([lat, lon], 12);
+            fetchPHCLocations(lat, lon);
+          } else {
+            alert("Location not found. Try a different place.");
+          }
+        } catch (error) {
+          console.error("Error fetching location:", error);
+        }
+      }
+
+      // Call getUserLocation when the page loads
+      getUserLocation();
+    </script> -->
   </body>
 </html>

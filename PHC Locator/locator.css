@@ -676,3 +676,28 @@ h1 {
 .hide {
   display: none;
 }
+
+#map {
+  height: 500px;
+  width: 100%;
+  z-index: 5;
+}
+#search-container {
+  margin: 10px 0;
+}
+
+.searchXBtn {
+  width: 100%;
+}
+.searchXBtn button {
+  width: 10rem;
+  height: 4.5rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  cursor: pointer;
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border-radius: 0.6rem;
+}

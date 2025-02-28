@@ -108,14 +108,6 @@ signupForm.addEventListener("submit", function (e) {
     ConfirmPassword.classList.remove("rejected");
     ConfirmPasswordErr.textContent = "";
   }
-
-  //   fname.value = "";
-  //   Surname.value = "";
-  //   number.value = "";
-  //   email.value = "";
-  //   password.value = "";
-  //   ConfirmPassword.value = "";
-
   saveToStorage();
 });
 function saveToStorage() {
@@ -125,7 +117,4 @@ function saveToStorage() {
   localStorage.setItem("Phone Number", number.value);
   localStorage.setItem("email", email.value);
   localStorage.setItem("Password", password.value);
-
-  // localStorage.clear();
-  console.log("module works");
 }

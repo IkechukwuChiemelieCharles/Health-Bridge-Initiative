@@ -1,73 +1,110 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nearest Hospital Finder</title>
+    <title>PHC Locator</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
-    <script defer src="map.js"></script>
-    <link rel="stylesheet" href="map.css" />
+    <style>
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+      #search-container {
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <h2>Find the Nearest PHC</h2>
     <div id="search-container">
-      <input type="text" id="locationInput" placeholder="Enter your location" />
+      <input type="text" id="locationInput" placeholder="Enter a location" />
       <button onclick="searchLocation()">Search</button>
     </div>
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
     <script>
-      let map = L.map("map").setView([9.082, 8.6753], 6); // Default view: Nigeria
-
-      // Add OpenStreetMap tiles
+      // Initialize the map
+      let map = L.map("map").setView([9.082, 8.6753], 6);
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: "&copy; OpenStreetMap contributors",
       }).addTo(map);
 
-      // Get User's Location
-      if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition((position) => {
-          let userLat = position.coords.latitude;
-          let userLng = position.coords.longitude;
-          let userMarker = L.marker([userLat, userLng])
+      // Function to fetch PHC locations from Overpass API
+      async function fetchPHCLocations(lat, lon) {
+        const query = `https://overpass-api.de/api/interpreter?data=[out:json];node[amenity=clinic](around:10000,${lat},${lon});out;`;
+        try {
+          let response = await fetch(query);
+          let data = await response.json();
+          displayPHCMarkers(data);
+        } catch (error) {
+          console.error("Error fetching PHC locations:", error);
+        }
+      }
+
+      // Function to display PHC markers on the map
+      function displayPHCMarkers(data) {
+        data.elements.forEach((phc) => {
+          let { lat, lon, tags } = phc;
+          let name = tags.name || "Unnamed PHC";
+          L.marker([lat, lon])
             .addTo(map)
-            .bindPopup("You are here")
-            .openPopup();
-          map.setView([userLat, userLng], 10);
+            .bindPopup(
+              `<b>${name}</b><br>Latitude: ${lat}<br>Longitude: ${lon}`
+            );
         });
-      } else {
-        alert("Geolocation is not supported by your browser");
       }
 
-      // Search Function
-      function searchLocation() {
-        let location = document.getElementById("locationInput").value;
-        if (!location) return alert("Please enter a location!");
-
-        let url = `https://nominatim.openstreetmap.org/search?format=json&q=${location}`;
-
-        fetch(url)
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.length === 0) {
-              alert("Location not found!");
-              return;
+      // Function to get user's location and fetch PHCs nearby
+      function getUserLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              let lat = position.coords.latitude;
+              let lon = position.coords.longitude;
+              map.setView([lat, lon], 12);
+              fetchPHCLocations(lat, lon);
+            },
+            (error) => {
+              console.error("Geolocation error:", error);
             }
-            let lat = data[0].lat;
-            let lon = data[0].lon;
-
-            L.marker([lat, lon])
-              .addTo(map)
-              .bindPopup(`Searched Location: ${location}`)
-              .openPopup();
-
-            map.setView([lat, lon], 12);
-          })
-          .catch((error) => console.error("Error fetching location:", error));
+          );
+        } else {
+          alert("Geolocation is not supported by your browser");
+        }
       }
+
+      // Function to search for a location
+      async function searchLocation() {
+        let locationInput = document.getElementById("locationInput").value;
+        if (!locationInput) {
+          alert("Please enter a location.");
+          return;
+        }
+
+        // Use Nominatim (OSM Geocoding API) to get coordinates
+        let url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+          locationInput
+        )}`;
+        try {
+          let response = await fetch(url);
+          let data = await response.json();
+          if (data.length > 0) {
+            let lat = parseFloat(data[0].lat);
+            let lon = parseFloat(data[0].lon);
+            map.setView([lat, lon], 12);
+            fetchPHCLocations(lat, lon);
+          } else {
+            alert("Location not found. Try a different place.");
+          }
+        } catch (error) {
+          console.error("Error fetching location:", error);
+        }
+      }
+
+      // Call getUserLocation when the page loads
+      getUserLocation();
     </script>
   </body>
-</html>
+</html> -->

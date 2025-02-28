@@ -18,6 +18,8 @@
   --lightBlue: rgba(170, 199, 224, 1);
   --lighterblue: rgba(0, 87, 163, 0.5);
   --lighterblue2: rgba(204, 221, 237, 1);
+  --border: rgba(228, 231, 236, 1);
+
   --font32: 3.2rem;
   --font24: 2.4rem;
   --font20: 2rem;
@@ -110,16 +112,46 @@ button {
   align-items: end;
   gap: 0.4rem;
 }
+.mobille ul li {
+  display: flex;
+  justify-content: end;
+  align-items: center !important;
+  list-style: none;
+  width: 20rem;
+  /* border: 1px solid red; */
+  padding: 1rem;
+  height: 4.4rem;
+  text-wrap: nowrap;
+}
 
-.mobille ul li,
+.serviceDrop {
+  display: flex;
+  justify-content: end;
+  align-items: center !important;
+  list-style: none;
+  width: 15rem;
+  /* border: 1px solid red; */
+  padding: 1rem;
+  height: 4.4rem;
+}
+
 .mobille ul a {
   font-size: var(--font14);
   /* line-height: 2.1rem; */
   color: var(--white);
   font-weight: var(--weight500);
   text-decoration: none;
-  list-style: none;
-  height: 4.4rem;
+  /* height: 4.4rem; */
+  /* text-align: center; */
+}
+
+.mobille ul li:hover {
+  background-color: var(--border);
+  border-radius: 0.6rem;
+}
+.currentMobilePage {
+  background-color: var(--border);
+  border-radius: 0.6rem;
 }
 
 nav {
