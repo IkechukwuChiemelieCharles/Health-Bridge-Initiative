@@ -257,3 +257,6 @@ main .currDate p {
   width: 100%;
   height: 100%;
 }
+.sideBar ul a:hover{
+  background-color: var(--lighterblue2);
+  }

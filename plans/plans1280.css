@@ -227,3 +227,6 @@ article {
   gap: 0;
   border-radius: 1rem;
 }
+.sideBar ul a:hover{
+  background-color: var(--lighterblue2);
+  }

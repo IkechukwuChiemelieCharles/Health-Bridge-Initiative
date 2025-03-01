@@ -134,31 +134,148 @@
         </div>
       </header>
 
-      <main>
+      <main class="mobile">
         <div class="innerMain">
-          <div class="arr">
-            <img src="../Assets/arr-left.png" alt="" />
-          </div>
-          <div class="tips">
-            <h2>Daily Health Tips</h2>
-            <p class="p1">
-              Maintain a balanced diet by including proteins, healthy fats, and
-              fiber in every meal.
-            </p>
-            <p class="p2">
-              Maintain good hygiene by washing your hands frequently to prevent
-              infections.
-            </p>
-            <div class="span">
-              <span class="p3">Stay hydrated</span>
-              <span class="p4">Limit Screen Time</span>
+          <div class="tipsSlide">
+            <div class="tips">
+              <h2>Daily Health Tips</h2>
+              <p class="p1">
+                Maintain a balanced diet by including proteins, healthy fats,
+                and fiber in every meal.
+              </p>
+              <p class="p2">
+                Maintain good hygiene by washing your hands frequently to
+                prevent infections.
+              </p>
+              <div class="span">
+                <span class="p3">Stay hydrated</span>
+                <span class="p4">Limit Screen Time</span>
+              </div>
+            </div>
+
+            <div class="tips">
+              <h2>Daily Health Tips</h2>
+              <p class="p1">
+                Prioritize night rest to enhance memory, and overall well-being.
+              </p>
+              <p class="p2">
+                Maintain good hygiene by washing your hands frequently to
+                prevent infections.
+              </p>
+              <div class="span">
+                <span class="p3">30 minutes walk</span>
+                <span class="p4">30 minutes stretch</span>
+              </div>
+            </div>
+
+            <div class="tips">
+              <h2>Daily Health Tips</h2>
+              <p class="p1">
+                Ensure taking breaks from screens to protect your eyes and
+                improve mental clarity.
+              </p>
+              <p class="p2">
+                Eat slowly and without distractions to improve digestion.
+              </p>
+              <div class="span">
+                <span class="p3">Eat more fiber</span>
+                <span class="p4">Limit sugar intake</span>
+              </div>
             </div>
           </div>
-          <div class="arr">
+
+          <div class="arr" id="left">
+            <img src="../Assets/arr-left.png" alt="" />
+          </div>
+
+          <div class="arr" id="right">
             <img src="../Assets/arr-right.png" alt="" />
           </div>
         </div>
       </main>
+
+      <div class="certs tab" id="certSec">
+        <div class="certConts">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="tips2">
+                <h2>Daily Health Tips</h2>
+                <p class="p1">
+                  Maintain a balanced diet by including proteins, healthy fats,
+                  and fiber in every meal.
+                </p>
+                <p class="p2">
+                  Maintain good hygiene by washing your hands frequently to
+                  prevent infections.
+                </p>
+                <div class="span">
+                  <span class="p3">Stay hydrated</span>
+                  <span class="p4">Limit Screen Time</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mySlides">
+              <div class="tips2">
+                <h2>Daily Health Tips</h2>
+                <p class="p1">
+                  Prioritize night rest to enhance memory, and overall
+                  well-being.
+                </p>
+                <p class="p2">
+                  Maintain good hygiene by washing your hands frequently to
+                  prevent infections.
+                </p>
+                <div class="span">
+                  <span class="p3">30 minutes walk</span>
+                  <span class="p4">30 minutes stretch</span>
+                </div>
+              </div>
+            </div>
+            <div class="mySlides">
+              <div class="tips2">
+                <h2>Daily Health Tips</h2>
+                <p class="p1">
+                  Ensure taking breaks from screens to protect your eyes and
+                  improve mental clarity.
+                </p>
+                <p class="p2">
+                  Eat slowly and without distractions to improve digestion.
+                </p>
+                <div class="span">
+                  <span class="p3">Eat more fiber</span>
+                  <span class="p4">Limit sugar intake</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arr">
+            <img
+              class="left"
+              src="../Assets/arr-left.png"
+              alt=""
+              onclick="plusSlides(-1)"
+            />
+            <img
+              class="right"
+              src="../Assets/arr-right.png"
+              alt=""
+              onclick="plusSlides(1)"
+            />
+          </div>
+
+          <!-- <div class="imgCont"> -->
+          <!-- <img
+                src="./asset/72-virtual-assistant-certificate-chiemelie-charles.png"
+                alt=""
+              /> -->
+          <!-- </div> -->
+          <!-- <div class="arrows">
+              <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+              <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+            </div> -->
+        </div>
+      </div>
 
       <aside>
         <div class="slides">
@@ -355,5 +472,6 @@
     </div>
 
     <script src="../data.js"></script>
+    <script src="./testimony.js"></script>
   </body>
 </html>

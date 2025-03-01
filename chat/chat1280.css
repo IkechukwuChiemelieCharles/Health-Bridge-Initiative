@@ -10,6 +10,8 @@
   --lighterblue: rgba(0, 87, 163, 0.5);
   --border: rgba(228, 231, 236, 1);
   --grey: rgba(249, 250, 251, 1);
+  --lighterblue2: rgba(204, 221, 237, 1);
+
 
   --font32: 3.6rem;
 
@@ -23,7 +25,7 @@
   --font12: 2.4rem;
   --font10: 1.4rem;
 }
-.tabCont {
+.mobileCont {
   display: none;
 }
 .deskCont {
@@ -161,10 +163,19 @@ main {
   width: 90%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
 }
-.leftTop {
-  gap: 2rem;
+main .currentdate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  width: 22.1rem;
+  height: 6.7rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  text-wrap: nowrap;
 }
 main h1 {
   font-size: 2.4rem;
@@ -176,23 +187,71 @@ main .prof p {
   font-weight: 400;
   line-height: 1.92rem;
 }
-main a {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+main .currDate {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 0.4rem;
+}
+main .currDate p {
+  font-size: 1.4rem;
   font-weight: 400;
-  /* padding: 2.9rem 1.6rem; */
-  width: 12.8rem;
-  height: 5.6rem;
-  background-color: var(--darkBlue);
-  color: var(--white);
+  line-height: 1.68rem;
+}
+
+.bottomCont {
+  width: 90%;
+}
+
+.topCont {
+  width: 90%;
+  /* width: 92rem; */
+  justify-content: space-between;
+}
+.left {
+  width: 60%;
   border: none;
-  border-radius: 0.6rem;
-  cursor: pointer;
+}
+
+.messageArea2 {
+}
+.messageArea2 {
+  position: fixed;
+  bottom: 0;
+
+  right:  0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-decoration: none;
+  align-items: start;
+  width: 80%;
+  height: 8.8rem;
+  padding: 1rem;
 }
-.sideBar ul a:hover {
-  background-color: var(--lighterblue2);
+.innerMessage2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 124rem;
+  gap: 4rem;
+}
+.innerMessage2 input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 4.8rem;
+  padding-left: 4rem;
+  background-image: url(/Assets/paperclip.png);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: 1rem center;
+  border-radius: 5rem;
+  border: 1px solid var(--darkBlue);
+  outline: none;
+}
+
+.sideBar ul a:hover{
+background-color: var(--lighterblue2);
 }

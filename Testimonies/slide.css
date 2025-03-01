@@ -1,0 +1,67 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.carousel {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  overflow: hidden; /* Ensures only one slide is visible */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 400%; /* Adjust width based on the number of slides */
+}
+
+.slide {
+  width: 100%; /* Each slide takes up full width of the container */
+  flex: 0 0 100%; /* Prevents shrinking */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  background: #007bff;
+  color: white;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}

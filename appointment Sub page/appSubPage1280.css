@@ -210,3 +210,6 @@ main a {
 .innerNav {
   gap: 0;
 }
+.sideBar ul a:hover {
+  background-color: var(--lighterblue2);
+}

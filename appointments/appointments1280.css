@@ -243,3 +243,6 @@ article {
   width: 80%;
   max-width: 40rem;
 } */
+.sideBar ul a:hover {
+  background-color: var(--lighterblue2);
+}

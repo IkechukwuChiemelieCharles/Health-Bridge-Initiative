@@ -250,3 +250,6 @@ main .currDate p {
   border-bottom: 1px solid var(--border);
   padding: 1rem;
 }
+.sideBar ul a:hover{
+  background-color: var(--lighterblue2);
+  }

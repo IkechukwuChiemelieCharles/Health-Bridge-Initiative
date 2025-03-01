@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <link rel="stylesheet" href="slide.css" />
+  </head>
+
+  <body>
+    <div class="carousel">
+      <div class="carousel-container">
+        <div class="slide">Slide 1 - Welcome to the Carousel!</div>
+        <div class="slide">Slide 2 - Vanilla JS is powerful!</div>
+        <div class="slide">Slide 3 - Smooth transitions are cool!</div>
+        <div class="slide">Slide 4 - CSS makes it awesome!</div>
+      </div>
+
+      <button id="prevBtn" class="nav-btn">❮</button>
+      <button id="nextBtn" class="nav-btn">❯</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      const carouselContainer = document.querySelector(".carousel-container");
+      const slides = document.querySelectorAll(".slide");
+      const nextBtn = document.getElementById("nextBtn");
+      const prevBtn = document.getElementById("prevBtn");
+
+      let currentIndex = 0;
+      const totalSlides = slides.length;
+
+      // Function to move to the next slide
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+      }
+
+      // Function to move to the previous slide
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+      }
+
+      // Function to update the carousel position
+      function updateCarousel() {
+        const translateValue = -currentIndex * 100; // Moves by full width (100%)
+        carouselContainer.style.transform = `translateX(${translateValue}%)`;
+      }
+
+      // Event Listeners for buttons
+      nextBtn.addEventListener("click", nextSlide);
+      prevBtn.addEventListener("click", prevSlide);
+    </script>
+  </body>
+</html>

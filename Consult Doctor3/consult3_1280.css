@@ -238,3 +238,6 @@ aside {
   flex-direction: column;
   gap: 2rem;
 }
+.sideBar ul a:hover {
+  background-color: var(--lighterblue2);
+}

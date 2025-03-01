@@ -254,3 +254,6 @@ aside {
 .sec2 .first .text p {
   font-size: 2rem;
 }
+.sideBar ul a:hover {
+  background-color: var(--lighterblue2);
+}

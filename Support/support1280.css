@@ -262,3 +262,6 @@ form {
   margin-right: -28rem;
   margin-top: 0;
 }
+.sideBar ul a:hover{
+  background-color: var(--lighterblue2);
+  }

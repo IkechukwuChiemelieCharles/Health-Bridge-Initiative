@@ -216,11 +216,11 @@ header {
   margin-top: 12rem;
 }
 .overlay {
-  background-image: url(../Assets/floatIcon1.png), url(../Assets/floatIcon2.png),
-    url(../Assets/floatIcon3.png);
+  background-image: url(../Assets/floatIcon1-blue.png),
+    url(../Assets/floatIcon2-blue.png), url(../Assets/floatIcon3-blue.png);
   background-repeat: no-repeat;
   background-position: right 2rem, center -1rem, left 26rem;
-  background-size: 5rem;
+  background-size:5rem;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -286,15 +286,35 @@ main {
   gap: 1.2rem;
   background-color: var(--lighterblue2);
   height: 23.4rem;
+  overflow-x: scroll;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+main::-moz-scrollbar {
+  display: none;
 }
 .innerMain {
   width: 80%;
   max-width: 124rem;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  /* overflow-x: scroll; */
 }
 .arr {
+  display: none;
+}
+.tipsSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: scroll; */
+  width: 124rem;
+  gap: 0.8rem;
+}
+.tab {
   display: none;
 }
 .tips {
@@ -305,16 +325,22 @@ main {
   flex-direction: column;
   gap: 2rem;
   padding: 4rem;
+  /* width: 26.2rem; */
+  width: 400px;
+  height: 23.712rem;
   color: var(--darkBlue);
 }
 .tips h2 {
   font-size: var(--font14);
   font-weight: var(--weight400);
   line-height: 2.4rem;
-  background-image: url(../Assets/zigzag.png);
+  background-image: url(../Assets/lighterZigzag.png);
   background-repeat: no-repeat;
-  background-position: bottom;
-  height: 3.312rem;
+  background-position: 0 bottom;
+  height: 4.312rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 .tips p,
 .tips span {

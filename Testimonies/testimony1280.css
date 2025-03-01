@@ -126,6 +126,10 @@ nav {
 .overlay {
   background-size: 10rem;
 }
+
+.overlay {
+  background-size: 10rem;
+}
 header {
   height: 48rem;
 }
@@ -138,7 +142,6 @@ main {
   line-height: 2.4rem;
 }
 aside {
-
   margin-bottom: 6.8rem;
 }
 
@@ -159,3 +162,40 @@ aside .slides {
   transform: rotate(180deg);
 }
 
+.certs {
+  height: 52.7rem;
+}
+
+.tips2 {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem;
+  /* width: 26.2rem; */
+  width: 400px;
+  height: 52.7rem;
+}
+.tips2 h2 {
+  font-size: 2.4rem;
+
+  height: 4.2rem;
+}
+.tips2 p,
+.tips2 span {
+  font-size: 1.6rem;
+
+  height: 4.2rem;
+}
+.left {
+  position: absolute;
+  left: 0;
+  top: 24rem;
+}
+.right {
+  position: absolute;
+  right: 0;
+  top: 24rem;
+}
