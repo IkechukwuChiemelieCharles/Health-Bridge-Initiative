@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./enroll.css" />
     <link rel="stylesheet" href="./enroll768.css" media="(min-width:768px)" />
 
-    <link rel="stylesheet" href="./enroll1280.css" media="(min-width:1280px)" />
+    <!-- <link rel="stylesheet" href="./enroll1280.css" media="(min-width:1280px)" /> -->
     <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon" />
     <title>Health Bridge | PHC Locator</title>
   </head>
@@ -198,19 +198,21 @@
             <div class="input">
               <label for="State"> State</label>
               <!-- <input type="text" id="" /> -->
-              <select name="state" id="state"></select>
+              <select class="state" name="state" id="state"></select>
             </div>
 
             <div class="input">
-              <label for="town"> Town</label>
-              <select name="state" id="town"></select>
+              <label for="town"> LGA</label>
+              <select class="lga" name="state" id="town"></select>
             </div>
           </div>
 
-          <button class="upload">
-            <img src="../Assets/paperclip.png " alt="" /> UPLOAD IDENTIFICATION
-            <img src="../Assets/log-out.png" alt="" />
-          </button>
+          <!-- <button class=""> -->
+          <input id="upload" type="file" placeholder="h" value="hdk" />
+
+          <!-- <img src="../Assets/paperclip.png " alt="" /> UPLOAD IDENTIFICATION
+          <img src="../Assets/log-out.png" alt="" /> -->
+          <!-- </button> -->
 
           <p>
             Eg: National ID Card, Tax Payer ID Card, International Passport
@@ -224,12 +226,12 @@
           <div class="doubleInp">
             <div class="input">
               <label for="location"> Preferred PHC location</label>
-              <select name="location" id="location"></select>
+              <input type="text" />
             </div>
 
             <div class="input">
               <label for="center"> Preferred PHC Center</label>
-              <select name="center" id="center"></select>
+              <input type="text" />
             </div>
           </div>
         </div>
@@ -435,12 +437,12 @@
             <div class="input">
               <label for="State"> State</label>
               <!-- <input type="text" id="" /> -->
-              <select name="state" id="state"></select>
+              <select class="state" name="state" id="state"></select>
             </div>
 
             <div class="input">
-              <label for="town"> Town</label>
-              <select name="state" id="town"></select>
+              <label for="town"> LGA</label>
+              <select class="lga" name="state" id="town"></select>
             </div>
           </div>
 
@@ -456,17 +458,20 @@
         </div>
 
         <div class="preferred">
-          <h2>Personal Information</h2>
+          <h2>Personal Informatio</h2>
 
           <div class="doubleInp">
             <div class="input">
               <label for="location"> Preferred PHC location</label>
-              <select name="location" id="location"></select>
+              <input
+                type="
+             "
+              />
             </div>
 
             <div class="input">
               <label for="center"> Preferred PHC Center</label>
-              <select name="center" id="center"></select>
+              <input type="text" />
             </div>
           </div>
         </div>
@@ -569,6 +574,7 @@
     </div>
 
     <script src="../js/dashboard.js"></script>
+    <script src="./enroll.js"></script>
     <script src="./dropDown.js"></script>
   </body>
 </html>
