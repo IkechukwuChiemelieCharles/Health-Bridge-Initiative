@@ -70,7 +70,7 @@ LYDIA AZIDE
 - [Tableau](https://public.tableau.com/app/profile/lydia.azide/vizzes)
 - [Github](https://github.com/Lydiatheanalyst)
 - [LinkedIn](https://www.linkedin.com/in/lydia-azide-255181178)
-- [Twitter](https://x.com/ZiziAzide/status/1863128689375908333)
+- [Twitter](https://x.com/ZiziAzide)
 
 BAYERE REUBEN AYODEJI
 
