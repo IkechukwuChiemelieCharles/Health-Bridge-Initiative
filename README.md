@@ -87,6 +87,7 @@ ONUOHA GENEVIEVE
 
 OYEWOLE DARE MARTINS
 
+- [Portfolio](https://www.datascienceportfol.io/oyewoledare)
 - [Github](https://github.com/Oyewole-Dare)
 - [LinkedIn](www.linkedin.com/in/oyewole-dare-75084a207)
 - [Twitter](https://x.com/OyewoleDare7?t=vnxTKmNwR5--dWZ7tmIv6A&s=09)
