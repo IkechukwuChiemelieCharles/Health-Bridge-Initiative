@@ -1,6 +1,8 @@
 const mobille = document.querySelectorAll(".mobille");
 
 const ham = document.querySelectorAll(".ham");
+const serviceDrop = document.querySelectorAll(".serviceDrop");
+const serviceMobile = document.querySelectorAll(".serviceMobile");
 
 //mobile menu
 
@@ -35,4 +37,10 @@ listDropDown.addEventListener("click", function () {
   dropMenu.classList.toggle("hide");
   imgDown.classList.toggle("img-up");
   console.log("fdf");
+});
+
+serviceDrop.forEach(function (s, i) {
+  s.addEventListener("click", function () {
+    serviceMobile[i].classList.toggle("hide");
+  });
 });

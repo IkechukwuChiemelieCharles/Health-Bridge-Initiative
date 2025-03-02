@@ -75,12 +75,29 @@ button {
   padding: 4rem;
   z-index: 10;
   gap: 25rem;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  overflow: auto;
+}
+.openmobile {
+  transform: translateX(0) !important;
 }
 
+.closedmobile {
+  transform: translateX(100%) !important;
+}
 .hide {
   display: none;
 }
-
+.darkOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+}
 .mobille ul {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,24 @@
+//mobile menu
+
+const darkOverlay = document.querySelector(".darkOverlay");
+const mobile = document.querySelector(".mobille");
+
+const ham = document.querySelector(".ham");
+
+ham.addEventListener("click", function () {
+  mobile.classList.add("openmobile");
+  darkOverlay.classList.remove("hide");
+
+  console.log("ham");
+});
+
+darkOverlay.addEventListener("click", function () {
+  mobile.classList.remove("openmobile");
+  darkOverlay.classList.add("hide");
+});
+
+//mobile menu ends here
+
 const boxes = document.querySelectorAll(".box");
 const profile = document.querySelectorAll(".profile");
 
