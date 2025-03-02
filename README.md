@@ -66,8 +66,10 @@ EBENEZER ADEMUJIMI
 
 LYDIA AZIDE
 
+- [Portfolio](https://www.datascienceportfol.io/Lydiathegreat)
+- [Tableau](https://public.tableau.com/app/profile/lydia.azide/vizzes)
 - [Github](https://github.com/Lydiatheanalyst)
-- [LinkedIn](www.linkedin.com/in/lydia-azide-255181178)
+- [LinkedIn](https://www.linkedin.com/in/lydia-azide-255181178)
 - [Twitter](https://x.com/ZiziAzide/status/1863128689375908333)
 
 BAYERE REUBEN AYODEJI
