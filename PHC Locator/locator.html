@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./locator.css" />
-    <link rel="stylesheet" href="./locator768.css" media="(min-width:768px)" />
+    <link
+      rel="stylesheet"
+      href="./locator1024.css"
+      media="(min-width:1024px)"
+    />
 
     <link
       rel="stylesheet"
@@ -19,7 +23,7 @@
     <title>Health Bridge | PHC Locator</title>
   </head>
   <body>
-    <div class="mobileCont">
+    <!-- <div class="mobileCont">
       <nav>
         <div class="innerNav">
           <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
@@ -88,7 +92,7 @@
       <main>
         <div class="searchXBtn">
           <input id="locationInput" type="text" placeholder="Search here..." />
-          <!-- <button onclick="searchLocation()">Search</button> -->
+          
         </div>
         <div class="leftTop">
           <h1>PHC Centers near me</h1>
@@ -232,20 +236,11 @@
               <a class="viewMore" href="#">View More</a>
             </div>
           </div>
-          <!-- <div class="spans">
-            <span class="activeSpan"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div> -->
+         
         </div>
 
         <aside>
-          <!-- <div id="map"></div> -->
+        
           <img
             src="../Assets/🌎 Map Maker_ Lagos, Lagos, Nigeria (Standard).png"
             alt=""
@@ -469,9 +464,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="tabCont">
+    <!-- <div class="tabCont">
       <nav>
         <div class="innerNav">
           <div class="logoCont"><img src="../Assets/logo.png" alt="" /></div>
@@ -554,10 +549,9 @@
           </div>
         </div>
 
-        <!-- <div class="searchXBtn"> -->
+      
         <input id="locationInput" type="text" placeholder="Search here..." />
-        <!-- <button onclick="searchLocation()">Search</button> -->
-        <!-- </div> -->
+        
       </main>
       <div class="leftTop">
         <div class="innerLeftTop">
@@ -921,14 +915,14 @@
           </div>
         </div>
         <aside>
-          <!-- <div id="map"></div> -->
+        
           <img
             src="../Assets/🌎 Map Maker_ Lagos, Lagos, Nigeria (Standard)2.png"
             alt=""
           />
         </aside>
       </div>
-    </div>
+    </div> -->
 
     <div class="deskCont">
       <div class="innerDesk">
@@ -982,38 +976,106 @@
           </div>
         </div>
 
-        <div class="mainCont">
-          <nav>
-            <div class="innerNav">
-              <!-- <div class="searchXBtn"> -->
-              <input
-                id="locationInput"
-                type="text"
-                placeholder="Search here..."
-              />
-              <!-- <button onclick="searchLocation()">Search</button> -->
-              <!-- </div> -->
+        <div class="darkOverlay hide"></div>
 
-              <div class="notification">
-                <img src="../Assets/Notification.png" alt="" />
-                <img src="../Assets/userThumbnail.png" alt="" />
+        <div class="mobille">
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                class="currentPage"
+                href="../User Dasboard/dashboard.html"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="../PHC Locator/locator.html"
+                >PHC Locator</a
+              >
+            </li>
+
+            <div class="listDropDown"></div>
+            <li class="listDropDown">
+              <a target="_blank" href="../appointments/appointments.html"
+                >My Appointments</a
+              >
+            </li>
+
+            <li>
+              <a target="_blank" href="../Consult Doctor/consult.html"
+                >Consult a Doctor</a
+              >
+            </li>
+
+            <li>
+              <a target="_blank" href="../Ai Symptom/symptom.html"
+                >AI Symptom Checker</a
+              >
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a target="_blank" href="../Settings Account/settings.html">
+                Settings</a
+              >
+            </li>
+
+            <li>
+              <a target="_blank" href="../Support/support.html"
+                >Contact Support</a
+              >
+            </li>
+
+            <li>
+              <a target="_blank" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mainCont">
+          <div class="mobilenav">
+            <div class="innerNav">
+              <div class="logoCont">
+                <img src="../Assets/logo.png" alt="" />
+              </div>
+
+              <div class="ham">
+                <img src="../Assets/ham2.png" alt="" />
               </div>
             </div>
-          </nav>
-
+          </div>
           <main>
-            <div class="breadCrumb">
-              <div class="back">
-                <img src="../Assets/arr-left-black.png" alt="" />
-                <a href="../User Dasboard/dashboard.html">Back</a>
-              </div>
-              <div class="phc">
-                <img src="../Assets/health-plus.png" alt="" />
-                <p>PHC Center Locator</p>
-              </div>
-              <span>/</span>
-              <div class="phc">
-                <p>PHC Center Near Me</p>
+            <div class="innerMain">
+              <nav>
+                <div class="innerNav">
+                  <input
+                    class="search"
+                    id="locationInput"
+                    type="text"
+                    placeholder="Search here..."
+                  />
+
+                  <div class="notification">
+                    <img src="../Assets/Notification.png" alt="" />
+                    <img src="../Assets/userThumbnail.png" alt="" />
+                  </div>
+                </div>
+              </nav>
+
+              <div class="breadCrumb">
+                <div class="back">
+                  <img src="../Assets/arr-left-black.png" alt="" />
+                  <a href="../User Dasboard/dashboard.html">Back</a>
+                </div>
+                <div class="phc">
+                  <img src="../Assets/health-plus.png" alt="" />
+                  <p>PHC Center Locator</p>
+                </div>
+                <span>/</span>
+                <div class="phc">
+                  <p>PHC Center Near Me</p>
+                </div>
               </div>
             </div>
           </main>
@@ -1047,6 +1109,7 @@
                     </span>
                   </div>
                   <img class="edit" src="../Assets/edit.png" alt="" />
+                  <a class="viewMore" href="#">View More</a>
                 </div>
                 <div class="box">
                   <div class="text">
@@ -1063,6 +1126,7 @@
                     </span>
                   </div>
                   <img class="edit" src="../Assets/edit.png" alt="" />
+                  <a class="viewMore" href="#">View More</a>
                 </div>
                 <div class="box">
                   <div class="text">
@@ -1079,6 +1143,7 @@
                     </span>
                   </div>
                   <img class="edit" src="../Assets/edit.png" alt="" />
+                  <a class="viewMore" href="#">View More</a>
                 </div>
                 <div class="box">
                   <div class="text">
@@ -1095,6 +1160,7 @@
                     </span>
                   </div>
                   <img class="edit" src="../Assets/edit.png" alt="" />
+                  <a class="viewMore" href="#">View More</a>
                 </div>
                 <div class="box">
                   <div class="text">
@@ -1111,6 +1177,7 @@
                     </span>
                   </div>
                   <img class="edit" src="../Assets/edit.png" alt="" />
+                  <a class="viewMore" href="#">View More</a>
                 </div>
                 <div class="box">
                   <div class="text">
@@ -1127,6 +1194,7 @@
                     </span>
                   </div>
                   <img class="edit" src="../Assets/edit.png" alt="" />
+                  <a class="viewMore" href="#">View More</a>
                 </div>
               </div>
             </div>
@@ -1364,11 +1432,11 @@
               </div>
             </div>
             <aside>
-              <!-- <div id="map"></div> -->
-              <img
+              <div class="map"></div>
+              <!-- <img
                 src="../Assets/🌎 Map Maker_ Lagos, Lagos, Nigeria (Standard)3.png"
                 alt=""
-              />
+              /> -->
             </aside>
           </div>
         </div>
@@ -1376,11 +1444,104 @@
     </div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="../js/dashboard.js"></script>
+    <!-- <script src="../js/dashboard.js"></script> -->
     <!-- <script src="./locator.js"></script> -->
-    <script src="./mapTrial.js"></script>
+    <!-- <script src="./mapTrial.js"></script> -->
 
     <script src="../locator Overview/overview.js"></script>
+
+    <script>
+      // Initialize the map
+      let map = L.map("map").setView([9.082, 8.6753], 6);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      let searchTimeout;
+
+      // Function to fetch PHC locations from Overpass API
+      async function fetchPHCLocations(lat, lon) {
+        const query = `https://overpass-api.de/api/interpreter?data=[out:json];node[amenity=clinic](around:10000,${lat},${lon});out;`;
+        try {
+          let response = await fetch(query);
+          let data = await response.json();
+          displayPHCMarkers(data);
+        } catch (error) {
+          console.error("Error fetching PHC locations:", error);
+        }
+      }
+
+      // Function to display PHC markers on the map
+      function displayPHCMarkers(data) {
+        map.eachLayer((layer) => {
+          if (layer instanceof L.Marker) {
+            map.removeLayer(layer);
+          }
+        });
+
+        data.elements.forEach((phc) => {
+          let { lat, lon, tags } = phc;
+          let name = tags.name || "Unnamed PHC";
+          L.marker([lat, lon])
+            .addTo(map)
+            .bindPopup(
+              `<b>${name}</b><br>Latitude: ${lat}<br>Longitude: ${lon}`
+            );
+        });
+      }
+
+      // Function to get user's location and fetch PHCs nearby
+      function getUserLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              let lat = position.coords.latitude;
+              let lon = position.coords.longitude;
+              map.setView([lat, lon], 12);
+              fetchPHCLocations(lat, lon);
+            },
+            (error) => {
+              console.error("Geolocation error:", error);
+            }
+          );
+        } else {
+          alert("Geolocation is not supported by your browser");
+        }
+      }
+
+      // Function to search for a location (debounced)
+      async function searchLocation() {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(async () => {
+          let locationInput = document.getElementById("locationInput").value;
+          if (!locationInput.trim()) return;
+
+          let url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
+            locationInput
+          )}`;
+          try {
+            let response = await fetch(url);
+            let data = await response.json();
+            if (data.length > 0) {
+              let lat = parseFloat(data[0].lat);
+              let lon = parseFloat(data[0].lon);
+              map.setView([lat, lon], 12);
+              fetchPHCLocations(lat, lon);
+            }
+          } catch (error) {
+            console.error("Error fetching location:", error);
+          }
+        }, 500); // 500ms debounce time
+      }
+
+      // Call getUserLocation when the page loads
+      getUserLocation();
+
+      // Listen for input changes on search field
+      document
+        .getElementById("locationInput")
+        .addEventListener("input", searchLocation);
+    </script>
 
     <!-- <script>
       // Initialize the map
@@ -1463,6 +1624,6 @@
 
       // Call getUserLocation when the page loads
       getUserLocation();
-    </script> -->
+    </script>  -->
   </body>
 </html>

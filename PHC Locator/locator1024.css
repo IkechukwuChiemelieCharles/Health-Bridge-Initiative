@@ -27,9 +27,9 @@
   --font10: 1.2rem;
 }
 
-.mobileCont {
+/* .mobileCont {
   display: none;
-}
+} */
 .mobille {
   width: 37.6rem;
   padding: 4rem;
@@ -47,15 +47,22 @@
 
 main {
   width: 90%;
-  flex-direction: row;
+
+  margin-top: 5rem;
+}
+/* main div {
+  width: 50%;
+} */
+
+.innerMain {
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
-main div {
-  width: 50%;
-}
-main input {
-  width: 50%;
+#locationInput {
+  width: 30.8rem;
 }
 main p {
   font-size: 1.6rem;
@@ -80,8 +87,9 @@ main p {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.941rem;
-  width: 90%;
+  width: 43.7rem;
   text-wrap: nowrap;
+
   /* text-align: center; */
 }
 .breadCrumb .back {
@@ -209,3 +217,6 @@ h1 {
 .closed {
   transform: translateY(100%);
 }
+
+/* main {
+} */
