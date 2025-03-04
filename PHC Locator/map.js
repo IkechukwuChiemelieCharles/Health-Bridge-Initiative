@@ -8,7 +8,8 @@ let searchTimeout;
 
 // Function to fetch PHC locations from Overpass API
 async function fetchPHCLocations(lat, lon) {
-  const query = `https://overpass-api.de/api/interpreter?data=[out:json];node[amenity=clinic](around:10000,${lat},${lon});out;`;
+  const query = `https://overpass-api.de/api/interpreter?data=[out:json];(node[amenity=clinic](around:50000,${lat},${lon});node[amenity=hospital](around:50000,${lat},${lon});node[healthcare=primary](around:50000,${lat},${lon}););out;`;
+
   try {
     let response = await fetch(query);
     let data = await response.json();
@@ -76,6 +77,8 @@ async function searchLocation() {
     } catch (error) {
       console.error("Error fetching location:", error);
     }
+
+    console.log(locationInput);
   }, 500); // 500ms debounce time
 }
 
