@@ -40,7 +40,57 @@ nav .logoCont {
   width: 50.3rem;
   height: 50.5rem;
 }
-form {
+.form2 {
   height: 66rem;
   width: 41.936rem;
+}
+
+.forgotPassword {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  /* height: 70vh; */
+  /* transform: translateY(100%); */
+  background-color: var(--white);
+
+  transition: transform 0.5s ease-in-out;
+}
+.innerforgot {
+  gap: 4rem;
+  max-width: 61.8rem;
+  border: 1px solid var(--black);
+  height: 56.1rem;
+
+  padding: 2rem 0;
+  position: relative;
+}
+
+.closeImg {
+  display: flex;
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  cursor: pointer;
+}
+
+.change,
+.forgotPasswordCont {
+  max-width: 41.8rem;
+}
+.forgotPasswordCont button {
+  margin-top: 1.5rem;
+}
+.forgotPasswordCont .input {
+  display: flex;
+}
+.inputs {
+  gap: 1.8rem;
+}
+
+.input {
+  gap: 0.9rem;
 }

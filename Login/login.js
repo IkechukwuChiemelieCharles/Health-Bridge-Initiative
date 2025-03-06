@@ -71,12 +71,48 @@ form.addEventListener("submit", function (e) {
   }
 });
 
-// console.log(savedData);
+//forgot password toggle
 
-// loginBtn.addEventListener(
-//   (e) => "click",
-//   () => {
-//     e.preventDefault();
-//     console.log("clicked");
-//   }
-// );
+const forgot = document.querySelector(".forgot");
+const closeImg = document.querySelector(".closeImg");
+const overlay = document.querySelector(".overlay");
+const forgotPasswordContainer = document.querySelector(".forgotPassword");
+
+forgot.addEventListener("click", function (e) {
+  e.preventDefault();
+  forgotPasswordContainer.classList.add("open");
+  overlay.classList.remove("hide");
+  console.log("hey");
+});
+
+overlay.addEventListener("click", function (e) {
+  forgotPasswordContainer.classList.remove("open");
+  overlay.classList.add("hide");
+});
+closeImg.addEventListener("click", function (e) {
+  forgotPasswordContainer.classList.remove("open");
+  overlay.classList.add("hide");
+});
+
+const forgotPasswordInput = document.querySelector("#forgotPasswordInput");
+const confirmForgotPasswordInput = document.querySelector(
+  "#confirmForgotPasswordInput"
+);
+
+const changePass = document.querySelector(".changePass");
+
+changePass.addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("hey");
+  saveForgotToStorage();
+});
+
+function saveForgotToStorage() {
+  localStorage.setItem("forgotpassword", forgotPasswordInput.value);
+
+  const forgot = localStorage.getItem(forgotpassword);
+  console.log(forgot);
+
+  // if
+  // localStorage.clear;
+}

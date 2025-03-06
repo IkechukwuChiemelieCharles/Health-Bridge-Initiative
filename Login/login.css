@@ -110,7 +110,7 @@ main {
   width: 100%;
   height: 100%;
 }
-form {
+.form2 {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -124,13 +124,13 @@ form {
   flex-direction: column;
   gap: 1.2rem;
 }
-form .header h1 {
+.form2 .header h1 {
   color: var(--darkBlue);
   font-weight: var(--weight600);
   font-size: var(--font24);
   line-height: var(--line36);
 }
-form .header p {
+.form2 .header p {
   color: var(--darkBlue);
   font-weight: var(--weight500);
   font-size: var(--font14);
@@ -289,4 +289,100 @@ button {
   font-size: var(--font14);
   font-weight: var(--weight400);
   line-height: var(--line21);
+}
+
+.forgotPassword {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  width: 100vw;
+  /* height: 70vh; */
+  /* transform: translateY(100%); */
+
+  transition: transform 0.5s ease-in-out;
+}
+.innerforgot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 90%;
+  gap: 3.2rem;
+
+  padding: 2rem 0;
+}
+
+.change {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 90%;
+}
+.change h3 {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-weight: var(--weight600);
+  line-height: 150%;
+}
+.change p {
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: var(--weight400);
+  line-height: var(--line21);
+}
+
+.forgotPasswordCont {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 90%;
+}
+
+
+.forgotPasswordCont button {
+  width: 100%;
+  height: 5.6rem;
+  background-color: var(--darkBlue);
+  border-radius: 0.6rem;
+  color: var(--white);
+  border: none;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
+}
+.closed {
+  transform: translateY(100%) !important;
+}
+.open {
+  transform: translateY(0) !important;
+}
+
+.hide {
+  display: none;
+}
+
+.closeImg {
+  display: none;
 }
