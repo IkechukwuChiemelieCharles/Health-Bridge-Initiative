@@ -287,27 +287,29 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   border: 1px solid var(--border);
   gap: 2.4rem;
   padding: 1rem;
   width: 24.6rem;
-  height: 20.9rem;
+  /* height: 20.9rem; */
+  height: auto;
   border-radius: 0.6rem;
 }
-.box .text {
+.text2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1.6rem;
 }
-.box .text h5 {
+.box .text2 h5 {
   font-size: 1.4rem;
   line-height: 2.1rem;
   font-weight: 600;
+  align-self: flex-start;
 }
-.box .text span {
+.box .text2 span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,10 +318,10 @@ h1 {
   line-height: 2.1rem;
   font-weight: 600;
 }
-.box .text span p {
+.box .text2 span p {
   color: var(--green);
 }
-.box .text p {
+.box .text2 p {
   font-size: 1.4rem;
   line-height: 2.1rem;
   font-weight: 400;

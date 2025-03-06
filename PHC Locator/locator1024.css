@@ -180,27 +180,28 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: start;
-  flex-direction: column;
+  /* flex-direction: row; */
   border: 1px solid var(--border);
   gap: 2.4rem;
   width: 100%;
   padding: 1rem;
   max-width: 28.6rem;
+  /* height: auto; */
   height: 25.9rem;
 }
 
-.box .text h5 {
+.box .text2 h5 {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 400;
 }
-.box .text span {
+.box .text2 span {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 500;
   align-self: flex-start;
 }
-.box .text p {
+.box .text2 p {
   align-self: flex-start;
 }
 
