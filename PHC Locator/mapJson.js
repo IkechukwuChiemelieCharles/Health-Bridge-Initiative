@@ -12,7 +12,7 @@ let cachedLocations = {}; // Cache for coordinates
 // Load PHC data from JSON
 async function loadPHCData() {
   try {
-    let response = await fetch("phc_data.json"); // Update with actual JSON file path
+    let response = await fetch("phc_data.json");  path
     phcData = await response.json();
 
     // Check local storage for cached locations
@@ -188,7 +188,7 @@ function updatePHCList(phcs, searchedLocation) {
   });
 }
 
-// Function to search for PHCs
+
 // Function to search for PHCs
 async function searchLocation() {
   let locationInput = document.getElementById("locationInput").value;
@@ -277,6 +277,4 @@ function selectPHC(phcId) {
   }
 }
 
-////////////////////////////CLAUDE END////////////
 
-// alright, all works well,  but is it possible tha instead of creating the boxes dynamically in javascript, i can just select the content of each box in my html and update the data there
