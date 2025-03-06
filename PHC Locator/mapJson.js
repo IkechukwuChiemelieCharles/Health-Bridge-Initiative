@@ -12,7 +12,7 @@ let cachedLocations = {}; // Cache for coordinates
 // Load PHC data from JSON
 async function loadPHCData() {
   try {
-    let response = await fetch("phc_data.json");  path
+    let response = await fetch("phc_data.json");  
     phcData = await response.json();
 
     // Check local storage for cached locations
