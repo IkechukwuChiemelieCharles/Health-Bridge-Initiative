@@ -423,12 +423,12 @@ function updatePHCList(phcs, searchedLocation) {
   phcListContainer.innerHTML = ""; // Clear existing content
 
   // Add a header if you want to show what location these PHCs are near
-  if (searchedLocation) {
-    const headerElement = document.createElement("div");
-    headerElement.className = "list-header";
-    headerElement.innerHTML = `<h4>PHCs near ${searchedLocation}</h4>`;
-    phcListContainer.appendChild(headerElement);
-  }
+  // if (searchedLocation) {
+  //   const headerElement = document.createElement("div");
+  //   headerElement.className = "list-header";
+  //   headerElement.innerHTML = `<h4>PHCs near ${searchedLocation}</h4>`;
+  //   phcListContainer.appendChild(headerElement);
+  // }
 
   phcs.forEach((phc) => {
     // Default values for missing data
@@ -459,7 +459,9 @@ function updatePHCList(phcs, searchedLocation) {
                     </span>
                   </div>
                   <img class="edit" src="../Assets/edit.png" alt="" />
-                 <a class="viewMore" href="#" data-phc-id="${phc.id || ""}">View More</a>
+                 <a class="viewMore" href="#" data-phc-id="${
+                   phc.id || ""
+                 }">View More</a>
     `;
 
     // Add click event to center map on this PHC when clicked
@@ -545,9 +547,12 @@ async function searchLocation() {
   if (!locationInput.trim()) return;
 
   // Update the typedLocation paragraph with the searched location
-  const typedLocationElement = document.querySelector("#typedLocation");
-  if (typedLocationElement) {
-    typedLocationElement.textContent = locationInput.trim();
+  const typedLocationElements =
+    document.getElementsByClassName("typedLocation");
+  if (typedLocationElements.length > 0) {
+    for (let element of typedLocationElements) {
+      element.textContent = locationInput.trim();
+    }
   }
 
   let url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
@@ -576,7 +581,8 @@ async function searchLocation() {
         .filter((phc) => phc.distance <= 50)
         .sort((a, b) => a.distance - b.distance);
 
-      displayPHCMarkersAndList(filteredPHCs);
+      // Make sure to pass the locationInput to displayPHCMarkersAndList
+      displayPHCMarkersAndList(filteredPHCs, locationInput.trim());
     }
   } catch (error) {
     console.error("Error fetching location:", error);
