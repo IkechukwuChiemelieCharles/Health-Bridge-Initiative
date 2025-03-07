@@ -1,8 +1,3 @@
-const viewMore = document.querySelectorAll(".viewMore");
-const overMobileCont = document.querySelectorAll(".overMobileCont");
-
-const overlay = document.querySelectorAll(".overlay");
-
 const reviewBtn = document.querySelectorAll(".review2");
 
 const overviewBtn = document.querySelectorAll(".overview2");
@@ -38,6 +33,10 @@ overviewBtn.forEach(function (overviewBtn, i) {
     // bottomReview[i].classList.add("hide");
   });
 });
+
+const viewMore = document.querySelectorAll(".viewMore");
+const overMobileCont = document.querySelectorAll(".overMobileCont");
+const overlay = document.querySelectorAll(".overlay");
 
 viewMore.forEach(function (view, i) {
   view.addEventListener("click", function (e) {
