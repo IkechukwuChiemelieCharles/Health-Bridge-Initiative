@@ -42,5 +42,6 @@ listDropDown.addEventListener("click", function () {
 serviceDrop.forEach(function (s, i) {
   s.addEventListener("click", function () {
     serviceMobile[i].classList.toggle("hide");
+    console.log("derv");
   });
 });

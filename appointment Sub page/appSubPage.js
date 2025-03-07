@@ -1,20 +1,20 @@
 //mobile menu
 
-const darkOverlay = document.querySelector(".darkOverlay");
+const darkOverlay2 = document.querySelector(".darkOverlay");
 const mobile = document.querySelector(".mobille");
 
-const ham = document.querySelector(".ham");
+const ham2 = document.querySelector(".ham");
 
-ham.addEventListener("click", function () {
+ham2.addEventListener("click", function () {
   mobile.classList.add("openmobile");
-  darkOverlay.classList.remove("hide");
+  darkOverlay2.classList.remove("hide");
 
-  console.log("ham");
+  console.log("ham2");
 });
 
-darkOverlay.addEventListener("click", function () {
+darkOverlay2.addEventListener("click", function () {
   mobile.classList.remove("openmobile");
-  darkOverlay.classList.add("hide");
+  darkOverlay2.classList.add("hide");
 });
 
 //mobile menu ends here
