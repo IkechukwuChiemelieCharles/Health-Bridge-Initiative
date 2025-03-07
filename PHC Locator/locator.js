@@ -34,48 +34,48 @@ overviewBtn.forEach(function (overviewBtn, i) {
   });
 });
 
-const viewMore = document.querySelectorAll(".viewMore");
-const overMobileCont = document.querySelectorAll(".overMobileCont");
-const overlay = document.querySelectorAll(".overlay");
+// const viewMore = document.querySelectorAll(".viewMore");
+// const overMobileCont = document.querySelectorAll(".overMobileCont");
+// const overlay = document.querySelectorAll(".overlay");
 
-viewMore.forEach(function (view, i) {
-  view.addEventListener("click", function (e) {
-    e.preventDefault();
-    console.log("over");
+// viewMore.forEach(function (view, i) {
+//   view.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     console.log("over");
 
-    overMobileCont.forEach(function (overMobileCont) {
-      overMobileCont.classList.add("open");
-      overMobileCont.classList.remove("closed");
-    });
+//     overMobileCont.forEach(function (overMobileCont) {
+//       overMobileCont.classList.add("open");
+//       overMobileCont.classList.remove("closed");
+//     });
 
-    overlay.forEach(function (overlay, i) {
-      overlay.classList.remove("hide");
-    });
-  });
-});
+//     overlay.forEach(function (overlay, i) {
+//       overlay.classList.remove("hide");
+//     });
+//   });
+// });
 
-overlay.forEach(function (overlay, i) {
-  overlay.addEventListener("click", function () {
-    overMobileCont[i].classList.remove("open");
-    overMobileCont[i].classList.add("closed");
-    overlay.classList.add("hide");
-  });
-});
+// overlay.forEach(function (overlay, i) {
+//   overlay.addEventListener("click", function () {
+//     overMobileCont[i].classList.remove("open");
+//     overMobileCont[i].classList.add("closed");
+//     overlay.classList.add("hide");
+//   });
+// });
 
-edit.forEach(function (edit, i) {
-  edit.addEventListener("click", function () {
-    console.log("over");
+// edit.forEach(function (edit, i) {
+//   edit.addEventListener("click", function () {
+//     console.log("over");
 
-    overMobileCont.forEach(function (overMobileCont) {
-      overMobileCont.classList.add("open");
-      overMobileCont.classList.remove("closed");
-    });
+//     overMobileCont.forEach(function (overMobileCont) {
+//       overMobileCont.classList.add("open");
+//       overMobileCont.classList.remove("closed");
+//     });
 
-    overlay.forEach(function (overlay, i) {
-      overlay.classList.remove("hide");
-    });
-  });
-});
+//     overlay.forEach(function (overlay, i) {
+//       overlay.classList.remove("hide");
+//     });
+//   });
+// });
 
 ///////////////////////************MAP************88///////////////////////*
 // /
