@@ -353,7 +353,7 @@ main .iconsContainer {
   max-width: 30rem;
   gap: 2rem;
 }
-.iconsContainer .box img {
+.iconsContainer .box svg {
   width: 21.25rem;
   height: 28.331rem;
 }
