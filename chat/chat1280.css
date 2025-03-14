@@ -12,7 +12,6 @@
   --grey: rgba(249, 250, 251, 1);
   --lighterblue2: rgba(204, 221, 237, 1);
 
-
   --font32: 3.6rem;
 
   --font24: 4.8rem;
@@ -28,6 +27,8 @@
 .mobileCont {
   display: none;
 }
+
+
 .deskCont {
   display: flex;
   justify-content: center;
@@ -220,7 +221,7 @@ main .currDate p {
   position: fixed;
   bottom: 0;
 
-  right:  0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -252,6 +253,6 @@ main .currDate p {
   outline: none;
 }
 
-.sideBar ul a:hover{
-background-color: var(--lighterblue2);
+.sideBar ul a:hover {
+  background-color: var(--lighterblue2);
 }

@@ -20,6 +20,8 @@
   --lighterblue2: rgba(204, 221, 237, 1);
   --inputBg: rgba(249, 250, 251, 1);
   --border: rgba(228, 231, 236, 1);
+  --border2: rgba(228, 231, 236, 0.527);
+
   --green: rgba(3, 107, 38, 1);
 
   --font32: 3.2rem;
@@ -136,11 +138,11 @@ button {
 }
 
 .mobille ul li:hover {
-  background-color: var(--border);
+  background-color: var(--border2);
   border-radius: 0.6rem;
 }
 .currentMobilePage {
-  background-color: var(--border);
+  background-color: var(--border2);
   border-radius: 0.6rem;
 }
 

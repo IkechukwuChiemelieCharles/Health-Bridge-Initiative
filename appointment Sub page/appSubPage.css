@@ -22,6 +22,7 @@
   --border: rgba(228, 231, 236, 1);
   --green: rgba(3, 107, 38, 1);
   --lightAsh: rgba(248, 248, 248, 1);
+  --border2: rgba(228, 231, 236, 0.527);
 
   --font32: 3.2rem;
   --font24: 2.4rem;
@@ -74,7 +75,7 @@ button {
   background-color: var(--darkBlue);
   padding: 4rem;
   z-index: 10;
-  gap: 25rem;
+  gap: 10rem;
   width: 22.6rem;
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
@@ -127,11 +128,11 @@ button {
 }
 
 .mobille ul li:hover {
-  background-color: var(--border);
+  background-color: var(--border2);
   border-radius: 0.6rem;
 }
 .currentMobilePage {
-  background-color: var(--border);
+  background-color: var(--border2);
   border-radius: 0.6rem;
 }
 .openmobile {
