@@ -357,8 +357,19 @@ main .iconsContainer {
   gap: 2rem;
 }
 .iconsContainer .box svg {
-  width: 21.25rem;
-  height: 28.331rem;
+  width: 20rem;
+  height: 20rem;
+}
+.iconsContainer .box .svg1 {
+  /* width: 14.167rem;
+  height: 14.165rem; */
+}
+.iconsContainer .box .svg2 {
+  /* width: 9.2rem;
+  height: 14.6rem; */
+
+  /* width:20rem;
+  height: 20rem; */
 }
 .iconsContainer .box h2 {
   font-size: 2.8rem;
@@ -408,8 +419,9 @@ article .content {
   gap: 2rem;
 }
 .content .boxes img {
-  width: 15.584rem;
-  height: 19.5rem;
+  width: 13.5rem;
+  /* width: 13.5rem; */
+  height: 17rem;
 }
 .content .boxes h2 {
   font-size: 2.8rem;

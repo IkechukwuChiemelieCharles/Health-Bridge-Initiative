@@ -114,7 +114,7 @@ function displayPHCMarkersAndList(filteredData, searchedLocation) {
     return;
   }
 
-  // Limit to 5 nearest PHCs
+  // Limit to 6 nearest PHCs
   const nearestPHCs = filteredData.slice(0, 6);
 
   console.log("6 Nearest PHCs:", nearestPHCs);
@@ -136,12 +136,12 @@ function displayPHCMarkersAndList(filteredData, searchedLocation) {
 }
 
 // Function to update the PHC list in the UI
-// Function to update the PHC list in the UI
+
 function updatePHCList(phcs, searchedLocation) {
   const phcListContainer = document.getElementById("phc-list");
   phcListContainer.innerHTML = ""; // Clear existing content
 
-  // Add a header if you want to show what location these PHCs are near
+
   // if (searchedLocation) {
   //   const headerElement = document.createElement("div");
   //   headerElement.className = "list-header";
@@ -260,7 +260,6 @@ function setupOverlayUIEvents() {
 }
 
 // Function to search for PHCs
-// Function to search for PHCs
 async function searchLocation() {
   let locationInput = document.getElementById("locationInput").value;
   if (!locationInput.trim()) return;
@@ -318,6 +317,7 @@ function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
       Math.cos(lat2 * (Math.PI / 180)) *
       Math.sin(dLon / 2) *
       Math.sin(dLon / 2);
+      //arctangent
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return R * c;
 }
@@ -325,12 +325,12 @@ function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
 // Load data on page load
 loadPHCData();
 
-// Add event listener for input changes or you could change to button click if preferred
+// Add event listener for input changes 
 document
   .getElementById("locationInput")
   .addEventListener("input", searchLocation);
 
-// You may also want to add this function to handle direct PHC selection
+
 function selectPHC(phcId) {
   const selectedPhc = phcData.find((phc) => phc.id === phcId);
 
