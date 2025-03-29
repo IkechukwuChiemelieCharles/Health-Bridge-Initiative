@@ -45,6 +45,7 @@ html {
 
 body {
   font-family: "MyCustomFont", sans-serif;
+  overflow-x: hidden;
 }
 button {
   font-family: "MyCustomFont", sans-serif;
@@ -100,6 +101,7 @@ main {
   width: 90%;
   gap: 3.2rem;
   max-width: 41.936rem;
+  overflow-x: hidden;
 }
 
 .imgCont {
@@ -350,7 +352,6 @@ button {
   gap: 1.2rem;
   width: 90%;
 }
-
 
 .forgotPasswordCont button {
   width: 100%;

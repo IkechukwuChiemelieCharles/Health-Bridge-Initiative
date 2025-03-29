@@ -22,7 +22,6 @@
   --border: rgba(228, 231, 236, 1);
   --border2: rgba(228, 231, 236, 0.527);
 
-
   --font32: 3.2rem;
   --font24: 2.4rem;
   --font20: 2rem;
@@ -49,6 +48,7 @@ html {
 
 body {
   font-family: "MyCustomFont", sans-serif;
+  overflow-x: hidden;
 }
 button {
   font-family: "MyCustomFont", sans-serif;
@@ -401,7 +401,6 @@ aside .imgCont {
   max-width: 43rem;
   display: flex;
   justify-content: end;
-  border: 1px solid red;
 }
 
 aside .imgCont img {

@@ -21,7 +21,6 @@
   --border: rgba(228, 231, 236, 1);
   --border2: rgba(228, 231, 236, 0.527);
 
-
   --font32: 3.2rem;
   --font24: 2.4rem;
   --font20: 2rem;
@@ -48,6 +47,7 @@ html {
 
 body {
   font-family: "MyCustomFont", sans-serif;
+  overflow-x: hidden;
 }
 button {
   font-family: "MyCustomFont", sans-serif;
@@ -222,7 +222,7 @@ header {
     url(../Assets/floatIcon2-blue.png), url(../Assets/floatIcon3-blue.png);
   background-repeat: no-repeat;
   background-position: right 2rem, center -1rem, left 26rem;
-  background-size:5rem;
+  background-size: 5rem;
   width: 100%;
   height: 100%;
   position: absolute;

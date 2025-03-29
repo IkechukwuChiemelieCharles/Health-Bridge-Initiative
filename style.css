@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 /* rgba(128, 171, 209, 1) */
 /* rgba(170, 199, 224, 1) */
@@ -48,6 +49,7 @@ html {
 
 body {
   font-family: "MyCustomFont", sans-serif;
+  overflow-x: hidden;
 }
 button {
   font-family: "MyCustomFont", sans-serif;
@@ -584,6 +586,7 @@ aside span {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  /* overflow-x: hidden; */
 
   text-align: center;
   gap: 2rem;
@@ -639,7 +642,7 @@ aside span {
   color: var(--white);
 }
 .carelinkImg {
-  width: 34.277rem;
+  width: 30.277rem;
   height: 43rem;
 }
 .carelinkImg img {

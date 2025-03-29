@@ -47,6 +47,7 @@ html {
 
 body {
   font-family: "MyCustomFont", sans-serif;
+  overflow-x: hidden;
 }
 button {
   font-family: "MyCustomFont", sans-serif;
